@@ -10,6 +10,7 @@ export default function Document() {
       <Navbar/>
         <Main />
         <NextScript />
+        <Background/>
       </body>
     </Html>
   )
