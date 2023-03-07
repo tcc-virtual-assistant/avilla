@@ -8,24 +8,10 @@ import Cards from "./Cards";
 export default function TelaEstatica() {
   return (
     <>
-      <div className="flex justify-center">
-        <div className="flex place-content-around">
-          <Navbar />
-        </div>
-
-        <div className="absolute">
+      <div className="bg-gray-100 flex w-full justify-center items-center">
+        <div className="">
           <Apresentacao />
-        </div>
-
-        <div className="absolute bottom-0">
-          <Background />
-        </div>
-
-        <div className="absolute mt-80">
           <Cards />
-        </div>
-
-        <div className="absolute bottom-4">
           <Acessibilidade />
         </div>
       </div>
