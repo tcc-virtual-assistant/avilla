@@ -3,10 +3,10 @@ import React from "react";
 function Acessibilidade() {
   return (
     <>
-      <div className="flex sm:space-x-20 md:space-x-60">
-        <button class="px-4 rounded-sm">
+      <div className="flex justify-center items-center space-x-6 md:space-x-10">
+        <button class="">
           <img
-            className="h-30 sm:w-28 2xl:w-40"
+            className="w-32"
             src="\images\microphone.svg"
             alt=""
           />
@@ -14,7 +14,7 @@ function Acessibilidade() {
 
         <button class="px-4 rounded-sm">
           <img
-            className="h-30 sm:w-28 2xl:w-48"
+            className="w-32"
             src="\images\keyboard.svg"
             alt=""
           />

@@ -3,12 +3,12 @@ import React from "react";
 function Apresentacao() {
   return (
     <>
-      <div className="mt-40 justify-center">
-        <div className="text-verde-escuro font-normal text-4xl px-56">
+      <div className=" mx-4 py-8 flex flex-col text-center justify-center">
+        <div className="text-xl md:text-3xl pb-3 text-verde-escuro">
           Olá! Sou Ávila, como posso te ajudar?
         </div>
-        <div className="mt-4 text-verde-escuro font-normal text-4xl">
-          Caso não tenha ideia do que aqui estão minhas sugestões!
+        <div className="text-xl md:text-3xl text-verde-escuro">
+          Caso não tenha ideia do que perguntar, aqui estão minhas sugestões!
         </div>
       </div>
     </>
