@@ -10,12 +10,14 @@ import Chat from "./Chat";
 export default function TelaEstatica() {
   return (
     <>
-      <div className="flex w-full justify-center items-center">
+      <div className="">
         <div className="">
-          {/* <Apresentacao />
-          <Cards /> */}
-          < Chat/>
-          {/* <Acessibilidade /> */}
+          <Apresentacao />
+          <Cards />
+          <div className="flex align-bottom justify-center">
+          <Acessibilidade/>
+          </div>
+          {/* < Chat/> */}
           {/* <AvilaSVG/> */}
         </div>
       </div>
