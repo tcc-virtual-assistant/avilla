@@ -6,7 +6,7 @@ function Cards() {
   const router = useRouter();
   return (
     <>
-      <div className="flex flex-col md:flex-row space-x-0 space-y-2 md:space-x-20 md:space-y-0 mx-12">
+      <div className="flex md:absolute md:top-1/2 justify-center flex-col md:flex-row space-x-0 space-y-2 md:space-x-20 md:space-y-0 mx-12">
         <button class=" flex flex-col items-center justify-center">
           <img
             className="w-2/4  md:w-10 lg:w-24 2xl:w-40"

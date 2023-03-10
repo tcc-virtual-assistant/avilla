@@ -3,7 +3,7 @@ import React from "react";
 function Navbar() {
   return (
     <>
-      <div className="w-full">
+      <div className="z-50 w-full ">
         <div className=" h-4 flex">
           <img
             style={{ objectFit: "cover", width: "100%" }}

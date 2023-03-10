@@ -7,14 +7,13 @@ function Background() {
   return (
     <>
       <div
-        className="w-full h-[530px] flex justify-end items-start bg-bottom avilla"
+        className="w-full h-full flex justify-end items-start bg-bottom avilla"
         style={{
           backgroundImage: `url(${bg.src})`,
           backgroundRepeat: "no-repeat",
         }}
       >
-          <Acessibilidade />
-          <div className=" absolute z-50">
+          <div className="z-50">
           <AvilaSVG />
           </div>
         
