@@ -13,7 +13,7 @@ function Navbar() {
 
         <div className="flex justify-between">
           <div className="flex-shrink-0 w-46 ">
-            <a href="">
+            <a href="/">
               <img
                 className=" w-60 h-19"
                 src="/images/bosch_logo.svg"
