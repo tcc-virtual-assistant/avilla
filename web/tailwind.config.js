@@ -10,8 +10,17 @@ module.exports = {
     // Or if using `src` directory:
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
+  
   theme: {
-    extend: { 'teste': '#fff' },
+    extend: { 
+      colors: {
+        'verde-escuro' : '#147671',
+        'azul' : '#007bc0',
+        'verde-grama' : '#00884a',
+        'roxo' : '#9e2896',
+        'verde-agua' : '#18837e',
+      },
+     },
 
   },
   plugins: [require("daisyui")],

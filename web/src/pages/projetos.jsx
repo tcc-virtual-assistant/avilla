@@ -18,17 +18,8 @@ function Home() {
             </Head>
             <main>
                 <div className="flex justify-center">
-                    <div className="flex place-content-around ">
-                        <Navbar />
-                    </div>
                     <div className=" absolute  top-64 h-1/4 z-50 w-1/2  items-center justify-center   md:flex  ">
                         <ProjectCards />
-                    </div>
-                    <div className="absolute bottom-0  ">
-                        <Background />
-                    </div>
-                    <div className="absolute  bottom-4">
-                        <Acessibilidade />
                     </div>
                 </div>
             </main>
