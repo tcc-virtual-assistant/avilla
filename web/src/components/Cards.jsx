@@ -1,6 +1,7 @@
 import React from "react";
 import { useRouter } from "next/router";
 import Link from "next/link";
+import CursosETS from "../pages/cursos_ets";
 
 function Cards() {
   const router = useRouter();
@@ -16,7 +17,8 @@ function Cards() {
           <p className="text-azul text-xl">Agenda semanal</p>
         </button>
 
-        <button class="  flex flex-col items-center justify-center">
+        <button class="  flex flex-col items-center justify-center"
+        onClick={()=>{router.push('/cursosets')}}>
           <img
             className="w-2/4  md:w-10 lg:w-24 2xl:w-40"
             src="\images\education.svg"
