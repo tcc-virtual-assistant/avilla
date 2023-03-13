@@ -1,4 +1,3 @@
-import Styles from '@/styles/Agenda.module.css'
 import Head from 'next/head'
 import { motion } from 'framer-motion'
 import { useState, useEffect, useRef } from 'react'

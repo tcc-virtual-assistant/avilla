@@ -1,6 +1,5 @@
 import React from 'react'
 import { useState } from 'react'
-import Styles from '@/styles/module/Tabela.module.css'
 
 import Popup from './popup'
 
