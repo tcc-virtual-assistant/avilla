@@ -11,7 +11,7 @@ export default function TelaEstatica() {
   return (
     <>
       <div className="flex flex-col w-full  justify-center ">
-      <Navbar/>
+      
         <div className="grid space-y-0">
           <div className="h-full w-full md:flex justify-center ">
             <Apresentacao />

@@ -3,6 +3,7 @@ import Image from 'next/image'
 import { Inter } from 'next/font/google'
 import styles from '@/styles/Home.module.css'
 import TelaEstatica from '@/components/TelaEstatica'
+import Popup from '@/components/popup'
 
 const inter = Inter({ subsets: ['latin'] })
 

@@ -1,4 +1,5 @@
 import React from "react";
+import Popup from "./popup";
 
 function Acessibilidade() {
   return (
@@ -13,13 +14,14 @@ function Acessibilidade() {
             />
           </button>
 
-          <button class="rounded-full md:rounded-none shadow-xl md:shadow-none">
-            <img
+
+            {/* <img
               className=" w-12 md:w-20 lg:w-28 2xl:w-40"
               src="\images\keyboard.svg"
               alt=""
-            />
-          </button>
+            /> */}
+            <Popup/>
+          
         </div>
         
       </div>
