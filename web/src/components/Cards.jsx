@@ -18,7 +18,7 @@ function Cards() {
         </button>
 
         <button class="  flex flex-col items-center justify-center"
-        onClick={()=>{router.push('/cursosets')}}>
+        onClick={()=>{router.push('/cursos_ets')}}>
           <img
             className="w-2/4  md:w-10 lg:w-24 2xl:w-40"
             src="\images\education.svg"
