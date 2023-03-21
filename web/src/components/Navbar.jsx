@@ -22,17 +22,14 @@ function Navbar() {
               />
             </a>
           </div>
-          <div className="flex mt-6 mr-3">
+          <div className="flex mt-6 mr-6">
             <div class="a-dropdown flex">
               <select
                 className="h-8 flex align-middle"
-                id="demo"
-                aria-label="here goes the aria label for the dropwdown"
               >
                 <option value='"Português"'>Português</option>
                 <option value='"English"'>English</option>
                 <option value='"Español"'>Español</option>
-                <option value='"Deutsch"'>Deutsch</option>
               </select>
             </div>
           </div>
