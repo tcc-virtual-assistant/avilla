@@ -14,13 +14,12 @@ export default function Carrosel() {
           dynamicBullets: true,
         }}
         modules={[Pagination]}
-        className="mySwiper mt-8"
+        className="mySwiper"
       >
         <SwiperSlide>
-          <div class="w-10/12 ml-16">
-            <div class="flex flex-col lg:flex-row overflow-hidden">
+            <div class="flex flex-col lg:flex-row overflow-hidden pl-14 pr-14 mb-12 mt-14 lg:mt-20">
               <img
-                class="block w-full lg:w-64 flex-none bg-cover"
+                class="block w-full lg:w-1/2 flex-none bg-cover lg:h-1/2"
                 src="https://www.pumpkin.care/wp-content/uploads/2021/03/Scottish-Fold-Hero.jpg"
               />
               <div class="p-2 flex flex-col mb-6">
@@ -37,14 +36,12 @@ export default function Carrosel() {
                 </p>
               </div>
             </div>
-          </div>
         </SwiperSlide>
 
         <SwiperSlide>
-          <div class="w-10/12 ml-16">
-            <div class="flex flex-col lg:flex-row overflow-hidden">
+            <div class="flex flex-col lg:flex-row overflow-hidden pl-14 pr-14 mb-12 mt-14 lg:mt-20">
               <img
-                class="block w-full lg:w-64 flex-none bg-cover"
+                class="block w-full lg:w-1/2 flex-none bg-cover lg:h-1/2"
                 src="https://www.veterinarians.org/wp-content/uploads/2022/10/A-Guide-to-the-Scottish-Fold-Cat-Breed.jpg"
               />
               <div class="p-2 flex flex-col mb-6">
@@ -60,18 +57,16 @@ export default function Carrosel() {
                 </p>
               </div>
             </div>
-          </div>
         </SwiperSlide>
 
         <SwiperSlide>
-          <div class="w-10/12 ml-16">
-            <div class="flex flex-col lg:flex-row overflow-hidden">
+            <div class="flex flex-col lg:flex-row overflow-hidden pl-14 pr-14 mb-12 mt-14 lg:mt-20">
               <img
-                class="block w-full lg:w-64 flex-none bg-cover"
+                class="block w-full lg:w-1/2 flex-none bg-cover lg:h-1/2"
                 src="https://i.pinimg.com/originals/80/c9/9c/80c99c2804897effd3f59db32b33b1cd.jpg"
               />
-              <div class="p-2 flex flex-col mb-6">
-                <div class="text-roxo font-bold text-2xl mb-2 leading-tight">
+              <div class="p-2 flex flex-col mb-6 text-center">
+                <div class="text-roxo font-bold text-3xl mb-2 leading-tight">
                   Administração
                 </div>
                 <p class="text-grey-darker text-lg leading-tight">
@@ -83,14 +78,12 @@ export default function Carrosel() {
                 </p>
               </div>
             </div>
-          </div>
         </SwiperSlide>
 
         <SwiperSlide>
-          <div class="w-10/12 ml-16">
-            <div class="flex flex-col lg:flex-row overflow-hidden">
+            <div class="flex flex-col lg:flex-row overflow-hidden pl-14 pr-14 mb-12 mt-14 lg:mt-20">
               <img
-                class="block w-full lg:w-64 flex-none bg-cover"
+                class="block w-full lg:w-1/2 flex-none bg-cover lg:h-1/2"
                 src="https://media.istockphoto.com/id/467801366/pt/foto/lovable-gato-scottish-fold.jpg?s=170667a&w=0&k=20&c=dJ9jMYD3t3eq986G34s4xTXwV3AbcSLXEKEBMNre8Os="
               />
               <div class="p-2 flex flex-col mb-6">
@@ -106,7 +99,6 @@ export default function Carrosel() {
                 </p>
               </div>
             </div>
-          </div>
         </SwiperSlide>
       </Swiper>
     </>
