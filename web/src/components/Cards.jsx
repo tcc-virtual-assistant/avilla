@@ -25,14 +25,15 @@ function Cards() {
           <p className="text-gray-600 text-xl">Cursos da ETS</p>
         </button>
 
-        <button class=" flex flex-col items-center justify-center">
+        <button onClick={()=>{router.push('/chat')}}
+        class=" flex flex-col items-center justify-center">
           <img
             className="w-2/4  md:w-10 lg:w-24  2xl:w-40"
             src="\images\chat-question-answer.svg"
             alt=""
           />
           <p className="text-verde-grama text-xl">Dúvidas frequentes</p>
-        </button>
+        </button >
 
         <button class=" flex flex-col items-center justify-center">
           <img
