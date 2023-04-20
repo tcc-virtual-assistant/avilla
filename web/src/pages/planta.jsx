@@ -9,7 +9,7 @@ import {OrbitControls, useGLTF} from '@react-three/drei';
 function Planta() {
   return (
     <div className=' flex items-center justify-center'>
-    <div className="w-10/12 h-96">
+    <div className="w-10/12 h-[40rem]">
           <Canvas>
             <Suspense fallback={null}>
               <ambientLight/>

@@ -6,9 +6,9 @@ import React, { useRef } from "react";
 import { useGLTF } from "@react-three/drei";
 
 export function Model(props) {
-  const { nodes, materials } = useGLTF("/Bosch.gltf");
+  const { nodes, materials } = useGLTF("/Bosch2.glb");
   return (
-    <group {...props} dispose={null} position={[-10.5,-4,-15]}>
+    <group {...props} dispose={null} position={[-11,-3,-11]}>
       <group
         position={[10.82, 0.57, 10.1]}
         rotation={[-Math.PI / 2, 0, 0.02]}
@@ -94,6 +94,24 @@ export function Model(props) {
         material={nodes.Cylinder080.material}
         rotation={[0.08, -1.52, 0.09]}
       />
+      <group
+        position={[11.1, 1.37, 6.98]}
+        rotation={[Math.PI / 2, 0, 2.79]}
+        scale={0.24}
+      >
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Cylinder002.geometry}
+          material={materials["Material.005"]}
+        />
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Cylinder002_1.geometry}
+          material={materials["Cor do texto.002"]}
+        />
+      </group>
       <mesh
         castShadow
         receiveShadow
@@ -393,19 +411,19 @@ export function Model(props) {
       />
       <group
         position={[1.68, 0.04, 7.19]}
-        rotation={[-Math.PI, -0.36, -Math.PI]}
+        rotation={[Math.PI, -0.36, Math.PI]}
         scale={[0.28, 0.09, 0.15]}
       >
         <mesh
           castShadow
           receiveShadow
-          geometry={nodes.mesh_45.geometry}
+          geometry={nodes.Plane002.geometry}
           material={materials.White}
         />
         <mesh
           castShadow
           receiveShadow
-          geometry={nodes.mesh_45_1.geometry}
+          geometry={nodes.Plane002_1.geometry}
           material={materials.Green}
         />
       </group>
@@ -417,13 +435,13 @@ export function Model(props) {
         <mesh
           castShadow
           receiveShadow
-          geometry={nodes.mesh_46.geometry}
+          geometry={nodes.Plane001.geometry}
           material={materials.White}
         />
         <mesh
           castShadow
           receiveShadow
-          geometry={nodes.mesh_46_1.geometry}
+          geometry={nodes.Plane001_1.geometry}
           material={materials.Green}
         />
       </group>
@@ -435,13 +453,13 @@ export function Model(props) {
         <mesh
           castShadow
           receiveShadow
-          geometry={nodes.mesh_47.geometry}
+          geometry={nodes.Plane003.geometry}
           material={materials.White}
         />
         <mesh
           castShadow
           receiveShadow
-          geometry={nodes.mesh_47_1.geometry}
+          geometry={nodes.Plane003_1.geometry}
           material={materials.Green}
         />
       </group>
@@ -453,13 +471,13 @@ export function Model(props) {
         <mesh
           castShadow
           receiveShadow
-          geometry={nodes.mesh_48.geometry}
+          geometry={nodes.Plane004.geometry}
           material={materials.White}
         />
         <mesh
           castShadow
           receiveShadow
-          geometry={nodes.mesh_48_1.geometry}
+          geometry={nodes.Plane004_1.geometry}
           material={materials.Green}
         />
       </group>
@@ -471,13 +489,13 @@ export function Model(props) {
         <mesh
           castShadow
           receiveShadow
-          geometry={nodes.mesh_49.geometry}
+          geometry={nodes.Plane005.geometry}
           material={materials.White}
         />
         <mesh
           castShadow
           receiveShadow
-          geometry={nodes.mesh_49_1.geometry}
+          geometry={nodes.Plane005_1.geometry}
           material={materials.Green}
         />
       </group>
@@ -517,6 +535,48 @@ export function Model(props) {
         rotation={[0, 0.32, 0]}
         scale={[0.11, 0.01, 0.15]}
       />
+      <group
+        position={[6.43, 0.64, 8.84]}
+        rotation={[Math.PI / 2, 0, 3.12]}
+        scale={0.14}
+      >
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Text011.geometry}
+          material={materials["Cor do texto"]}
+        />
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Text011_1.geometry}
+          material={materials["Material.003"]}
+        />
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Text011_2.geometry}
+          material={materials["Cor do texto.001"]}
+        />
+      </group>
+      <group
+        position={[13.61, 1.08, 9.93]}
+        rotation={[Math.PI / 2, 0, 0]}
+        scale={0.14}
+      >
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Text003.geometry}
+          material={materials["Cor do texto.003"]}
+        />
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Text003_1.geometry}
+          material={materials["Material.004"]}
+        />
+      </group>
       <mesh
         castShadow
         receiveShadow
@@ -525,15 +585,6 @@ export function Model(props) {
         position={[17.59, 0.08, 7.07]}
         rotation={[-Math.PI / 2, 0, 0.25]}
         scale={[0.02, 0.02, 0.07]}
-      />
-      <mesh
-        castShadow
-        receiveShadow
-        geometry={nodes.Plane.geometry}
-        material={materials.Mat}
-        position={[5.53, 0.06, 8.55]}
-        rotation={[-1.57, 0.01, -2.9]}
-        scale={0}
       />
       <mesh
         castShadow
@@ -547,7 +598,7 @@ export function Model(props) {
         <mesh
           castShadow
           receiveShadow
-          geometry={nodes.Cube005.geometry}
+          geometry={nodes.Cube005_1.geometry}
           material={materials["Material.032"]}
           position={[2, 0, -0.95]}
           rotation={[-Math.PI / 2, 0, 0]}
@@ -587,7 +638,7 @@ export function Model(props) {
           material={materials["Material.040"]}
           position={[5.52, 0, -1.27]}
           rotation={[-Math.PI / 2, 0, 0]}
-          scale={[0.01, 0.02, 0.02]}
+          scale={[0.01, 0.02, 0.01]}
         />
         <mesh
           castShadow
@@ -596,7 +647,7 @@ export function Model(props) {
           material={materials["Material.040"]}
           position={[5.46, 0, 1.5]}
           rotation={[-Math.PI / 2, 0, 0]}
-          scale={[0.01, 0.02, 0.02]}
+          scale={[0.01, 0.02, 0.01]}
         />
         <mesh
           castShadow
@@ -605,7 +656,7 @@ export function Model(props) {
           material={materials["Material.040"]}
           position={[-1.57, 0, 1.33]}
           rotation={[Math.PI / 2, 0, Math.PI]}
-          scale={[0.01, 0.02, 0.02]}
+          scale={[0.01, 0.02, 0.01]}
         >
           <mesh
             castShadow
@@ -710,7 +761,21 @@ export function Model(props) {
         <mesh
           castShadow
           receiveShadow
-          geometry={nodes.Plane003.geometry}
+          geometry={nodes.Plane001_2.geometry}
+          material={materials["Material.027"]}
+          position={[4, 0, 0]}
+        />
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Plane002_2.geometry}
+          material={materials["Material.028"]}
+          position={[2, 0, 0]}
+        />
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Plane003_2.geometry}
           material={materials["Material.042"]}
           position={[4.86, -0.02, -0.93]}
           rotation={[1.56, 1.52, -1.54]}
@@ -719,7 +784,7 @@ export function Model(props) {
         <mesh
           castShadow
           receiveShadow
-          geometry={nodes.Plane004.geometry}
+          geometry={nodes.Plane004_2.geometry}
           material={materials["Material.042"]}
           position={[-0.97, 0.02, -0.93]}
           rotation={[Math.PI, -Math.PI / 2, 0]}
@@ -803,43 +868,6 @@ export function Model(props) {
         <mesh
           castShadow
           receiveShadow
-          geometry={nodes.Cylinder.geometry}
-          material={materials["Material.022"]}
-          position={[5.59, 0, 0.88]}
-          rotation={[-Math.PI / 2, 0, 0]}
-          scale={[0.07, 2.23, 0.11]}
-        >
-          <mesh
-            castShadow
-            receiveShadow
-            geometry={nodes.Cylinder002.geometry}
-            material={materials["Material.030"]}
-            position={[-4.69, 0.91, 0]}
-            rotation={[-Math.PI, 0, -2.34]}
-            scale={[-0.01, 4.42, 0.02]}
-          />
-          <mesh
-            castShadow
-            receiveShadow
-            geometry={nodes.Cylinder003.geometry}
-            material={materials["Material.031"]}
-            position={[-4.46, 0.41, 0]}
-            rotation={[-Math.PI, 0, -1.89]}
-            scale={[0, 4.54, 0.02]}
-          />
-          <mesh
-            castShadow
-            receiveShadow
-            geometry={nodes.Cylinder004.geometry}
-            material={materials["Material.031"]}
-            position={[-4.81, -0.19, 0]}
-            rotation={[-Math.PI, 0, -0.71]}
-            scale={[-0.01, 4.05, 0.02]}
-          />
-        </mesh>
-        <mesh
-          castShadow
-          receiveShadow
           geometry={nodes.Cube009.geometry}
           material={materials["Material.039"]}
           position={[5.59, 0, 1.27]}
@@ -858,6 +886,43 @@ export function Model(props) {
         <mesh
           castShadow
           receiveShadow
+          geometry={nodes.Cylinder_1.geometry}
+          material={materials["Material.022"]}
+          position={[5.59, 0, 0.88]}
+          rotation={[-Math.PI / 2, 0, 0]}
+          scale={[0.07, 2.23, 0.11]}
+        >
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cylinder002_2.geometry}
+            material={materials["Material.030"]}
+            position={[-4.69, 0.91, 0]}
+            rotation={[0, 0, 2.34]}
+            scale={[-0.01, -4.42, -0.02]}
+          />
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cylinder003.geometry}
+            material={materials["Material.031"]}
+            position={[-4.46, 0.41, 0]}
+            rotation={[0, 0, 1.89]}
+            scale={[0, -4.54, -0.02]}
+          />
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cylinder004.geometry}
+            material={materials["Material.031"]}
+            position={[-4.81, -0.19, 0]}
+            rotation={[0, 0, 0.71]}
+            scale={[-0.01, -4.05, -0.02]}
+          />
+        </mesh>
+        <mesh
+          castShadow
+          receiveShadow
           geometry={nodes.Cylinder001.geometry}
           material={materials["Material.026"]}
           position={[-1.7, 0, 0.84]}
@@ -870,8 +935,8 @@ export function Model(props) {
             geometry={nodes.Cylinder005.geometry}
             material={materials["Material.030"]}
             position={[5.6, 0.89, 0]}
-            rotation={[-Math.PI, 0, -0.83]}
-            scale={[0, 4.9, 0.02]}
+            rotation={[0, 0, 0.83]}
+            scale={[0, -4.9, -0.02]}
           />
           <mesh
             castShadow
@@ -879,8 +944,8 @@ export function Model(props) {
             geometry={nodes.Cylinder006.geometry}
             material={materials["Material.030"]}
             position={[5.57, -0.16, 0]}
-            rotation={[-Math.PI, 0, -2.36]}
-            scale={[-0.01, 4.92, 0.02]}
+            rotation={[0, 0, 2.36]}
+            scale={[-0.01, -4.92, -0.02]}
           />
           <mesh
             castShadow
@@ -888,24 +953,10 @@ export function Model(props) {
             geometry={nodes.Cylinder008.geometry}
             material={materials["Material.030"]}
             position={[5.51, 0.31, 0]}
-            rotation={[-Math.PI, 0, -1.72]}
-            scale={[0, 5, 0.02]}
+            rotation={[0, 0, 1.72]}
+            scale={[0, -5, -0.02]}
           />
         </mesh>
-        <mesh
-          castShadow
-          receiveShadow
-          geometry={nodes.Plane001.geometry}
-          material={materials["Material.027"]}
-          position={[4, 0, 0]}
-        />
-        <mesh
-          castShadow
-          receiveShadow
-          geometry={nodes.Plane002.geometry}
-          material={materials["Material.028"]}
-          position={[2, 0, 0]}
-        />
       </mesh>
       <mesh
         castShadow
@@ -959,7 +1010,7 @@ export function Model(props) {
           material={materials["Material.040"]}
           position={[5.52, 0, -1.27]}
           rotation={[-Math.PI / 2, 0, 0]}
-          scale={[0.01, 0.02, 0.02]}
+          scale={[0.01, 0.02, 0.01]}
         />
         <mesh
           castShadow
@@ -968,7 +1019,7 @@ export function Model(props) {
           material={materials["Material.040"]}
           position={[5.46, 0, 1.5]}
           rotation={[-Math.PI / 2, 0, 0]}
-          scale={[0.01, 0.02, 0.02]}
+          scale={[0.01, 0.02, 0.01]}
         />
         <mesh
           castShadow
@@ -977,7 +1028,7 @@ export function Model(props) {
           material={materials["Material.040"]}
           position={[-1.57, 0, 1.33]}
           rotation={[Math.PI / 2, 0, Math.PI]}
-          scale={[0.01, 0.02, 0.02]}
+          scale={[0.01, 0.02, 0.01]}
         >
           <mesh
             castShadow
@@ -1082,6 +1133,20 @@ export function Model(props) {
         <mesh
           castShadow
           receiveShadow
+          geometry={nodes.Plane005_2.geometry}
+          material={materials["Material.027"]}
+          position={[4, 0, 0]}
+        />
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Plane006.geometry}
+          material={materials["Material.028"]}
+          position={[2, 0, 0]}
+        />
+        <mesh
+          castShadow
+          receiveShadow
           geometry={nodes.Plane007.geometry}
           material={materials["Material.042"]}
           position={[4.86, -0.02, -0.93]}
@@ -1175,43 +1240,6 @@ export function Model(props) {
         <mesh
           castShadow
           receiveShadow
-          geometry={nodes.Cylinder020.geometry}
-          material={materials["Material.022"]}
-          position={[5.59, 0, 0.88]}
-          rotation={[-Math.PI / 2, 0, 0]}
-          scale={[0.07, 2.23, 0.11]}
-        >
-          <mesh
-            castShadow
-            receiveShadow
-            geometry={nodes.Cylinder022.geometry}
-            material={materials["Material.030"]}
-            position={[-4.69, 0.91, 0]}
-            rotation={[-Math.PI, 0, -2.34]}
-            scale={[-0.01, 4.42, 0.02]}
-          />
-          <mesh
-            castShadow
-            receiveShadow
-            geometry={nodes.Cylinder023.geometry}
-            material={materials["Material.031"]}
-            position={[-4.46, 0.41, 0]}
-            rotation={[-Math.PI, 0, -1.89]}
-            scale={[0, 4.54, 0.02]}
-          />
-          <mesh
-            castShadow
-            receiveShadow
-            geometry={nodes.Cylinder024.geometry}
-            material={materials["Material.031"]}
-            position={[-4.81, -0.19, 0]}
-            rotation={[-Math.PI, 0, -0.71]}
-            scale={[-0.01, 4.05, 0.02]}
-          />
-        </mesh>
-        <mesh
-          castShadow
-          receiveShadow
           geometry={nodes.Cube021.geometry}
           material={materials["Material.039"]}
           position={[5.59, 0, 1.27]}
@@ -1230,6 +1258,43 @@ export function Model(props) {
         <mesh
           castShadow
           receiveShadow
+          geometry={nodes.Cylinder020.geometry}
+          material={materials["Material.022"]}
+          position={[5.59, 0, 0.88]}
+          rotation={[-Math.PI / 2, 0, 0]}
+          scale={[0.07, 2.23, 0.11]}
+        >
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cylinder022.geometry}
+            material={materials["Material.030"]}
+            position={[-4.69, 0.91, 0]}
+            rotation={[0, 0, 2.34]}
+            scale={[-0.01, -4.42, -0.02]}
+          />
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cylinder023.geometry}
+            material={materials["Material.031"]}
+            position={[-4.46, 0.41, 0]}
+            rotation={[0, 0, 1.89]}
+            scale={[0, -4.54, -0.02]}
+          />
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cylinder024.geometry}
+            material={materials["Material.031"]}
+            position={[-4.81, -0.19, 0]}
+            rotation={[0, 0, 0.71]}
+            scale={[-0.01, -4.05, -0.02]}
+          />
+        </mesh>
+        <mesh
+          castShadow
+          receiveShadow
           geometry={nodes.Cylinder021.geometry}
           material={materials["Material.026"]}
           position={[-1.7, 0, 0.84]}
@@ -1242,8 +1307,8 @@ export function Model(props) {
             geometry={nodes.Cylinder025.geometry}
             material={materials["Material.030"]}
             position={[5.6, 0.89, 0]}
-            rotation={[-Math.PI, 0, -0.83]}
-            scale={[0, 4.9, 0.02]}
+            rotation={[0, 0, 0.83]}
+            scale={[0, -4.9, -0.02]}
           />
           <mesh
             castShadow
@@ -1251,8 +1316,8 @@ export function Model(props) {
             geometry={nodes.Cylinder026.geometry}
             material={materials["Material.030"]}
             position={[5.57, -0.16, 0]}
-            rotation={[-Math.PI, 0, -2.36]}
-            scale={[-0.01, 4.92, 0.02]}
+            rotation={[0, 0, 2.36]}
+            scale={[-0.01, -4.92, -0.02]}
           />
           <mesh
             castShadow
@@ -1260,24 +1325,10 @@ export function Model(props) {
             geometry={nodes.Cylinder027.geometry}
             material={materials["Material.030"]}
             position={[5.51, 0.31, 0]}
-            rotation={[-Math.PI, 0, -1.72]}
-            scale={[0, 5, 0.02]}
+            rotation={[0, 0, 1.72]}
+            scale={[0, -5, -0.02]}
           />
         </mesh>
-        <mesh
-          castShadow
-          receiveShadow
-          geometry={nodes.Plane005.geometry}
-          material={materials["Material.027"]}
-          position={[4, 0, 0]}
-        />
-        <mesh
-          castShadow
-          receiveShadow
-          geometry={nodes.Plane006.geometry}
-          material={materials["Material.028"]}
-          position={[2, 0, 0]}
-        />
       </mesh>
       <mesh
         castShadow
@@ -1327,11 +1378,11 @@ export function Model(props) {
         <mesh
           castShadow
           receiveShadow
-          geometry={nodes.Cube035.geometry}
+          geometry={nodes.Cube035_1.geometry}
           material={materials["Material.040"]}
           position={[5.52, 0, -1.27]}
           rotation={[-Math.PI / 2, 0, 0]}
-          scale={[0.01, 0.02, 0.02]}
+          scale={[0.01, 0.02, 0.01]}
         />
         <mesh
           castShadow
@@ -1340,7 +1391,7 @@ export function Model(props) {
           material={materials["Material.040"]}
           position={[5.46, 0, 1.5]}
           rotation={[-Math.PI / 2, 0, 0]}
-          scale={[0.01, 0.02, 0.02]}
+          scale={[0.01, 0.02, 0.01]}
         />
         <mesh
           castShadow
@@ -1454,6 +1505,20 @@ export function Model(props) {
         <mesh
           castShadow
           receiveShadow
+          geometry={nodes.Plane009.geometry}
+          material={materials["Material.027"]}
+          position={[4, 0, 0]}
+        />
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Plane010.geometry}
+          material={materials["Material.028"]}
+          position={[2, 0, 0]}
+        />
+        <mesh
+          castShadow
+          receiveShadow
           geometry={nodes.Plane011.geometry}
           material={materials["Material.042"]}
           position={[4.86, -0.02, -0.93]}
@@ -1490,7 +1555,7 @@ export function Model(props) {
           <mesh
             castShadow
             receiveShadow
-            geometry={nodes.Cube036.geometry}
+            geometry={nodes.Cube036_1.geometry}
             material={materials["Material.040"]}
             position={[2.19, 0, 0.26]}
             rotation={[1.55, 0, 0]}
@@ -1518,7 +1583,7 @@ export function Model(props) {
           <mesh
             castShadow
             receiveShadow
-            geometry={nodes.Cube039.geometry}
+            geometry={nodes.Cube039_1.geometry}
             material={materials["Material.040"]}
             position={[2.18, 0, 0.26]}
             rotation={[1.55, 0, 0]}
@@ -1547,43 +1612,6 @@ export function Model(props) {
         <mesh
           castShadow
           receiveShadow
-          geometry={nodes.Cylinder040.geometry}
-          material={materials["Material.022"]}
-          position={[5.59, 0, 0.88]}
-          rotation={[-Math.PI / 2, 0, 0]}
-          scale={[0.07, 2.23, 0.11]}
-        >
-          <mesh
-            castShadow
-            receiveShadow
-            geometry={nodes.Cylinder042.geometry}
-            material={materials["Material.030"]}
-            position={[-4.69, 0.91, 0]}
-            rotation={[-Math.PI, 0, -2.34]}
-            scale={[-0.01, 4.42, 0.02]}
-          />
-          <mesh
-            castShadow
-            receiveShadow
-            geometry={nodes.Cylinder043.geometry}
-            material={materials["Material.031"]}
-            position={[-4.46, 0.41, 0]}
-            rotation={[-Math.PI, 0, -1.89]}
-            scale={[0, 4.54, 0.02]}
-          />
-          <mesh
-            castShadow
-            receiveShadow
-            geometry={nodes.Cylinder044.geometry}
-            material={materials["Material.031"]}
-            position={[-4.81, -0.19, 0]}
-            rotation={[-Math.PI, 0, -0.71]}
-            scale={[-0.01, 4.05, 0.02]}
-          />
-        </mesh>
-        <mesh
-          castShadow
-          receiveShadow
           geometry={nodes.Cube033.geometry}
           material={materials["Material.039"]}
           position={[5.59, 0, 1.27]}
@@ -1602,6 +1630,43 @@ export function Model(props) {
         <mesh
           castShadow
           receiveShadow
+          geometry={nodes.Cylinder040.geometry}
+          material={materials["Material.022"]}
+          position={[5.59, 0, 0.88]}
+          rotation={[-Math.PI / 2, 0, 0]}
+          scale={[0.07, 2.23, 0.11]}
+        >
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cylinder042.geometry}
+            material={materials["Material.030"]}
+            position={[-4.69, 0.91, 0]}
+            rotation={[0, 0, 2.34]}
+            scale={[-0.01, -4.42, -0.02]}
+          />
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cylinder043.geometry}
+            material={materials["Material.031"]}
+            position={[-4.46, 0.41, 0]}
+            rotation={[0, 0, 1.89]}
+            scale={[0, -4.54, -0.02]}
+          />
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cylinder044.geometry}
+            material={materials["Material.031"]}
+            position={[-4.81, -0.19, 0]}
+            rotation={[0, 0, 0.71]}
+            scale={[-0.01, -4.05, -0.02]}
+          />
+        </mesh>
+        <mesh
+          castShadow
+          receiveShadow
           geometry={nodes.Cylinder041.geometry}
           material={materials["Material.026"]}
           position={[-1.7, 0, 0.84]}
@@ -1614,8 +1679,8 @@ export function Model(props) {
             geometry={nodes.Cylinder045.geometry}
             material={materials["Material.030"]}
             position={[5.6, 0.89, 0]}
-            rotation={[-Math.PI, 0, -0.83]}
-            scale={[0, 4.9, 0.02]}
+            rotation={[0, 0, 0.83]}
+            scale={[0, -4.9, -0.02]}
           />
           <mesh
             castShadow
@@ -1623,8 +1688,8 @@ export function Model(props) {
             geometry={nodes.Cylinder046.geometry}
             material={materials["Material.030"]}
             position={[5.57, -0.16, 0]}
-            rotation={[-Math.PI, 0, -2.36]}
-            scale={[-0.01, 4.92, 0.02]}
+            rotation={[0, 0, 2.36]}
+            scale={[-0.01, -4.92, -0.02]}
           />
           <mesh
             castShadow
@@ -1632,24 +1697,10 @@ export function Model(props) {
             geometry={nodes.Cylinder047.geometry}
             material={materials["Material.030"]}
             position={[5.51, 0.31, 0]}
-            rotation={[-Math.PI, 0, -1.72]}
-            scale={[0, 5, 0.02]}
+            rotation={[0, 0, 1.72]}
+            scale={[0, -5, -0.02]}
           />
         </mesh>
-        <mesh
-          castShadow
-          receiveShadow
-          geometry={nodes.Plane009.geometry}
-          material={materials["Material.027"]}
-          position={[4, 0, 0]}
-        />
-        <mesh
-          castShadow
-          receiveShadow
-          geometry={nodes.Plane010.geometry}
-          material={materials["Material.028"]}
-          position={[2, 0, 0]}
-        />
       </mesh>
       <mesh
         castShadow
@@ -1703,7 +1754,7 @@ export function Model(props) {
           material={materials["Material.040"]}
           position={[5.52, 0, -1.27]}
           rotation={[-Math.PI / 2, 0, 0]}
-          scale={[0.01, 0.02, 0.02]}
+          scale={[0.01, 0.02, 0.01]}
         />
         <mesh
           castShadow
@@ -1712,7 +1763,7 @@ export function Model(props) {
           material={materials["Material.040"]}
           position={[5.46, 0, 1.5]}
           rotation={[-Math.PI / 2, 0, 0]}
-          scale={[0.01, 0.02, 0.02]}
+          scale={[0.01, 0.02, 0.01]}
         />
         <mesh
           castShadow
@@ -1826,6 +1877,20 @@ export function Model(props) {
         <mesh
           castShadow
           receiveShadow
+          geometry={nodes.Plane013.geometry}
+          material={materials["Material.027"]}
+          position={[4, 0, 0]}
+        />
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Plane014.geometry}
+          material={materials["Material.028"]}
+          position={[2, 0, 0]}
+        />
+        <mesh
+          castShadow
+          receiveShadow
           geometry={nodes.Plane015.geometry}
           material={materials["Material.042"]}
           position={[4.86, -0.02, -0.93]}
@@ -1862,7 +1927,7 @@ export function Model(props) {
           <mesh
             castShadow
             receiveShadow
-            geometry={nodes.Cube048.geometry}
+            geometry={nodes.Cube048_1.geometry}
             material={materials["Material.040"]}
             position={[2.19, 0, 0.26]}
             rotation={[1.55, 0, 0]}
@@ -1890,7 +1955,7 @@ export function Model(props) {
           <mesh
             castShadow
             receiveShadow
-            geometry={nodes.Cube051.geometry}
+            geometry={nodes.Cube051_1.geometry}
             material={materials["Material.040"]}
             position={[2.18, 0, 0.26]}
             rotation={[1.55, 0, 0]}
@@ -1909,48 +1974,11 @@ export function Model(props) {
           <mesh
             castShadow
             receiveShadow
-            geometry={nodes.Cube052.geometry}
+            geometry={nodes.Cube052_1.geometry}
             material={materials["Material.040"]}
             position={[2.18, 0, 0.66]}
             rotation={[1.55, 0, 0]}
             scale={[1.5, 1.5, 0.75]}
-          />
-        </mesh>
-        <mesh
-          castShadow
-          receiveShadow
-          geometry={nodes.Cylinder060.geometry}
-          material={materials["Material.022"]}
-          position={[5.59, 0, 0.88]}
-          rotation={[-Math.PI / 2, 0, 0]}
-          scale={[0.07, 2.23, 0.11]}
-        >
-          <mesh
-            castShadow
-            receiveShadow
-            geometry={nodes.Cylinder062.geometry}
-            material={materials["Material.030"]}
-            position={[-4.69, 0.91, 0]}
-            rotation={[-Math.PI, 0, -2.34]}
-            scale={[-0.01, 4.42, 0.02]}
-          />
-          <mesh
-            castShadow
-            receiveShadow
-            geometry={nodes.Cylinder063.geometry}
-            material={materials["Material.031"]}
-            position={[-4.46, 0.41, 0]}
-            rotation={[-Math.PI, 0, -1.89]}
-            scale={[0, 4.54, 0.02]}
-          />
-          <mesh
-            castShadow
-            receiveShadow
-            geometry={nodes.Cylinder064.geometry}
-            material={materials["Material.031"]}
-            position={[-4.81, -0.19, 0]}
-            rotation={[-Math.PI, 0, -0.71]}
-            scale={[-0.01, 4.05, 0.02]}
           />
         </mesh>
         <mesh
@@ -1974,6 +2002,43 @@ export function Model(props) {
         <mesh
           castShadow
           receiveShadow
+          geometry={nodes.Cylinder060.geometry}
+          material={materials["Material.022"]}
+          position={[5.59, 0, 0.88]}
+          rotation={[-Math.PI / 2, 0, 0]}
+          scale={[0.07, 2.23, 0.11]}
+        >
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cylinder062.geometry}
+            material={materials["Material.030"]}
+            position={[-4.69, 0.91, 0]}
+            rotation={[0, 0, 2.34]}
+            scale={[-0.01, -4.42, -0.02]}
+          />
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cylinder063.geometry}
+            material={materials["Material.031"]}
+            position={[-4.46, 0.41, 0]}
+            rotation={[0, 0, 1.89]}
+            scale={[0, -4.54, -0.02]}
+          />
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cylinder064.geometry}
+            material={materials["Material.031"]}
+            position={[-4.81, -0.19, 0]}
+            rotation={[0, 0, 0.71]}
+            scale={[-0.01, -4.05, -0.02]}
+          />
+        </mesh>
+        <mesh
+          castShadow
+          receiveShadow
           geometry={nodes.Cylinder061.geometry}
           material={materials["Material.026"]}
           position={[-1.7, 0, 0.84]}
@@ -1986,8 +2051,8 @@ export function Model(props) {
             geometry={nodes.Cylinder065.geometry}
             material={materials["Material.030"]}
             position={[5.6, 0.89, 0]}
-            rotation={[-Math.PI, 0, -0.83]}
-            scale={[0, 4.9, 0.02]}
+            rotation={[0, 0, 0.83]}
+            scale={[0, -4.9, -0.02]}
           />
           <mesh
             castShadow
@@ -1995,8 +2060,8 @@ export function Model(props) {
             geometry={nodes.Cylinder066.geometry}
             material={materials["Material.030"]}
             position={[5.57, -0.16, 0]}
-            rotation={[-Math.PI, 0, -2.36]}
-            scale={[-0.01, 4.92, 0.02]}
+            rotation={[0, 0, 2.36]}
+            scale={[-0.01, -4.92, -0.02]}
           />
           <mesh
             castShadow
@@ -2004,37 +2069,30 @@ export function Model(props) {
             geometry={nodes.Cylinder067.geometry}
             material={materials["Material.030"]}
             position={[5.51, 0.31, 0]}
-            rotation={[-Math.PI, 0, -1.72]}
-            scale={[0, 5, 0.02]}
+            rotation={[0, 0, 1.72]}
+            scale={[0, -5, -0.02]}
           />
         </mesh>
-        <mesh
-          castShadow
-          receiveShadow
-          geometry={nodes.Plane013.geometry}
-          material={materials["Material.027"]}
-          position={[4, 0, 0]}
-        />
-        <mesh
-          castShadow
-          receiveShadow
-          geometry={nodes.Plane014.geometry}
-          material={materials["Material.028"]}
-          position={[2, 0, 0]}
-        />
       </mesh>
       <mesh
         castShadow
         receiveShadow
-        geometry={nodes.Mapa.geometry}
-        material={materials.Nylon}
-        position={[10.74, 0.06, 10.11]}
-        rotation={[-1.57, 0, -3.09]}
-        scale={[0.06, 0.06, 0]}
+        geometry={nodes.Plane.geometry}
+        material={materials.Mat}
+        position={[5.53, 0.06, 8.55]}
+        rotation={[1.57, -0.01, 2.9]}
+        scale={0}
+      />
+      <mesh
+        castShadow
+        receiveShadow
+        geometry={nodes.Cube053.geometry}
+        material={materials["Material.006"]}
+        position={[10.48, 0.02, 6.26]}
+        scale={[1.18, 0.26, 1.18]}
       />
     </group>
   );
 }
 
-useGLTF.preload("/Bosch.gltf");
-
+useGLTF.preload("/Bosch2.glb");
