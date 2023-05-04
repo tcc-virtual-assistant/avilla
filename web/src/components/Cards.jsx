@@ -35,7 +35,8 @@ function Cards() {
           <p className="text-verde-grama text-xl">Dúvidas frequentes</p>
         </button >
 
-        <button class=" flex flex-col items-center justify-center">
+        <button onClick={()=>{router.push('/planta')}}
+        class=" flex flex-col items-center justify-center">
           <img
             className="w-2/4  md:w-10 lg:w-24 2xl:w-40"
             src="\images\map-city.svg"
