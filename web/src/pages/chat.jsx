@@ -80,7 +80,7 @@ function Chat() {
 
     return(
         <>
-        <div className="flex items-center justify-center flex-col mt-5 w-10/12">
+        <div className="flex items-center justify-center flex-row ml-52 place-content-center">
         <div className="w-full max-w-lg flex justify-center flex-col">
             <form onSubmit={handleSubmit} 
                 className="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4"
@@ -102,7 +102,7 @@ function Chat() {
                 </div>
             </form>
                 <button className="bg-green-500 hover:bg-green-700 
-                text-white font-bold py-1.5 px-5 rounded"
+                text-white font-bold py-1.5 px-5 rounded w-40 place-self-center"
                 id='btn'
                 onClick={handleSubmit}
                 >Enviar
@@ -116,39 +116,33 @@ function Chat() {
                     </p>
                 </div>
                 </div>
-            <div className="flex flex-col w-full justify-center">
-                <div className="grid space-y-0">
-                    <div className="absolute bottom-2 w-full flex justify-center">
-                        <div className="fixed flex bottom-44 right-16">
-                        <div className="w-36 h-80">
-                            <Canvas>
-                                <Suspense fallback={null}>
-                                <ambientLight/>
-                                <spotLight
+                </div>
+                <div className='relative ml-16'>
+                    <div className="bg-green-500 h-80 w-72">
+                        <Canvas>
+                            <Suspense fallback={null}>
+                            <ambientLight/>
+                            <spotLight
                                 intensity={0.9}
                                 angle={0.1}
                                 penumbra={1}
                                 position={[10,15,10]}
                                 castShadow/>
-                                <Avilla_Thinking />
-                                <OrbitControls 
+                            <Avilla_Thinking />
+                            <OrbitControls 
                                 enablePan={true}
-                                enableZoom={false}
+                                enableZoom={true}
                                 enableRotate={true}
                                 enableDamping={true}
                                 />
-                                </Suspense>
-                            </Canvas>    
-                        </div>                            
-                        </div>
+                            </Suspense>
+                        </Canvas>    
+                    </div>
                     </div>
                 </div>
-            </div>
-        </div>
-        <div clasn>
-        <Acessibilidade />
-        </div>
-        </div>
+                <div className='absolute bottom-2 w-full flex justify-center'>
+                    <Acessibilidade />
+                </div>
         <ToastContainer />
         </>
     )
