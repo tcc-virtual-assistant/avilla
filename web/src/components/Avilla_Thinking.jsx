@@ -8,7 +8,7 @@ import { useGLTF } from "@react-three/drei";
 export function Avilla_Thinking(props) {
   const { nodes, materials } = useGLTF("/avilla_thinking2.glb");
   return (
-    <group {...props} dispose={null} position={[-0.2,0.4,4.1]}>
+    <group {...props} dispose={null} position={[0,-1.5,4.5]}>
       <primitive object={nodes.Hips} />
       <mesh
         castShadow

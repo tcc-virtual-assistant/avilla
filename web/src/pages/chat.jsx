@@ -80,7 +80,7 @@ function Chat() {
 
     return(
         <>
-        <div className="flex items-center justify-center flex-row ml-52 place-content-center">
+        <div className="flex items-center justify-center flex-row ml-80 place-content-center">
         <div className="w-full max-w-lg flex justify-center flex-col">
             <form onSubmit={handleSubmit} 
                 className="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4"
@@ -118,15 +118,15 @@ function Chat() {
                 </div>
                 </div>
                 <div className='relative ml-16'>
-                    <div className="bg-green-500 h-80 w-72">
+                    <div className="h-80 w-72">
                         <Canvas>
                             <Suspense fallback={null}>
                             <ambientLight/>
                             <spotLight
-                                intensity={0.9}
-                                angle={0.1}
+                                intensity={1.0}
+                                angle={Math.PI/3}
                                 penumbra={1}
-                                position={[10,15,10]}
+                                position={[0,0,9]}
                                 castShadow/>
                             <Avilla_Thinking />
                             <OrbitControls 
