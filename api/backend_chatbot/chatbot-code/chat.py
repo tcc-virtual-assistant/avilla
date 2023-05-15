@@ -83,6 +83,6 @@ def chatbot():
                     print(f"novo {newestID}")
                     break
                 else:
-                    print("Desculpe, eu não consegui compreender...")
+                    print("Me desculpe, irei trabalhar na resposta para essa pergunta, ainda não sou perfeita...")
 
 chatbot()

@@ -249,10 +249,343 @@
         "tag":"numeroBoschBrasil",
         "id":21,
         "patterns":[
-            "quantas bosch tem no brasil"
+            "quantas bosch tem no brasil","no brasil tem quantas bosch?",
+            "quantas empresas bosch tem no brasil?", "quantas plantas nacionais existem?"
         ],
         "responses":[
             "Atualmente no Brasil existem 17 unidades da Bosch, sendo que 9 se encontram no estado de São Paulo, uma em Minas Gerais, uma na Bahia, outra em Pernambuco, 3 no Paraná e duas em Santa Catarina."
         ]
+    },
+    {
+        "tag":"polimorfismo",
+        "id":22,
+        "patterns":[
+            "O que é polimorfismo?","polimorfismo"
+        ],
+        "responses":[
+            "Polimorfismo é um conceito da programação orientada a objetos, que se refere a objetos de diferentes classes terem o mesmo método ou operação de maneira diferente. Existem dois tipos: Um é polimorfismo estático ou sobrecarga, quando duas ou mais funções tem o mesmo nome, porém, parâmetros diferentes. O outro é o polimorfismo dinâmico ou sobrescrita, quando uma subclasse substitui um método que está na superclasse, alterando ou estendendo seu comportamento"
+        ]
+    },
+    {
+        "tag":"herança",
+        "id":23,
+        "patterns":[
+            "o que é herança?","herança"
+        ],
+        "responses":[
+            "Herança é a capacidade de uma subclasse de ter acesso as propriedades da superclasse. Exemplo: A superclasse Mamifero possui duas subclasses: Gato e cachorro, ambos possuem os mesmos atributos pois herdam da superclasse mamifero (como pelos e glândulas mamárias) e também tem seus atributos individuais (como miar e latir). Sua maior vantagem é a reutilização de código. "
+        ]
+    },
+    {
+        "tag":"pagBoschZunder",
+        "id":24,
+        "patterns":[
+            "Onde acho a página do Bosch zunder?","bosch zunder"
+        ],
+        "responses":[
+           "Você pode abrir qualquer navegador e clicar no icone de casa ao lado da barra de endereços. "  
+        ]
+    },
+    {
+        "tag":"definicaoPOO",
+        "id":25,
+        "patterns":[
+            "o que é orientado a objetos?", "o que é poo",
+            "poo", "orientação a objetos", "programação orientada"
+        ],
+        "responses":[
+           "O termo orientação a objetos significa organizar o mundo real como uma coleção de objetos que são organizados em classes, cujo possuem métodos. Por exemplo: temos um carro civic cor preta e um carro hrv cor prata, ambos aceleram e freiam. O carro é a classe cujo possui modelo, cor e suas ações. Cada carro é um objeto onde é especificado qual modelo, cor e como executa essas ações. De forma mais simples, é um conceito que está relacionado com a ideia de classificar, organizar e abstrair coisas. "  
+        ]
+    },
+    {
+        "tag":"definicaoCOMPILADO",
+        "id":26,
+        "patterns":[
+            "o que é compilado?","compilação"
+        ],
+        "responses":[
+           "Linguagem compilada é uma linguagem de programação em que o código fonte, nessa linguagem, é executado diretamente pelo sistema operacional ou pelo processador, após ser traduzido por meio de um processo chamado compilação, usando um programa de computador chamado compilador, para uma linguagem de baixo nível, como linguagem de montagem ou código de máquina. "  
+        ]
+    },
+    {
+        "tag":"diferencaCOMPILADO",
+        "id":27,
+        "patterns":[
+            "qual a diferença de compilado e interpretado?","interpretado"
+        ],
+        "responses":[
+           "Na compilação, o compilador irá ler o código, fazer todas as análises sintáticas e demais processos, para, por fim, gerar um arquivo código-objeto ou um arquivo executável (exemplo: c). Já na interpretação, nenhum arquivo ou código é gerado, e sim uma tradução instantânea, em tempo de execução (exemplo: python) "  
+        ]
+    },
+    {
+        "tag":"classes",
+        "id":28,
+        "patterns":[
+            "o que são classes","classes orientado a objeto",
+            "o que é classe em java"
+        ],
+        "responses":[
+           "Sendo aplicadas durante a programação orientada a objetos as classes tem como função definir o formato destes objetos e, além disso, definir como esse objeto se comunicará com o resto da aplicação. Estes objetos da programação, assim como os da vida real possuem características e comportamentos característicos. Em programação chamamos estas características de atributos e estes comportamentos de métodos. "  
+        ]
+    },
+    {
+        "tag":"construtor",
+        "id":29,
+        "patterns":[
+            "o que é construtor", "o que são construtores",
+            "método construtor"
+        ],
+        "responses":[
+           "São métodos especiais que servem para construir e inicializar instâncias de uma classe (novos objetos). Em geral os construtores são responsáveis por atribuir valores iniciais para os atributos do novo objeto que está sendo criado, mas eventualmente pode ser necessário algum processamento adicional que vai além da inicialização de atributos. "  
+        ]
+    },
+    {
+        "tag":"graficoPowerBI",
+        "id":30,
+        "patterns":[
+            "como fazer um gráfico no powerbi?","gráficos no powerbi"
+        ],
+        "responses":[
+           "São cinco passos: O primeiro deles é abrir o programa em sua máquina; o segundo é importar a planilha desejada, seja Excel ou SQL Server; o terceiro passo é clicar nas opções de gráficos disponíveis ao lado direito da tela, o penúltimo passo é selecionar quais colunas e informações deseja como o eixo ou a legenda, e por fim o último passo é clicar no ícone de pincel e estilizar! "  
+        ]
+    },
+    {
+        "tag":"tratarDadosPowerBI",
+        "id":31,
+        "patterns":[
+            "como tratar os dados no powerbi", "tratamento de dados no powerbi"
+        ],
+        "responses":[
+           "Através do Transform Data é possível inserir novas fontes de dados, excluir ou alterar planilhas, colunas e linhas. Para encontrá-lo é só ir na página inicial, a funcionalidade estará na faixa de opções em queries. "  
+        ]
+    },
+    {
+        "tag":"imagensPowerBI",
+        "id":32,
+        "patterns":[
+            "tem como usar imagens no powerbi","figuras powerbi"
+        ],
+        "responses":[
+           "Para usar imagens no powerbi, vá para Insert na faixa de opções e em Elements clique em imagem e a selecione. Para adicionar ações, clique na imagem, do lado direito irá aparecer um menu de opções chamado Format, em Image clique em Action. "  
+        ]
+    },
+    {
+        "tag":"relacionamentoPowerBI",
+        "id":33,
+        "patterns":[
+            "como fazer relacionamentos no powerbi","como fazer relações no powerbi?"
+        ],
+        "responses":[
+           "Clique em Model na página inicial do lado esquerdo (o terceiro icone). Depois lique em manage relationship na parte de relacionamentos na barra de ferramentas. Em seguida, clique em New e na primeira barra selecione qual a tabela deseja relacionar. Na segunda barra selecione a outra tabela a ser relacionada. Selecione as colunas que serão utilizadas para fazer o relacionamento clicando nelas, lembre-se: as colunas devem ter os mesmos dados (exemplo: coluna de id). Por fim, clique em OK. "  
+        ]
+    },
+    {
+        "tag":"programarMelhor",
+        "id":34,
+        "patterns":[
+            "dicas para ser um melhor programador", "como posso melhorar minha programação"
+        ],
+        "responses":[
+           "Buscar conhecimento todos os dias, seja por meio do estudo teorico ou prático. É muito importante a prática de exercícios sobre os assuntos aprendidos, para que eles se fixem na mente, alguns sites para treinar são: HackerRank, LeetCode ou Codeforces  Esteja apto a receber feedbacks buscando constante evolução. Pergunte aos colegas como eles resolveriam tal problema, para aprender as diversas maneiras. "  
+        ]
+    },
+    {
+        "tag":"automação",
+        "id":35,
+        "patterns":[
+            "quais as principais ferramentas de automação que a Bosch tem?","bosch automação"
+        ],
+        "responses":[
+           "Power BI, AutomationAnywhere, VsDIA, Catalytic e PowerAutomate são as principais ferramentas de automação usadas na Bosch"  
+        ]
+    },
+    {
+        "tag":"composição",
+        "id":36,
+        "patterns":[
+            "o que é composição", "composição"
+        ],
+        "responses":[
+           "A Composição ou Agregação faz o reaproveitamento (reutilização) de classes utilizado pela programação orientada a objetos para aumentar a produtividade e a qualidade no desenvolvimento de software. Basicamente, é quando uma classe está composta de várias outras, exemplo: um carro é composto por: rodas, motor, pneus, direção etc. "  
+        ]
+    },
+    {
+        "tag":"duvidasPessoais",
+        "id":37,
+        "patterns":[
+            "será que estou na área certa?", "me sinto perdido",
+            "nao sei se quero trabalhar com isso"
+        ],
+        "responses":[
+           "De jovem para jovem, quero te fazer refletir sobre umas coisas. O primeiro ponto é de que apesar muitas pessoas considerarem normal, você fica no piloto automático com frequência? O que te faz ficar assim são as atividades que realiza ou o ambiente em que está? porque veja bem, se você é o profissional que passa os dias contando as horas para chegar em casa, algo com certeza está errado. Outro ponto é se existe aquela positividade boa ou você passa o dia inteiro de mal humor comprometendo sua produtividade. Tenha sempre em mente que quando atuamos em uma área que nos trás satisfação diária, existem planos frequentes de crescer na carreira. "  
+        ]
+    },
+    {
+        "tag":"api",
+        "id":38,
+        "patterns":[
+            "o que posso usar para fazer uma API","ferramentas api"
+        ],
+        "responses":[
+           "Para Node.js existe o framework Express.js, que permite criar APIs RESTful rapidamente e de maneira simples. Para Python existe o Django Rest Framework, que possui bons recursos para autenticação e serialização dos dados. Para Java existe o Spring Boot que facilita o desenvolvimento de APIs RESTful de alto desempenho"  
+        ]
+    },
+    {
+        "tag":"dicasPowerBI",
+        "id":39,
+        "patterns":[
+            "dicas para um melhor powerbi","como fazer um bom powerbi"
+        ],
+        "responses":[
+           "Organização dos gráficos de acordo com seu contexto (ex: deixar tudo que se relaciona a X de um lado e perto um do outro) investir na clusterização (se possível). Sempre conversar com o cliente e mostrar a ele o powerbi, pois é ele quem tem que entender o que você está fazendo. "  
+        ]
+    },
+    {
+        "tag":"duvidasPessoais2",
+        "id":41,
+        "patterns":[
+            "Estou me sentindo desanimado, o que devo fazer?",
+             "estou me sentindo triste"
+        ],
+        "responses":[
+           "Posso te recomendar nossa psicóloga Izadora da ETS, ela fica disponível das 07:30 às 15:00 na sala dos instrutores. Temos também como agendar uma consulta através do aplicativo da UNIMED ou solicitarmos um plantão pelo e-mail do ambulatório. "  
+        ]
+    },
+    {
+        "tag":"duvidasPessoais3",
+        "id":41,
+        "patterns":[
+            "onde encontro um psicólogo na bosch?","busco terapia",
+            "preciso de psicóloga"
+        ],
+        "responses":[
+           "Posso te recomendar nossa psicóloga Izadora da ETS, ela fica disponível das 07:30 às 15:00 na sala dos instrutores. Temos também como agendar uma consulta através do aplicativo da UNIMED ou solicitarmos um plantão pelo e-mail do ambulatório. "  
+        ]
+    },
+    {
+        "tag":"encapsulamento",
+        "id":42,
+        "patterns":[
+            "o que é encapsulamento?", "encapsulamento"
+        ],
+        "responses":[
+           "O encapsulamento serve para modificar o acesso aos atributos e aos métodos de um objeto, garantindo que somente as classes apropriadas possam acessar as informações e ajuda a assegurar que os atributos e os métodos sejam usados de forma consistente e previsível. Para acessar os dados usamos getters e para modificar usamos os setters. "  
+        ]
+    },
+    {
+        "tag":"itensPerdidos",
+        "id":43,
+        "patterns":[
+            "o que fazer se eu perder alguma coisa","perdi meu material"
+        ],
+        "responses":[
+           "Fique atento aos grupos do WhatsApp, se possível, mande uma mensagem informando o objeto perdido. Os materiais perdidos fora da ETS são deixados na portaria. "  
+        ]
+    },
+    {
+        "tag":"pagamento",
+        "id":44,
+        "patterns":[
+            "quais os dias do pagamento",
+            "quando a gente recebe",
+            "quando o salario ta na conta",
+            "quando a gente recebe"
+        ],
+        "responses":[
+           "Irei te informar apenas após meu mês de criação, haha! Em Junho será no dia 14 e 29, Julho: 13 e 28, Agosto: 15 a 30, Setembro: 13 e 28, Outubro:   e 30, Novembro: 14 e 29 (junto a 1º parcela do décimo terceiro), e Dezembro: 13 (junto a nossa 2º parcela do décimo terceiro) e 28! "  
+        ]
+    },
+    {
+        "tag":"feriados",
+        "id":45,
+        "patterns":[
+            "quais os feriados desse ano?","que dias a gente folga esse ano"
+        ],
+        "responses":[
+           "No dia 08 de Junho teremos Corpus Christi, 07 de Setembro nossa independência do Brasil! 12 de Outubro nosso dia das crianças e Nossa Sra. Aparecida, em Novembro teremos Finados no dia 02 e Proclamação da República no dia 15, e por fim o Natal no dia 25 de Dezembro. "  
+        ]
+    },
+    {
+        "tag":"redirecionarPowerbi",
+        "id":46,
+        "patterns":[
+            "como clicar em um botao e ir pra outra página no powerbi",
+            "como fazer redirecionamento com o powerbi"
+        ],
+        "responses":[
+           "Você pode fazer o uso dos botões para fazer redirecionamento para outras páginas, para isso, adicione um botão  na aba ‘insert’ clicando em buttons, na aba de ‘format’ ative a action e escolha ‘page navigation’   e escolha a ‘destionation’ que quiser! "  
+        ]
+    },
+    {
+        "tag":"planilhasPython",
+        "id":47,
+        "patterns":[
+            "como modificar planilhas no python","como fazer crud em planilha"
+        ],
+        "responses":[
+           "Para fazer um crud basico no python, você precisa importar o pandas, é comum que se use a dominação pd, (import pandas as pd), você também precisa uar o DataFrame para fazer as modificações. Analisei os videos do YouTube e te recomendo esse: https://youtu.be/C0aj3FjN5e0 "  
+        ]
+    },
+    {
+        "tag":"metodosHttp",
+        "id":48,
+        "patterns":[
+            "metodos http","http","protocolo de comunicação"
+        ],
+        "responses":[
+           "O método HTTP nada mais é que um protocolo de comunicação entre cliente-servidor, ou seja, de um lado, um navegador requisita um determinado dado, e do outro, um computador/servidor retorna a informação desejada (ou não, caso ela não seja encontrada, ocorra um erro ou não exista mesmo). Este protocolo define oito métodos de requisição que são GET (irá buscar a informação), POST (irá postar uma informação), PUT (irá atualizar uma informação), DELETE (irá deletar uma informação), HEAD (retorna o cabeçalho da informação pedida pelo GET), TRACE (realiza um teste de loopback provendo um mecanismo útil para debug), OPTIONS (mostra as opções de requisição permitidas para um determinado recurso em um servidor) e CONNECT (acessa websites que usam SSL ou HTTPS). "  
+        ]
+    },
+    {
+        "tag":"publicarPowerbi",
+        "id":49,
+        "patterns":[
+            "publicar powerbi","publicar powerbi"
+        ],
+        "responses":[
+           "Para publicar o powerbi, digite a seguinte URL na web: ‘https://powerbi.bosch.com/publish/’ Clique em Add Reports, na caixa de seleção escolha o nivel de segurança do seu powerbi (qualquer coisa deixa o SC-2, mas é bom saber o correto) Depois selecione o arquivo, preencha as informações e tudo certo! Já pode enviar o link aos interessados. "  
+        ]
+    },
+    {
+        "tag":"executavel",
+        "id":50,
+        "patterns":[
+            "como fazer um programa ser executavel","como fazer um exe python",
+            "como fazer um script executavel"
+        ],
+        "responses":[
+           "Você pode fazer isso utlilizando o PyIntsaller, baixe ele no seu projeto (pip install pyinstaller) e no terminal digite ‘pyinstaller --onefile aqui_o_nome.py’, o arquivo será gerado em um diretório chamado ‘dist’, de lá você pode jogá-lo onde quiser! "  
+        ]
+    },
+    {
+        "tag":"workspacePowerBI",
+        "id":51,
+        "patterns":[
+            "como fazer workspace para powerbi", "como crio powerbi no sharepoint"
+        ],
+        "responses":[
+           "Para isso você precisa pedir o powerbi pro em IT Service Portal (o icone de IS na página do Bosch Zunder), pesquise por ‘Pro License for Power BI Cloud’, clique em ‘order for self’ preencha as informações e é só aguardar (pode demorar até uma semana!). Depois de ter o powerbi pro, vá no seu office 365 (pesquise por office 365 na web e faça o login) e clique em powerbi, depois em workspaces, crie uma nova com os interessados, suba o powerbi e mande o link para aqueles que estão na workspace. Para atualiza, você deve ir ao powerbi e clicar e ‘publish’, escolha a workspace e prontinho! "  
+        ]
+    },
+    {
+        "tag":"tecnologias",
+        "id":52,
+        "patterns":[
+            "quais as tecnologias em alta no mercado"
+        ],
+        "responses":[
+           "Estas estão sendo as maiores tendências tecnológicas: Inteligência Artificial (IA), Metaverso, Wireless com novas funções, plataformas de nuvem e desenvolvedores front e back-end. "  
+        ]
+    },
+    {
+        "tag":"hackathon",
+        "id":52,
+        "patterns":[
+            "quais foram os ganhadores do hackathon","hackathon"
+        ],
+        "responses":[
+           "No Hackathon de 2021 os ganhadores foram ‘Milena Fernandes, Ryan Corsi, Vinicius Cunha, Fernanda Cambiagui, Leonardo Migliorini e Mariana Barbosa’ com o projeto TestQuest - Correção Automática de provas por IA. No Hackathon de 2022 os ganhadores foram ‘Elizeu Magalhães, Louise Feliciano, Julia Monteiro, Maitê Fávaro, Naiury Chaves e Vinicius Ventura’ com o projeto Robosch – um ChatBot da ETS. No Hackathon de 2023 – Primeiro semestre, os ganhadores foram ‘Ingrid Oliveira, Jenifer Ramalho, Larissa de Oliveira, Lucas Capovila, Luiza Moraes, Michael Lopes e Naely Pereira’ Com o projeto Greenbo. "  
+        ]
     }
+
 ]}
