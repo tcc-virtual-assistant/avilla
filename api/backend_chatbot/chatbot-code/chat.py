@@ -83,6 +83,7 @@ def chatbot():
                     print(f"novo {newestID}")
                     break
                 else:
-                    print("Me desculpe, irei trabalhar na resposta para essa pergunta, ainda não sou perfeita...")
+                    answer = "Me desculpe, irei trabalhar na resposta para essa pergunta, ainda não sou perfeita..."
+                    sendAPI(answer, apiUserid)
 
 chatbot()
