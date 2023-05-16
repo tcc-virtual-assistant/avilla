@@ -414,7 +414,8 @@
         "id":37,
         "patterns":[
             "será que estou na área certa?", "me sinto perdido",
-            "nao sei se quero trabalhar com isso"
+            "nao sei se quero trabalhar com isso","quero sair do curso",
+            "quero desistir do curso","nao quero continuar curso"
         ],
         "responses":[
            "De jovem para jovem, quero te fazer refletir sobre umas coisas. O primeiro ponto é de que apesar muitas pessoas considerarem normal, você fica no piloto automático com frequência? O que te faz ficar assim são as atividades que realiza ou o ambiente em que está? porque veja bem, se você é o profissional que passa os dias contando as horas para chegar em casa, algo com certeza está errado. Outro ponto é se existe aquela positividade boa ou você passa o dia inteiro de mal humor comprometendo sua produtividade. Tenha sempre em mente que quando atuamos em uma área que nos trás satisfação diária, existem planos frequentes de crescer na carreira. "  
@@ -424,7 +425,7 @@
         "tag":"api",
         "id":38,
         "patterns":[
-            "o que posso usar para fazer uma API","ferramentas api"
+            "o que posso usar para fazer uma API","ferramentas api","api"
         ],
         "responses":[
            "Para Node.js existe o framework Express.js, que permite criar APIs RESTful rapidamente e de maneira simples. Para Python existe o Django Rest Framework, que possui bons recursos para autenticação e serialização dos dados. Para Java existe o Spring Boot que facilita o desenvolvimento de APIs RESTful de alto desempenho"  
@@ -434,7 +435,7 @@
         "tag":"dicasPowerBI",
         "id":39,
         "patterns":[
-            "dicas para um melhor powerbi","como fazer um bom powerbi"
+            "dicas para um melhor powerbi","como fazer um bom powerbi","dicas powerbi"
         ],
         "responses":[
            "Organização dos gráficos de acordo com seu contexto (ex: deixar tudo que se relaciona a X de um lado e perto um do outro) investir na clusterização (se possível). Sempre conversar com o cliente e mostrar a ele o powerbi, pois é ele quem tem que entender o que você está fazendo. "  
@@ -445,7 +446,8 @@
         "id":40,
         "patterns":[
             "Estou me sentindo desanimado, o que devo fazer?",
-             "estou me sentindo triste"
+             "estou me sentindo triste","triste","desanimado",
+             "cabisbaixo","sem vontade de continuar","sem vontade"
         ],
         "responses":[
            "Posso te recomendar nossa psicóloga Izadora da ETS, ela fica disponível das 07:30 às 15:00 na sala dos instrutores. Temos também como agendar uma consulta através do aplicativo da UNIMED ou solicitarmos um plantão pelo e-mail do ambulatório. "  
@@ -456,7 +458,8 @@
         "id":41,
         "patterns":[
             "onde encontro um psicólogo na bosch?","busco terapia",
-            "preciso de psicóloga"
+            "preciso de psicóloga", "temos psicólogo","psicólogo",
+            "terapia","psicologia"
         ],
         "responses":[
            "Posso te recomendar nossa psicóloga Izadora da ETS, ela fica disponível das 07:30 às 15:00 na sala dos instrutores. Temos também como agendar uma consulta através do aplicativo da UNIMED ou solicitarmos um plantão pelo e-mail do ambulatório. "  
