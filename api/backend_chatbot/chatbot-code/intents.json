@@ -442,7 +442,7 @@
     },
     {
         "tag":"duvidasPessoais2",
-        "id":41,
+        "id":40,
         "patterns":[
             "Estou me sentindo desanimado, o que devo fazer?",
              "estou me sentindo triste"
@@ -575,16 +575,6 @@
         ],
         "responses":[
            "Estas estão sendo as maiores tendências tecnológicas: Inteligência Artificial (IA), Metaverso, Wireless com novas funções, plataformas de nuvem e desenvolvedores front e back-end. "  
-        ]
-    },
-    {
-        "tag":"hackathon",
-        "id":52,
-        "patterns":[
-            "quais foram os ganhadores do hackathon","hackathon"
-        ],
-        "responses":[
-           "No Hackathon de 2021 os ganhadores foram ‘Milena Fernandes, Ryan Corsi, Vinicius Cunha, Fernanda Cambiagui, Leonardo Migliorini e Mariana Barbosa’ com o projeto TestQuest - Correção Automática de provas por IA. No Hackathon de 2022 os ganhadores foram ‘Elizeu Magalhães, Louise Feliciano, Julia Monteiro, Maitê Fávaro, Naiury Chaves e Vinicius Ventura’ com o projeto Robosch – um ChatBot da ETS. No Hackathon de 2023 – Primeiro semestre, os ganhadores foram ‘Ingrid Oliveira, Jenifer Ramalho, Larissa de Oliveira, Lucas Capovila, Luiza Moraes, Michael Lopes e Naely Pereira’ Com o projeto Greenbo. "  
         ]
     },
     {
