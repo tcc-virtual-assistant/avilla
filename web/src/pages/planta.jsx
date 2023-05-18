@@ -11,15 +11,16 @@ import { FaMapMarkedAlt } from 'react-icons/fa';
 
 
 const areas = [
-  {name:'Planta', model:'../components/mapa/Model'},
-  {name:'BTC', model:'../components/Avilla_Thinking'},
-  {name:'Chapeuzinho', model:''},
-  {name:'Eletrical Drives', model:''},
-  {name:'Power Tools', model:''},
-  {name:'Ambulatório', model:''},
-  {name:'Portarias', model:''}, 
-  {name:'Bosch Digital', model:''},
-  {name:'Digihub', model:''}
+  {name:'Planta'},
+  {name:'BTC'},
+  {name:'Chapeuzinho'},
+  {name:'Eletrical Drives'},
+  {name:'Power Tools'},
+  {name:'Ambulatório'},
+  {name:'Portarias'}, 
+  {name:'Bosch Digital'},
+  {name:'Digihub'},
+  {name:'Banco'}
 ]
 
 
@@ -45,6 +46,20 @@ function Planta() {
               {model == "Planta" ? 
               <Model /> 
               : model == "BTC" ?
+              <Avilla_Thinking/> 
+              : model == "Chapeuzinho" ?
+              <Avilla_Thinking/> 
+              : model == "Eletrical Drives" ?
+              <Avilla_Thinking/> 
+              : model == "Power Tools" ?
+              <Avilla_Thinking/> 
+              : model == "Ambulatório" ?
+              <Avilla_Thinking/> 
+              : model == "Portarias" ?
+              <Avilla_Thinking/> 
+              : model == "Bosch Digital" ?
+              <Avilla_Thinking/> 
+              : model == "Digihub" ?
               <Avilla_Thinking/> 
               : null 
             }
