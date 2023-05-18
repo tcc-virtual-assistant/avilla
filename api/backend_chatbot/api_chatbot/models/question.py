@@ -8,5 +8,5 @@ class Question(ormar.Model):
         tablename = 'questions'
 
     id: int = ormar.Integer(primary_key=True)
-    userQuestion: str = ormar.String(max_length = 200)
-    avillaAnswer: str = ormar.String(max_length=200)
+    userQuestion: str = ormar.String(max_length=500)
+    avillaAnswer: str = ormar.String(max_length=500)
