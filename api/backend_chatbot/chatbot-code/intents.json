@@ -414,7 +414,8 @@
         "id":37,
         "patterns":[
             "será que estou na área certa?", "me sinto perdido",
-            "nao sei se quero trabalhar com isso"
+            "nao sei se quero trabalhar com isso","quero sair do curso",
+            "quero desistir do curso","nao quero continuar curso"
         ],
         "responses":[
            "De jovem para jovem, quero te fazer refletir sobre umas coisas. O primeiro ponto é de que apesar muitas pessoas considerarem normal, você fica no piloto automático com frequência? O que te faz ficar assim são as atividades que realiza ou o ambiente em que está? porque veja bem, se você é o profissional que passa os dias contando as horas para chegar em casa, algo com certeza está errado. Outro ponto é se existe aquela positividade boa ou você passa o dia inteiro de mal humor comprometendo sua produtividade. Tenha sempre em mente que quando atuamos em uma área que nos trás satisfação diária, existem planos frequentes de crescer na carreira. "  
@@ -424,7 +425,7 @@
         "tag":"api",
         "id":38,
         "patterns":[
-            "o que posso usar para fazer uma API","ferramentas api"
+            "o que posso usar para fazer uma API","ferramentas api","api"
         ],
         "responses":[
            "Para Node.js existe o framework Express.js, que permite criar APIs RESTful rapidamente e de maneira simples. Para Python existe o Django Rest Framework, que possui bons recursos para autenticação e serialização dos dados. Para Java existe o Spring Boot que facilita o desenvolvimento de APIs RESTful de alto desempenho"  
@@ -434,7 +435,7 @@
         "tag":"dicasPowerBI",
         "id":39,
         "patterns":[
-            "dicas para um melhor powerbi","como fazer um bom powerbi"
+            "dicas para um melhor powerbi","como fazer um bom powerbi","dicas powerbi"
         ],
         "responses":[
            "Organização dos gráficos de acordo com seu contexto (ex: deixar tudo que se relaciona a X de um lado e perto um do outro) investir na clusterização (se possível). Sempre conversar com o cliente e mostrar a ele o powerbi, pois é ele quem tem que entender o que você está fazendo. "  
@@ -442,10 +443,11 @@
     },
     {
         "tag":"duvidasPessoais2",
-        "id":41,
+        "id":40,
         "patterns":[
             "Estou me sentindo desanimado, o que devo fazer?",
-             "estou me sentindo triste"
+             "estou me sentindo triste","triste","desanimado",
+             "cabisbaixo","sem vontade de continuar","sem vontade"
         ],
         "responses":[
            "Posso te recomendar nossa psicóloga Izadora da ETS, ela fica disponível das 07:30 às 15:00 na sala dos instrutores. Temos também como agendar uma consulta através do aplicativo da UNIMED ou solicitarmos um plantão pelo e-mail do ambulatório. "  
@@ -456,7 +458,8 @@
         "id":41,
         "patterns":[
             "onde encontro um psicólogo na bosch?","busco terapia",
-            "preciso de psicóloga"
+            "preciso de psicóloga", "temos psicólogo","psicólogo",
+            "terapia","psicologia"
         ],
         "responses":[
            "Posso te recomendar nossa psicóloga Izadora da ETS, ela fica disponível das 07:30 às 15:00 na sala dos instrutores. Temos também como agendar uma consulta através do aplicativo da UNIMED ou solicitarmos um plantão pelo e-mail do ambulatório. "  
@@ -579,13 +582,342 @@
     },
     {
         "tag":"hackathon",
-        "id":52,
+        "id":53,
         "patterns":[
-            "quais foram os ganhadores do hackathon","hackathon"
+            "Quais os projetos ganhadores do hackathon?",
+            "Hackathon ganhadores",
+            "Quem ganhou o Hackathon?"
         ],
         "responses":[
-           "No Hackathon de 2021 os ganhadores foram ‘Milena Fernandes, Ryan Corsi, Vinicius Cunha, Fernanda Cambiagui, Leonardo Migliorini e Mariana Barbosa’ com o projeto TestQuest - Correção Automática de provas por IA. No Hackathon de 2022 os ganhadores foram ‘Elizeu Magalhães, Louise Feliciano, Julia Monteiro, Maitê Fávaro, Naiury Chaves e Vinicius Ventura’ com o projeto Robosch – um ChatBot da ETS. No Hackathon de 2023 – Primeiro semestre, os ganhadores foram ‘Ingrid Oliveira, Jenifer Ramalho, Larissa de Oliveira, Lucas Capovila, Luiza Moraes, Michael Lopes e Naely Pereira’ Com o projeto Greenbo. "  
+            "No Hackathon de 2021 os ganhadores foram: Milena Fernandes, Ryan Corsi, Vinicius Cunha, Fernanda Cambiagui, Leonardo Migliorini e Mariana Barbosa com o projeto TestQuest, Correção Automática de provas por IA. No Hackathon de 2022 os ganhadores foram: Elizeu Magalhães, Louise Feliciano, Julia Monteiro, Maitê Fávaro, Naiury Chaves e Vinicius Ventura com o projeto Robosch, um ChatBot da ETS. No primeiro semestre de 2023 os ganhadores foram: Ingrid Oliveira, Jenifer Ramalho, Larissa de Oliveira, Lucas Capovila, Luiza Moraes, Michael Lopes e Naely Pereira Com o projeto Greenbo."
+        ]
+    },
+    {
+        "tag":"hardware",
+        "id":54,
+        "patterns":[
+            "Como funciona e qual a importância de cada um dos componentes fundamentais de um computador?",
+            "Me fala os hardwares de um computador",
+            "Me fala os hardwares de um computador por favor",
+            "ÁViila como funciona os hardwares de um pc?",
+            "Quais são os componentes principais de um pc?",
+            "Quais são os componentes principais de um computador?",
+            "Descreva os componentes do computador",
+            "Componentes de computador",
+            "Componentes de um computador"
+        ],
+        "responses":[
+            "Bom, a sua resposta vai ser um pouco longa hahaha, temos a Placa Mãe, ela é como uma central do computador/noteboook, onde as informações são coletadas e difundidas através desse união de todas as partes do seu Sistema Operacional. Ela se conecta com a placa de vídeo, os pentes de memória, o processador, e o HD por exemplo! Agora o processador..bem, ele é o responsável pela execução de instruções do sistema do seu computador, ou seja, vai executar os comandos dados à máquina. Nosso HD tem a função de armazenar todos os arquivos e informações do seu computador, permitindo o seu funcionamento. Nossa Memória RAM armazenada é diferente ao HD, pois ela é uma memória temporária do seu computador. Temos a Placa de Vídeo e a Fonte de Alimentação, que recebe a energia da rede elétrica e a distribui aos componentes de seu computador. "
+        ]
+    },
+    {
+        "tag":"proxy",
+        "id":55,
+        "patterns":[
+            "O que é proxy e para que serve?",
+            "Me fala o que é proxy?",
+            "Me fala o que é proxy por favor",
+            "ÁVilla me explica esse proxy ai por favor",
+            "ÁVilla proxy",
+            "Proxy",
+            "Apenas proxy"
+        ],
+        "responses":[
+            "Um servidor proxy é uma ferramenta importante para sua privacidade, e está muito ligado ao que a palavra em inglês quer dizer: procuração. Isto é, representa um certo tipo de autoridade dada a uma outra parte para agir em seu nome. Ele é uma ponte entre você e a internet. Quando você tenta acessar um site pelo seu dispositivo, o navegador envia uma requisição ao servidor web deste site, o qual retorna com a página que você estava buscando. Assim, sem um proxy, você se comunica diretamente com a internet e com o servidor em que está hospedado o site que você deseja acessar."
+        ]
+    },  
+    {
+        "tag":"escopo",
+        "id":56,
+        "patterns":[
+            "Qual a diferença entre Escopo global e local de variaveis?",
+            "O que é variável global e local?",
+            "Me explique escopo global e local por favor ÁVilla",
+            "Me explique escopo global e local por favor",
+            "Escopo global e local"
+        ],
+        "responses":[
+            "Uma variável global é quando declaramos uma variável fora de qualquer função, se tornando acessível a qualquer parte da nossa aplicação, podendo ser lida e alterada. Diferente da global, a variável local é quando declaramos dentro de uma função,assim ela se torna acessível somente dentro da função onde ela foi declarada."
+        ]
+    },
+    {
+        "tag":"informação",
+        "id":57,
+        "patterns":[
+            "Quais os tres criterios de segurança da informação (cada um deles)",
+            "Quais os critérios da segurança da informação?",
+            "Quais os pilares da segurança da informação?"
+        ],
+        "responses":[
+            "Os 3 pilares da segurança da informação são Disponibilidade, Confidencialidade e Integridade. Disponibilidade: esse pilar está diretamente ligado à possibilidade de acesso às informações. Segundo ele, as informações precisam estar sempre à disposição; Confidencialidade: segundo ele, o acesso as informações deve ser concedido apenas a quem tem permissão para acessá-las. Integridade: A informação enviada deve permanecer sempre em sua natureza original. Não deve ser alterado durante o processo de transmissão."
+        ]
+    },
+    {    
+        "tag":"abstração",
+        "id":58,   
+        "patterns":[
+            "O que é abstração?"
+        ], 
+        "responses":[
+            "Na programação de computadores ela é uma forma de reduzir a complexidade e tornar o projeto e a implementação mais eficientes em sistemas complexos de software. Ela esconde a complexidade técnica de um sistema por trás de uma API mais simples."
+        ]
+    },
+    {
+        "tag":"modelagem",
+        "id":59,
+        "patterns":[
+            "Qual a diferença entre modelagem lógica e conceitual?",
+            "Modelagem conceitual e lógica",
+            "O que é modelagem lógica e conceitual?"
+        ],
+        "responses":[
+            "Na Modelagem Conceitual o objetivo é criar um modelo de forma gráfica, sendo este chamado de Diagrama Entidade e Relacionamento (DER), que identificará todos de forma global, sem qualquer detalhamento específico de um Banco de Dados. Sua principal finalidade é capturar os requisitos de informação e regras de negócio sob o ponto de vista do negócio. Agora na Modelagem Lógica é principalmente associada à coleta de necessidades de negócios, e não ao design do banco de dados. Ele irá determinar se todos os requisitos do negócio foram coletados, sendo mais complexo que o Modelo COnceitual em que os tipos de coluna são definidos."
+        ]
+    },
+    {
+        "tag":"atribuição",
+        "id":60,
+        "patterns":[
+            "Quando faço uma atribuição por valor e uma atribuição por referência?",
+            "Como faço atribuições no JavaScript?",
+            "Como faço atribuições?"
+        ],
+        "responses":[
+            "No JavaScript os dados do tipo primitivos (string, number, boolean, null, undefined e symbol) são atribuídos por valor e os objetos (Array, Funções e {}) são atribuídos por referências."
+        ]
+    },
+    {
+        "tag":"BD",
+        "id":61,
+        "patterns":[
+            "Quais os bancos de dados mais utilizados?",
+            "Me fale os bancos de dados mais usados por favor"
+        ],
+        "responses":[
+            "Listei os dez sistemas de banco de dados mais utilizados para você: ORACLE DATABASE, MYSQL, SQL SERVER, POSTGRESQL, IMB DB2, MICROSOFT ACCESS, SQLITE, MARIADB, SNOWFLAKE e MICROSOFT AZURE."
+        ]
+    },
+    {
+        "tag":"servidor",
+        "id":62,
+        "patterns":[
+            "O que é um servidor web?",
+            "Como funciona um servidor web?",
+            "Me explique o que é um servidor web por favor"
+        ],
+        "responses":[
+            "Um Servidor web pode se referir ao hardware ou ao software, ou ambos trabalhando juntos. Referente ao hardware, ele é um computador que armazena arquivos que compõem os sites (por exemplo, documentos HTML, imagens e arquivos JavaScript) e os entrega para o dispositivo do usuário final. Está conectado a Internet e pode ser acessado através do seu nome de domínio (DNS). Já ao software, um servidor web inclui diversos componentes que controlam como os usuários acessam os arquivos hospedados (armazenados para disponibilização), no mínimo um servidor HTTP. Um servidor HTTP é um software que compreende URLs (endereços web) e HTTP (o protocolo que seu navegador utiliza para visualizar páginas web."
+        ]
+    },
+    {
+        "tag":"aplicação", 
+        "id":63,
+        "patterns":[
+            "Onde posso hospedar minha aplicação?",
+            "Após terminar meu projeto como posso hospedar ele?"
+        ],
+        "responses":[
+        ]
+    },
+    {
+        "tag":"PowerBI",
+        "id":64,
+        "patterns":[
+            "Primeiros passos com Power BI",
+            "Por onde devo começar no Power BI?",
+            "Não sei nada de Power BI"
+        ],
+        "responses":[
+            "Eu sei o que você esperava, apenas três ou quatro passos haha, mas o Power BI é uma ferramenta muito rica! Por isso, recomendo este vídeo detalhado do Power BI, desde sua instalação a seu primeiro gráfico! Digite essa url no seu navegador: https://youtu.be/UFGe25gydxo"
+        ]
+    },
+    {
+        "tag":"VsDia",
+        "id":65,
+        "patterns":[
+            "Primeiros passos com VsDia",
+            "Por onde devo começar no VsDia?",
+            "Não sei nada de VsDia"
+        ], 
+        "responses":[
+            "Nós já temos um belo tutorial para vocês! Aqui está S:PM/ter/ets/Inter_Setor/COMPARTILHADO/AULAS/DIGITAL_SOLUTIONS/DIGITAL_SOLUTIONS_04/VSDIA"
+        ]
+    },
+    {
+        "tag":"relatório",
+        "id":66,
+        "patterns":[
+            "Como faço para criar um relatório no Power BI?",
+            "Como eu crio um relatório no Power BI?"
+        ],
+        "responses":[
+            "No painel de navegação no serviço do Power BI, você pode selecionar o botão Criar, que abre uma página em que você pode selecionar sua fonte de dados. Isso também pode ser acessado no botão Novo relatório na página inicial. "
+        ]
+    },
+    {
+        "tag":"compartilhar",
+        "id":67,
+        "patterns":[
+            "Como compartilhar meu Power BI com outras pessoas?",
+            "Quero compartilhar meu Power BI, como faço isso?"
+        ],
+        "responses":[
+            "Para isso você precisa publicar o powerbi, digite a seguinte URL na web: https://powerbi.bosch.com/publish/ Clique em Add Reports, na caixa de seleção escolha o nivel de segurança do seu powerbi (qualquer coisa deixa o SC-2, mas é bom saber o correto) Depois selecione o arquivo, preencha as informações e tudo certo! Já pode enviar o link aos interessados."
+        ]   
+    },
+    {
+        "tag":"DAX",
+        "id":68,
+        "patterns":[
+            "Como programar no Power BI?",
+            "Qual a linguagem de programação do Power BI",
+            "Power BI tem linguagem de programação?",
+            "Power BI usa alguma linguagem?"
+        ],
+        "responses":[
+            "Assim como no Excel, é possível realizarmos fórmulas no Power BI através do DAX (Data Analysis Expressions), a linguagem de programação própria do Power BI"
+        ]
+    },
+    {
+        "tag":"Outlook",
+        "id":69,
+        "patterns":[
+            "Como fazer um E-mail automático no Outlook?",
+            "Como eu faço um E-mail automático no Outlook?"
+        ],
+        "responses":[
+            "É mais simples do que imagina! Basta abrir seu Outlook e em seguida clicar em Arquivo no cabeçalho e selecionar ‘Respostas Automáticas’. Desta forma você pode escolher algumas configurações como horários e intervalo de tempo de envio."
+        ]
+    },
+    {
+        "tag":"Order",
+        "id":70,
+        "patterns":[
+            "Como pedir um computador?",
+            "Como solicito um computador?",
+            "Como solicito um notebook?",
+            "Como pedir um notebook?",
+            "Como eu peço um notebook?",
+            "Como eu peço um computador?"
+        ],
+        "responses":[
+            "Para pedir um computador, você deve seguir os passos: 1- Acessar o Bosch Zunder, clicar no icone de IS ou pesquisar por IT Service Portal. 2- Na barra de pesquisa busque por ‘Request computer’, vai aparecer um card, se for para você clique em ‘Order for self’, se não em ‘Order for others’. 3 – Preencha as informações e clique em submit. As demais informações você receberá por email."
+        ]
+    },
+    {
+        "tag":"WorkOn",
+        "id":71,
+        "patterns":[
+            "Como tirar meu WorkOn?",
+            "Como retiro meu WorkOn?",
+            "Tirar WorkOn"
+        ],
+        "responses":[
+            "Para pedir um workon, você deve seguir os passos: 1- Acessar o Bosch Zunder, clicar no icone de IS ou pesquisar por IT Service Portal. 2- Na barra de pesquisa busque por ‘WorkON’, vai aparecer um card, se for para você clique em ‘Order for self’, se não em ‘Order for others’. 3 – Preencha as informações e clique em submit. As demais informações você recebrá por email."
+        ]
+    },
+    {
+        "tag":"diariamente",
+        "id":72,
+        "patterns":[
+            "Como fazer um programa rodar todos os dias ou assim que eu ligar o pc?",
+            "Como eu rodo um programa todos os dias ou assim que eu ligar o pc?",
+            "Como eu rodo um programa em determinado horário?",
+            "Como eu rodo um programa em um horário específico?"
+        ],
+        "responses":[
+            "Para isso, você pode usar o agendador de tarefas do windows, pesquise por ele no menu iniciar. Depois clique em ‘criar tarefa básica’, preencha o nome e a descrição. Clique em avançar, escolha qual a recorrência (lembre-se, você precisa ligar o pc para que o programa rode!), clique em avançar, escolha ‘inicar um programa’ selecione qual, prossiga e conclua!"
+        ]
+    },
+    {
+        "tag":"adminstrativo",
+        "id":73,
+        "patterns":[
+            "Como ativar acesso adminstrativo?",
+            "Como eu consigo acesso adminstrativo?",
+            "Como eu consigo acesso admin?"
+        ],
+        "responses":[
+            "Para pedir acesso administrativo, você deve ir ao IT Service Portal (o icone de IS na pagina da Bosch Zunder) e pesquisar por Enable or Disable Permanent Administrative Rights, clicar em Order e preencher os campos, depois é só aguardar! Para ativá-lo, vá no IT Workspace Toolkit (o icone de ferramenta provavelmente no sue Desktop) e clique em ‘Habilitar Acesso Administrativo Temporário’, selecione o motivo e tudo pronto"
+        ]
+    },
+    {
+        "tag":"download",
+        "id":74,
+        "patterns":[
+            "Nao estou conseguindo baixar um programa, o que faço?"
+        ],
+        "responses":[
+            "Minhas sugestões são:  checar o espaço disponível em sua máquina, caso esteja tudo ok, faça o download do programa e o arraste para a área de trabalho. Se não for possível, habilite o acesso administrativo e tente novamente. Se o problema persistir, vá ao AppLocker no IT Workspace toolkit e desligue ou habilite baixa proteção e tente novamente."
+        ]
+    },
+    {
+        "tag":"instalação",
+        "id":75,
+        "patterns":[
+            "Como pedir a instalação ou remoção de um programa no meu computador?",
+            "Como eu peço para instalar um programa?",
+            "Como eu peço para desinstalar um programa?"
+        ],
+        "responses":[
+            "Vá até a página da Bosch Zunder ‘Access & Permissions’ e busque por ‘Add/Remove Software’. Preencha as informações de acordo e aguarde, pois pode levar um tempo."
+        ]
+    },
+    {
+        "tag":"HomeOffice",
+        "id":76,
+        "patterns":[
+            "Como pedir acesso a Bosch em casa?",
+            "Como eu peço acesso a Bosch para trabalhar Home Office?"
+        ],
+        "responses":[
+            "Caso você já tenha o workon, vá até a página inicial da bosch zunder no IT Service Portal, lá você irá pesquisar por CoRASon: Corporate Remote Access Solution. Uma vez que esteja no seu usuário selecione Order e preencha as informações, caso peça para terceiros selecione Order for others. Agora chegamos ao último passo! Em sua casa acesso o Cisco AnyConnect; selecione LA Brazil e seu usuário."
+        ]
+    },
+    {
+        "tag":"inglês",
+        "id":77,    
+        "patterns":[
+            "Como pedir acesso ao curso de inglês?",
+            "Como eu consigo fazer o curso de inglês?",
+            "Como eu faço o curso de inglês?"
+        ],
+        "responses":[
+            "Converse com o gestor da sua área sobre o seu interesse no curso, se aprovado, siga os passos: na pagina da Bosch Zunder, clique no icone LP, pesquise por ‘portal de idiomas’, antes de terminar de digitar vai aparecer duas opções, clique na primeira. Após isso, na nova página clique em ‘tutorial: como solicitar o teste de idiomas’ e siga os passos!"
+        ]
+    },
+    {
+        "tag":"VPN",
+        "id":78,       
+        "patterns":[
+            "Qual a diferença entre Proxy e VPN?",
+            "Proxy e VPN tem diferença?",
+            "VPN e Proxy é a mesma coisa?"
+        ],  
+         "responses":[
+            "Embora uma VPN (Virtual Private Network) também possa ser usada para acessar serviços de outros países, e mascarar seu IP, ela cria uma rede privada criptografada, blindando totalmente os dados entre o computador do usuário e o servidor VPN. Já o proxy é apenas um intermediário entre você e a internet e não criptografa nada."
+        ]
+    },
+    {
+        "tag":"interface", 
+        "id":79,
+        "patterns":[
+            "Para que servem interfaces em Java?",
+            "O que é interface na Java?"
+        ],
+        "responses":[
+            "Uma interface é similar a um contrato, através dela podemos especificar quais métodos as classes que implementam esta interface são obrigados a implementar."
+        ]
+    },  
+    {
+        "tag":"Enum", 
+        "id":80,
+        "patterns":[
+            "Para que serve o Enum em java?",
+            "O que o Enum do Java faz?"
+        ],
+        "responses":[
+            "Habilita uma variável a ser configurada com valores costantes pré-definidos. Ao atribuir valores à variável durante a execução do programa, somente são aceitos valores presentes da lista definida de ENUM. Usamos Enum sempre que precisamos representar um conjunto fixo de constantes, valores que são totalmente conhecidos na hora d compilação do programa."
         ]
     }
-
 ]}

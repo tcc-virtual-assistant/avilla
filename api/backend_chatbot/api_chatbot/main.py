@@ -3,13 +3,13 @@ from fastapi.middleware.cors import CORSMiddleware
 from rotas import router
 import uvicorn
 
-app = FastAPI()
+app2 = FastAPI()
 
 origins = [
     "*"
 ]
 
-app.add_middleware(
+app2.add_middleware(
     CORSMiddleware,
     allow_origins=origins,
     allow_credentials=True,
@@ -17,8 +17,11 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-@app.get("/")
+@app2.get("/")
 def get_root():
     return{"mensagem":"waiting for questions.."}
 
-app.include_router(router, prefix="")
+app2.include_router(router, prefix="")
+
+if __name__ == "__main__":
+    uvicorn.run("main:app2", port=8000, log_level="info")
