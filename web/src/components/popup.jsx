@@ -64,15 +64,19 @@ export default function Popup(props) {
                     as="h1"
                     className="text-xl text-gray-900"
                     >
-                      Digite o que deseja
+                      Digite o que deseja:
                     </Dialog.Title>
 
-                    <input/>
+                    <input
+                        className="shadow appearance-none border rounded 
+                        w-full mt-2 py-2 px-4 text-gray-700 leading-tight 
+                        focus:outline-none focus:shadow-outline"
+                    ></input>
                    
                   <div className="mt-4">
                     <button
                       type="button"
-                      className="w-full bg-blue-300 p-2 rounded-lg text-blue-900 border border-white hover:border-blue-900 hover:bg-blue-100 duration-500"
+                      className="w-full h-full bg-blue-300 p-2 rounded-lg text-blue-900 border border-white hover:border-blue-900 hover:bg-blue-100 duration-500"
                       onClick={closeModal}
                     >
                       Fechar
