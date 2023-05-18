@@ -5,7 +5,11 @@ import axios from "axios";
 import {ToastContainer, toast} from "react-toastify";
 import Acessibilidade from "../components/Acessibilidade";
 import AvilaSVG from "../components/AvilaSVG";
+import {Avilla_Thinking} from "../components/Avilla_Thinking";
 import 'react-toastify/dist/ReactToastify.css';
+import { Suspense } from 'react'
+import { Canvas } from '@react-three/fiber'
+import {OrbitControls, useGLTF} from '@react-three/drei'; 
 
 function Chat() {
 
@@ -76,7 +80,7 @@ function Chat() {
 
     return(
         <>
-        <div className="flex items-center justify-center flex-col mt-5">
+        <div className="flex items-center justify-center flex-row ml-80 place-content-center">
         <div className="w-full max-w-lg flex justify-center flex-col">
             <form onSubmit={handleSubmit} 
                 className="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4"
@@ -97,12 +101,11 @@ function Chat() {
                     ></input>
                 </div>
             </form>
-            </div>
                 <button className="bg-green-500 hover:bg-green-700 
-                text-white font-bold py-1.5 px-5 rounded"
-                    id='btn'
-                    onClick={handleSubmit}
-                    >Enviar
+                text-white font-bold py-1.5 px-5 rounded w-40 place-self-center"
+                id='btn'
+                onClick={handleSubmit}
+                >Enviar
                 </button>
             <div className="w-full max-w-lg flex justify-center flex-col">
                 <div className="block text-gray-700 text-sm font-bold mb-2 mt-5">
@@ -113,20 +116,35 @@ function Chat() {
                     </p>
                 </div>
                 </div>
-            </div>
-            <div className="flex flex-col w-full justify-center">
-                <div className="grid space-y-0">
-                    <div className="absolute bottom-2 w-full flex justify-center">
-                        <div className="fixed flex bottom-44 right-16">
-                            <AvilaSVG/>
-                        </div>
-                            <Acessibilidade />
+                </div>
+                <div className='relative ml-16'>
+                    <div className="h-80 w-72">
+                        <Canvas>
+                            <Suspense fallback={null}>
+                            <ambientLight/>
+                            <spotLight
+                                intensity={1.0}
+                                angle={Math.PI/3}
+                                penumbra={1}
+                                position={[0,0,9]}
+                                castShadow/>
+                            <Avilla_Thinking />
+                            <OrbitControls 
+                                enablePan={true}
+                                enableZoom={true}
+                                enableRotate={true}
+                                enableDamping={true}
+                                />
+                            </Suspense>
+                        </Canvas>    
+                    </div>
                     </div>
                 </div>
-            </div>
+                <div className='absolute bottom-2 w-full flex justify-center'>
+                    <Acessibilidade />
+                </div>
         <ToastContainer />
         </>
     )
 }
-
 export default Chat;
