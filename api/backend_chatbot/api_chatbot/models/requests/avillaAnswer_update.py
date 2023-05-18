@@ -1,6 +1,6 @@
 from typing import List, Optional
-from pydantic import BaseModel
+from pydantic import BaseModel, Field
 
 class avillaAnswerUpdate(BaseModel):
-    userQuestion: Optional[str] = None
-    avillaAnswer: Optional[str] = None
+    userQuestion: Optional[str] = Field(max_length=500)
+    avillaAnswer: Optional[str] = Field(max_length=500)
