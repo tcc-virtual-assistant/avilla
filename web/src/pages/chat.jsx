@@ -11,7 +11,16 @@ import { Suspense } from 'react'
 import { Canvas } from '@react-three/fiber'
 import {OrbitControls, useGLTF} from '@react-three/drei'; 
 
-function Chat() {
+export function getStaticProps({locale}){
+    return{
+        props: {
+            locale
+        }
+    }
+}
+
+
+function Chat(props) {
 
     const [input, setInput] = useState({})
     const [data, setData] = useState([])
