@@ -2,25 +2,29 @@
 import Head from 'next/head'
 import React, { useEffect, useState } from "react";
 import axios from "axios";
-import {ToastContainer, toast} from "react-toastify";
+import {ToastContainer, toast} from "react-toastify";   
 import Acessibilidade from "../components/Acessibilidade";
 import AvilaSVG from "../components/AvilaSVG";
 import {Avilla_Thinking} from "../components/Avilla_Thinking";
 import 'react-toastify/dist/ReactToastify.css';
 import { Suspense } from 'react'
 import { Canvas } from '@react-three/fiber'
-import {OrbitControls, useGLTF} from '@react-three/drei'; 
+import {OrbitControls, useGLTF} from '@react-three/drei';
+import { serverSideTranslations } from 'next-i18next/serverSideTranslations' 
+import { useTranslation } from 'next-i18next';
 
-export function getStaticProps({locale}){
+
+export async function getStaticProps({locale}){
     return{
         props: {
-            locale
+            ...(await serverSideTranslations(locale, ['chat']))
         }
     }
 }
 
-
 function Chat(props) {
+    
+    const {t: translate} = useTranslation('chat')
 
     const [input, setInput] = useState({})
     const [data, setData] = useState([])
@@ -96,7 +100,8 @@ function Chat(props) {
                 id='form'>
                 <div class="mb-4">
                 <label className="block text-gray-700 text-sm font-bold mb-2">
-                    Sua pergunta:
+                    {/* {translate('Sua pergunta:')} */}
+                    {/* {translate('Sua pergunta:')} */}
                 </label>
                     <input
                         className="shadow appearance-none border rounded 

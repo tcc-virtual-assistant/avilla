@@ -1,6 +1,16 @@
-import React from "react";
+import React, {useEffect, useState} from "react";
+// import { useRouter } from 'next/router';
+import { i18n } from "next-i18next";
+import { useRouter } from "next/router";
 
 function Navbar() {
+  const router = useRouter()
+  const {locale} = router
+  
+  const changeLocale = (e) =>{
+    const locale = e.target.value
+    router.push('/','/',{locale})
+  }
   return (
     <>
       <div className="z-50 w-full ">
@@ -29,10 +39,10 @@ function Navbar() {
                 id="demo"
                 aria-label="here goes the aria label for the dropwdown"
               >
-                <option value='"Português"'>Português</option>
-                <option value='"English"'>English</option>
-                <option value='"Español"'>Español</option>
-                <option value='"Deutsch"'>Deutsch</option>
+                <option value='pt' onClick={()=> changeLocale('en')}>Português</option>
+                <option value='en'>English</option>
+                <option value='es'>Español</option>
+                {/* <option value='"Deutsch"'>Deutsch</option> */}
               </select>
             </div>
           </div>
