@@ -14,17 +14,17 @@ import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 import { useTranslation } from 'next-i18next';
 
 
-export async function getStaticProps({locale}){
-    return{
-        props: {
-            ...(await serverSideTranslations(locale, ['chat']))
-        }
-    }
-}
+// export async function getStaticProps({locale}){
+//     return{
+//         props: {
+//             ...(await serverSideTranslations(locale, ['chat']))
+//         }
+//     }
+// }
 
 function Chat(props) {
     
-    const {t: translate} = useTranslation('chat')
+    // const {t: translate} = useTranslation('chat')
 
     const [input, setInput] = useState({})
     const [data, setData] = useState([])
@@ -102,6 +102,7 @@ function Chat(props) {
                 <label className="block text-gray-700 text-sm font-bold mb-2">
                     {/* {translate('Sua pergunta:')} */}
                     {/* {translate('Sua pergunta:')} */}
+                    Sua pergunta:
                 </label>
                     <input
                         className="shadow appearance-none border rounded 
