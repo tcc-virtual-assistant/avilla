@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import { FaMicrophoneAlt } from 'react-icons/fa'
 import React, { useState } from 'react';
-//import ResponsiveVoice from 'responsivevoice';
+import ResponsiveVoice from 'responsivevoice';
 
 export default function Voz() {
   const [speech, setSpeech] = useState('Ola Mundo');
