@@ -11,7 +11,16 @@ import { Suspense } from 'react'
 import { Canvas } from '@react-three/fiber'
 import {OrbitControls, useGLTF} from '@react-three/drei'; 
 
-function Chat() {
+export function getStaticProps({locale}){
+    return{
+        props: {
+            locale
+        }
+    }
+}
+
+
+function Chat(props) {
 
     const [input, setInput] = useState({})
     const [data, setData] = useState([])
@@ -112,9 +121,14 @@ function Chat() {
                     <p className="shadow appearance-none border rounded 
                     w-full py-2 px-4 text-gray-700 leading-tight 
                     focus:outline-none focus:shadow-outline">
-                        Avilla informa: {data.avillaAnswer}
+                        Avilla informa: 
                     </p>
-                </div>
+                    </div>
+                    <p className="shadow appearance-none border rounded 
+                        w-full py-2 px-10 text-gray-700 leading-tight 
+                        focus:outline-none focus:shadow-outline">
+                                {data.avillaAnswer}
+                        </p>
                 </div>
                 </div>
                 <div className='relative ml-16'>

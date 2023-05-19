@@ -51,6 +51,7 @@ def chatbot():
         sentence = str(sentence)
         print(f" do começo {apiUserid}")
         print(f" do começo newest {newestID}")
+
         if newestID != apiUserid:
             while True:
                 if sentence == "sair":
@@ -68,6 +69,7 @@ def chatbot():
                 tag = tags[predicted.item()]
                 probs = torch.softmax(output, dim=1)
                 prob = probs[0][predicted.item()]
+
                 if prob.item() > 0.9993212223052980:
                     for intent in intents['intents']:
                         if tag == intent["tag"]:
@@ -75,14 +77,13 @@ def chatbot():
                     response = requests.get(f'http://localhost:5000/answer/{id}')
                     call = response.json()
                     answer = call['response']
-                    print(answer)
                     sendAPI(answer, apiUserid)
-                    time.sleep(2)
                     print(f"antigo {newestID}")
                     newestID = apiUserid
                     print(f"novo {newestID}")
                     break
                 else:
-                    print("Me desculpe, irei trabalhar na resposta para essa pergunta, ainda não sou perfeita...")
+                    answer = "Me desculpe, irei trabalhar na resposta para essa pergunta, ainda não sou perfeita..."
+                    sendAPI(answer, apiUserid)
 
 chatbot()
