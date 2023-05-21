@@ -14,6 +14,5 @@ class Projects(Base):
     description = Column(String(255), index=True, nullable=True)
     techs = Column(String(255), index=True, nullable=True)
     contact = Column(String(255), index=True, nullable=True)
-    finish_ratio = Column(Integer, index=True, nullable=True)
     status = Column(String(255), index=True, nullable=True)
     image_path  = Column(String(255), index=True, nullable=True)

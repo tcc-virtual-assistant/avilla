@@ -8,6 +8,7 @@ export async function getStaticProps() {
     const data = await fetch('http://localhost:8001/schedule/')
     const agenda = await data.json()
 
+
     return {
         props : { agenda }
     }
@@ -59,8 +60,8 @@ export default function Agenda({ agenda }) {
             <Head>
                 <title>Avilla | Agenda</title>
             </Head>
-            <main className='text-center mb-14'>
-                <h1 className='text-5xl p-10'>
+            <main className='text-center px-2 mb-14'>
+                <h1 className='text-5xl p-10 text-black'>
                     Agenda da Semana
                 </h1>
                 <div className='w-full max-w-screen-2xl m-auto min-h-100 flex item-center justify-center border-2 border-black rounded-lg'>

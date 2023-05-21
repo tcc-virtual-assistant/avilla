@@ -12,7 +12,7 @@ from db_handler import SessionLocal, engine
 models.Base.metadata.create_all(bind=engine)
 
 app = FastAPI(
-    title = "BOSCH/ETS Project Manager (Made by ApeView)",
+    title = "Avilla Project Manager",
     version = "0.0.1"
 )
 

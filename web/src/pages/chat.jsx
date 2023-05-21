@@ -10,8 +10,8 @@ import 'react-toastify/dist/ReactToastify.css';
 import { Suspense } from 'react'
 import { Canvas } from '@react-three/fiber'
 import {OrbitControls, useGLTF} from '@react-three/drei';
-import { serverSideTranslations } from 'next-i18next/serverSideTranslations' 
-import { useTranslation } from 'next-i18next';
+// import { serverSideTranslations } from 'next-i18next/serverSideTranslations' 
+// import { useTranslation } from 'next-i18next';
 
 
 // export async function getStaticProps({locale}){
