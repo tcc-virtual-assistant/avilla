@@ -4,8 +4,6 @@ import Image from 'next/image';
 
 export default function Popup(props) {
   let [isOpen, setIsOpen] = useState(false);
-  const [largura, setLargura] = useState(0);
-  const [margin, setMargin] = useState(4);
 
   function closeModal() {
     setIsOpen(false)

@@ -1,12 +1,13 @@
-import Head from 'next/head'
+import Head from 'next/head';
 import React, { useState } from 'react';
 
-import { FaMicrophoneAlt } from 'react-icons/fa'
-import { MdRecordVoiceOver } from 'react-icons/md'
+import { FaMicrophoneAlt } from 'react-icons/fa';
+import { MdRecordVoiceOver } from 'react-icons/md';
+import ModalRecognit from '@/components/modalrecognit';
 
 export default function Voz() {
-  const [speech, setSpeech] = useState('Olá, eu sou a Avila! Sua assistente virtual');
-  const [recognition, SetRecognition] = useState()
+  const [speech, setSpeech] = useState('Meu propósito é ajudar as pessoas');
+  const [voice, SetResultVoice] = useState('');
 
   const TextSpeech = () => {
     const mensagem = new SpeechSynthesisUtterance(speech);
@@ -25,8 +26,8 @@ export default function Voz() {
 
     recognition.onresult = event => {
       const resultado = event.results[0][0].transcript; 
-      SetRecognition(resultado);
-      console.log(recognition);
+      SetResultVoice(resultado);
+      console.log(voice);
     };
 
     recognition.start(); 
@@ -51,27 +52,10 @@ export default function Voz() {
               className='m-auto'
             />
           </button>
-
-          <button 
-            onClick={SpeakRecognition}
-            className='border-2 border-blue-400 text-blue-400 font-bold text-lg w-64 h-64 cursor-pointer rounded-full hover:bg-blue-100 duration-300'
-          >
-            <FaMicrophoneAlt
-              size={100}
-              className='m-auto'
-            />
-          </button>
+          
+          <ModalRecognit/>
+          
         </div>
-        {
-          (speech) ?
-            <div className='w-[80%] flex items-center justify-center m-auto bg-gray-200 mt-10 rounded-lg p-2'>
-              <label className='text-green-400 my-10 text-xl'>
-                {speech}
-              </label>
-            </div>
-          :
-          null
-        }
       </main>
     </>
   )

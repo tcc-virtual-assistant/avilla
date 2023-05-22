@@ -127,8 +127,8 @@ function Chat(props) {
                     <p className="shadow appearance-none border rounded 
                         w-full py-2 px-10 text-gray-700 leading-tight 
                         focus:outline-none focus:shadow-outline">
-                                {data.avillaAnswer}
-                        </p>
+                        {data.avillaAnswer}
+                    </p>
                 </div>
                 </div>
                 <div className='relative ml-16'>

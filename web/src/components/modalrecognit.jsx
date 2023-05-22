@@ -1,0 +1,104 @@
+import { Dialog, Transition } from '@headlessui/react'
+import { Fragment, useState, useEffect } from 'react'
+
+import { FaMicrophoneAlt, FaAssistiveListeningSystems } from 'react-icons/fa';
+
+export default function ModalRecognit(props) {
+    const [open, setOpen] = useState(false);
+    const [voice, SetVoice] = useState();
+
+    const SpeakRecognition = () => {
+        setOpen(true);
+
+        const recognition = new window.webkitSpeechRecognition(); 
+        recognition.lang = 'pt-BR'; 
+    
+        recognition.onresult = event => {
+          const resultado = event.results[0][0].transcript; 
+          SetVoice(resultado);
+          console.log(voice);
+        };
+    
+        recognition.start(); 
+      };
+
+    return (
+        <>
+          <button
+            type="button"
+            onClick={SpeakRecognition}
+            className='border-2 border-blue-400 text-blue-400 font-bold text-lg w-64 h-64 cursor-pointer rounded-full hover:bg-blue-100 duration-300'
+          >
+            <FaMicrophoneAlt
+              size={100}
+              className='m-auto'
+            />
+          </button>
+    
+            <Transition appear show={open} as={Fragment}>
+                <Dialog as="div" className="relative z-10" onClose={() => setOpen(false)}>
+                    <Transition.Child
+                        as={Fragment}
+                        enter="ease-out duration-300"
+                        enterFrom="opacity-0"
+                        enterTo="opacity-100"
+                        leave="ease-in duration-200"
+                        leaveFrom="opacity-100"
+                        leaveTo="opacity-0"
+                    >
+                        <div className="fixed inset-0 bg-black bg-opacity-25" />
+                    </Transition.Child>
+        
+                    <div className="fixed inset-0 overflow-y-auto">
+                        <div className="flex min-h-full items-center justify-center p-4 text-center">
+                            <Transition.Child
+                                as={Fragment}
+                                enter="ease-out duration-300"
+                                enterFrom="opacity-0 scale-95"
+                                enterTo="opacity-100 scale-100"
+                                leave="ease-in duration-200"
+                                leaveFrom="opacity-100 scale-100"
+                                leaveTo="opacity-0 scale-95"
+                            >
+                                <Dialog.Panel 
+                                    className="w-full max-w-2xl transform overflow-hidden rounded-lg bg-white p-6 text-left align-middle shadow-xl transition-all"
+                                >
+                                    <Dialog.Title
+                                        as="h1"
+                                        className="text-xl font-semibold text-gray-900"
+                                    >
+                                        Diga o que deseja saber para a Avila, ela está escutando...
+                                    </Dialog.Title>
+        
+                                    <div className='w-full flex my-3'>
+                                        <div className='w-1/4'>
+                                            <span className="relative flex h-16 w-16 my-6 m-auto">
+                                                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-sky-400 opacity-75"></span>
+                                                <span className="relative inline-flex rounded-full h-16 w-16 bg-sky-500 justify-center items-center text-white">
+                                                    <FaAssistiveListeningSystems size={30} />
+                                                </span>
+                                            </span>
+                                        </div>
+                                        <div className='w-3/4 rounded-md p-2 text-lg'>
+                                            <strong className='text-green-400'>Sua pergunta:</strong> {voice}
+                                        </div>
+                                    </div>
+                                    
+                                    <div className="mt-4">
+                                        <button
+                                            type="button"
+                                            className="w-full h-full bg-blue-300 p-2 rounded-lg text-blue-900 border border-white hover:border-blue-900 hover:bg-blue-100 duration-500"
+                                            onClick={() => setOpen(false)}
+                                        >
+                                            Fechar
+                                        </button>
+                                    </div>
+                                </Dialog.Panel>
+                            </Transition.Child>
+                        </div>
+                    </div>
+                </Dialog>
+            </Transition>
+        </>
+    )
+}

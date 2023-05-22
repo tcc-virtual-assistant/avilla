@@ -1,12 +1,29 @@
 import Head from 'next/head'
+import axios from 'axios'
 import { motion } from 'framer-motion'
 import { useState, useEffect, useRef } from 'react'
 
 import Tabela from '@/components/agenda/tabela'
 
 export async function getStaticProps() {
-    const data = await fetch('http://localhost:8001/schedule/')
-    const agenda = await data.json()
+    let data = JSON.stringify({});
+    //const data = await fetch('https://localhost:8001/schedule/')
+    const [agenda, setAgenda] = useState([{}]);
+
+    let config  = {
+        method: 'get',
+        maxBodyLength: Infinity,
+        url: 'https://localhost:8001/schedule/',
+        headers: {
+            'Content-Type': 'application/json',
+        },
+        data : data
+    }
+
+    await axios.request(config)
+        .then(resp => {
+            setAgenda(resp.data)
+        })
 
     return {
         props : { agenda }
