@@ -1,13 +1,19 @@
 import Head from 'next/head'
 import { FaMicrophoneAlt } from 'react-icons/fa'
 import React, { useState } from 'react';
-import ResponsiveVoice from 'responsivevoice';
 
 export default function Voz() {
-  const [speech, setSpeech] = useState('Ola Mundo');
+  const [speech, setSpeech] = useState('Olá, eu sou a Avila! Sua assistente virtual');
 
   const TextSpeech = () => {
-    ResponsiveVoice.speak(speech, 'Brazilian Portuguese')
+    const mensagem = new SpeechSynthesisUtterance(speech);
+    mensagem.lang = 'pt-BR';
+
+    const vozes = window.speechSynthesis.getVoices();
+    const vozFeminina = vozes.find(voz => voz.voiceURI.includes('Maria'));
+    mensagem.voice = vozFeminina;
+
+    window.speechSynthesis.speak(mensagem);
   }
 
   return (
