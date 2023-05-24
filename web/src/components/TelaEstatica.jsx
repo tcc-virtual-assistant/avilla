@@ -5,7 +5,7 @@ import Background from "./Background";
 import Apresentacao from "./Apresentacao";
 import Cards from "./Cards";
 import AvilaSVG from "./AvilaSVG";
-import Chat from "./Chat";
+// import Chat from "./Chat";
 
 export default function TelaEstatica() {
   return (

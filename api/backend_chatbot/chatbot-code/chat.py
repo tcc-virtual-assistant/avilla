@@ -85,5 +85,6 @@ def chatbot():
                 else:
                     answer = "Me desculpe, irei trabalhar na resposta para essa pergunta, ainda não sou perfeita..."
                     sendAPI(answer, apiUserid)
+                    break
 
 chatbot()
