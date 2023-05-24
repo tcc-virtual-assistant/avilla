@@ -301,7 +301,7 @@
         "tag":"definicaoCOMPILADO",
         "id":26,
         "patterns":[
-            "o que é compilado?","compilação"
+            "o que é compilado?","compilação","compilado"
         ],
         "responses":[
            "Linguagem compilada é uma linguagem de programação em que o código fonte, nessa linguagem, é executado diretamente pelo sistema operacional ou pelo processador, após ser traduzido por meio de um processo chamado compilação, usando um programa de computador chamado compilador, para uma linguagem de baixo nível, como linguagem de montagem ou código de máquina. "  
@@ -311,7 +311,8 @@
         "tag":"diferencaCOMPILADO",
         "id":27,
         "patterns":[
-            "qual a diferença de compilado e interpretado?","interpretado"
+            "qual a diferença de compilado e interpretado?",
+            "interpretado"
         ],
         "responses":[
            "Na compilação, o compilador irá ler o código, fazer todas as análises sintáticas e demais processos, para, por fim, gerar um arquivo código-objeto ou um arquivo executável (exemplo: c). Já na interpretação, nenhum arquivo ou código é gerado, e sim uma tradução instantânea, em tempo de execução (exemplo: python) "  
@@ -322,7 +323,7 @@
         "id":28,
         "patterns":[
             "o que são classes","classes orientado a objeto",
-            "o que é classe em java"
+            "o que é classe em java","classe"
         ],
         "responses":[
            "Sendo aplicadas durante a programação orientada a objetos as classes tem como função definir o formato destes objetos e, além disso, definir como esse objeto se comunicará com o resto da aplicação. Estes objetos da programação, assim como os da vida real possuem características e comportamentos característicos. Em programação chamamos estas características de atributos e estes comportamentos de métodos. "  
@@ -353,7 +354,8 @@
         "tag":"tratarDadosPowerBI",
         "id":31,
         "patterns":[
-            "como tratar os dados no powerbi", "tratamento de dados no powerbi"
+            "como tratar os dados no powerbi", "tratamento de dados no powerbi",
+            "tratar powerbi","tratar planilha"
         ],
         "responses":[
            "Através do Transform Data é possível inserir novas fontes de dados, excluir ou alterar planilhas, colunas e linhas. Para encontrá-lo é só ir na página inicial, a funcionalidade estará na faixa de opções em queries. "  
@@ -363,7 +365,8 @@
         "tag":"imagensPowerBI",
         "id":32,
         "patterns":[
-            "tem como usar imagens no powerbi","figuras powerbi"
+            "tem como usar imagens no powerbi","figuras powerbi",
+            "imagem powerbi"
         ],
         "responses":[
            "Para usar imagens no powerbi, vá para Insert na faixa de opções e em Elements clique em imagem e a selecione. Para adicionar ações, clique na imagem, do lado direito irá aparecer um menu de opções chamado Format, em Image clique em Action. "  
@@ -373,7 +376,9 @@
         "tag":"relacionamentoPowerBI",
         "id":33,
         "patterns":[
-            "como fazer relacionamentos no powerbi","como fazer relações no powerbi?"
+            "como fazer relacionamentos no powerbi",
+            "como fazer relações no powerbi?","chave estrangeira powerbi",
+            "fk powerbi","pk powerbi","chave primaria powerbi"
         ],
         "responses":[
            "Clique em Model na página inicial do lado esquerdo (o terceiro icone). Depois lique em manage relationship na parte de relacionamentos na barra de ferramentas. Em seguida, clique em New e na primeira barra selecione qual a tabela deseja relacionar. Na segunda barra selecione a outra tabela a ser relacionada. Selecione as colunas que serão utilizadas para fazer o relacionamento clicando nelas, lembre-se: as colunas devem ter os mesmos dados (exemplo: coluna de id). Por fim, clique em OK. "  
@@ -383,7 +388,9 @@
         "tag":"programarMelhor",
         "id":34,
         "patterns":[
-            "dicas para ser um melhor programador", "como posso melhorar minha programação"
+            "dicas para ser um melhor programador", 
+            "como posso melhorar minha programação","melhorar",
+            "ser um programador melhor"
         ],
         "responses":[
            "Buscar conhecimento todos os dias, seja por meio do estudo teorico ou prático. É muito importante a prática de exercícios sobre os assuntos aprendidos, para que eles se fixem na mente, alguns sites para treinar são: HackerRank, LeetCode ou Codeforces  Esteja apto a receber feedbacks buscando constante evolução. Pergunte aos colegas como eles resolveriam tal problema, para aprender as diversas maneiras. "  
@@ -393,7 +400,8 @@
         "tag":"automação",
         "id":35,
         "patterns":[
-            "quais as principais ferramentas de automação que a Bosch tem?","bosch automação"
+            "quais as principais ferramentas de automação que a Bosch tem?",
+            "bosch automação","ferramentas automação"
         ],
         "responses":[
            "Power BI, AutomationAnywhere, VsDIA, Catalytic e PowerAutomate são as principais ferramentas de automação usadas na Bosch"  
@@ -403,7 +411,7 @@
         "tag":"composição",
         "id":36,
         "patterns":[
-            "o que é composição", "composição"
+            "o que é composição", "composição","agregação"
         ],
         "responses":[
            "A Composição ou Agregação faz o reaproveitamento (reutilização) de classes utilizado pela programação orientada a objetos para aumentar a produtividade e a qualidade no desenvolvimento de software. Basicamente, é quando uma classe está composta de várias outras, exemplo: um carro é composto por: rodas, motor, pneus, direção etc. "  
@@ -425,7 +433,8 @@
         "tag":"api",
         "id":38,
         "patterns":[
-            "o que posso usar para fazer uma API","ferramentas api","api"
+            "o que posso usar para fazer uma API",
+            "ferramentas api","api"
         ],
         "responses":[
            "Para Node.js existe o framework Express.js, que permite criar APIs RESTful rapidamente e de maneira simples. Para Python existe o Django Rest Framework, que possui bons recursos para autenticação e serialização dos dados. Para Java existe o Spring Boot que facilita o desenvolvimento de APIs RESTful de alto desempenho"  
@@ -435,7 +444,8 @@
         "tag":"dicasPowerBI",
         "id":39,
         "patterns":[
-            "dicas para um melhor powerbi","como fazer um bom powerbi","dicas powerbi"
+            "dicas para um melhor powerbi",
+            "como fazer um bom powerbi","dicas powerbi"
         ],
         "responses":[
            "Organização dos gráficos de acordo com seu contexto (ex: deixar tudo que se relaciona a X de um lado e perto um do outro) investir na clusterização (se possível). Sempre conversar com o cliente e mostrar a ele o powerbi, pois é ele quem tem que entender o que você está fazendo. "  
@@ -447,7 +457,8 @@
         "patterns":[
             "Estou me sentindo desanimado, o que devo fazer?",
              "estou me sentindo triste","triste","desanimado",
-             "cabisbaixo","sem vontade de continuar","sem vontade"
+             "cabisbaixo","sem vontade de continuar","sem vontade",
+             "preciso de ajuda"
         ],
         "responses":[
            "Posso te recomendar nossa psicóloga Izadora da ETS, ela fica disponível das 07:30 às 15:00 na sala dos instrutores. Temos também como agendar uma consulta através do aplicativo da UNIMED ou solicitarmos um plantão pelo e-mail do ambulatório. "  
@@ -459,7 +470,7 @@
         "patterns":[
             "onde encontro um psicólogo na bosch?","busco terapia",
             "preciso de psicóloga", "temos psicólogo","psicólogo",
-            "terapia","psicologia"
+            "terapia","psicologia","psicologa"
         ],
         "responses":[
            "Posso te recomendar nossa psicóloga Izadora da ETS, ela fica disponível das 07:30 às 15:00 na sala dos instrutores. Temos também como agendar uma consulta através do aplicativo da UNIMED ou solicitarmos um plantão pelo e-mail do ambulatório. "  
@@ -469,7 +480,8 @@
         "tag":"encapsulamento",
         "id":42,
         "patterns":[
-            "o que é encapsulamento?", "encapsulamento"
+            "o que é encapsulamento?", "encapsulamento",
+            "encapsular"
         ],
         "responses":[
            "O encapsulamento serve para modificar o acesso aos atributos e aos métodos de um objeto, garantindo que somente as classes apropriadas possam acessar as informações e ajuda a assegurar que os atributos e os métodos sejam usados de forma consistente e previsível. Para acessar os dados usamos getters e para modificar usamos os setters. "  
@@ -479,7 +491,9 @@
         "tag":"itensPerdidos",
         "id":43,
         "patterns":[
-            "o que fazer se eu perder alguma coisa","perdi meu material"
+            "o que fazer se eu perder alguma coisa",
+            "perdi meu material","perdi",
+            "perdido"
         ],
         "responses":[
            "Fique atento aos grupos do WhatsApp, se possível, mande uma mensagem informando o objeto perdido. Os materiais perdidos fora da ETS são deixados na portaria. "  
@@ -492,7 +506,9 @@
             "quais os dias do pagamento",
             "quando a gente recebe",
             "quando o salario ta na conta",
-            "quando a gente recebe"
+            "quando a gente recebe",
+            "pagamento",
+            "salario"
         ],
         "responses":[
            "Irei te informar apenas após meu mês de criação, haha! Em Junho será no dia 14 e 29, Julho: 13 e 28, Agosto: 15 a 30, Setembro: 13 e 28, Outubro:   e 30, Novembro: 14 e 29 (junto a 1º parcela do décimo terceiro), e Dezembro: 13 (junto a nossa 2º parcela do décimo terceiro) e 28! "  
@@ -502,7 +518,8 @@
         "tag":"feriados",
         "id":45,
         "patterns":[
-            "quais os feriados desse ano?","que dias a gente folga esse ano"
+            "quais os feriados desse ano?","que dias a gente folga esse ano",
+            "folga","feriado"
         ],
         "responses":[
            "No dia 08 de Junho teremos Corpus Christi, 07 de Setembro nossa independência do Brasil! 12 de Outubro nosso dia das crianças e Nossa Sra. Aparecida, em Novembro teremos Finados no dia 02 e Proclamação da República no dia 15, e por fim o Natal no dia 25 de Dezembro. "  
@@ -513,7 +530,8 @@
         "id":46,
         "patterns":[
             "como clicar em um botao e ir pra outra página no powerbi",
-            "como fazer redirecionamento com o powerbi"
+            "como fazer redirecionamento com o powerbi","mudar de pagina powerbi",
+            "powerbi resirecionar","como faço pra ir pra outra página powerbi"
         ],
         "responses":[
            "Você pode fazer o uso dos botões para fazer redirecionamento para outras páginas, para isso, adicione um botão  na aba ‘insert’ clicando em buttons, na aba de ‘format’ ative a action e escolha ‘page navigation’   e escolha a ‘destionation’ que quiser! "  
@@ -523,7 +541,8 @@
         "tag":"planilhasPython",
         "id":47,
         "patterns":[
-            "como modificar planilhas no python","como fazer crud em planilha"
+            "como modificar planilhas no python","como fazer crud em planilha",
+            "planilha python","python pandas","python planilha"
         ],
         "responses":[
            "Para fazer um crud basico no python, você precisa importar o pandas, é comum que se use a dominação pd, (import pandas as pd), você também precisa uar o DataFrame para fazer as modificações. Analisei os videos do YouTube e te recomendo esse: https://youtu.be/C0aj3FjN5e0 "  
@@ -543,7 +562,7 @@
         "tag":"publicarPowerbi",
         "id":49,
         "patterns":[
-            "publicar powerbi","publicar powerbi"
+            "publicar powerbi"
         ],
         "responses":[
            "Para publicar o powerbi, digite a seguinte URL na web: ‘https://powerbi.bosch.com/publish/’ Clique em Add Reports, na caixa de seleção escolha o nivel de segurança do seu powerbi (qualquer coisa deixa o SC-2, mas é bom saber o correto) Depois selecione o arquivo, preencha as informações e tudo certo! Já pode enviar o link aos interessados. "  
@@ -554,7 +573,8 @@
         "id":50,
         "patterns":[
             "como fazer um programa ser executavel","como fazer um exe python",
-            "como fazer um script executavel"
+            "como fazer um script executavel",
+            "executavel python"
         ],
         "responses":[
            "Você pode fazer isso utlilizando o PyIntsaller, baixe ele no seu projeto (pip install pyinstaller) e no terminal digite ‘pyinstaller --onefile aqui_o_nome.py’, o arquivo será gerado em um diretório chamado ‘dist’, de lá você pode jogá-lo onde quiser! "  
@@ -564,7 +584,8 @@
         "tag":"workspacePowerBI",
         "id":51,
         "patterns":[
-            "como fazer workspace para powerbi", "como crio powerbi no sharepoint"
+            "como fazer workspace para powerbi", "como crio powerbi no sharepoint",
+            "workspace powerbi", "powerbi sharepoint"
         ],
         "responses":[
            "Para isso você precisa pedir o powerbi pro em IT Service Portal (o icone de IS na página do Bosch Zunder), pesquise por ‘Pro License for Power BI Cloud’, clique em ‘order for self’ preencha as informações e é só aguardar (pode demorar até uma semana!). Depois de ter o powerbi pro, vá no seu office 365 (pesquise por office 365 na web e faça o login) e clique em powerbi, depois em workspaces, crie uma nova com os interessados, suba o powerbi e mande o link para aqueles que estão na workspace. Para atualiza, você deve ir ao powerbi e clicar e ‘publish’, escolha a workspace e prontinho! "  
@@ -574,7 +595,8 @@
         "tag":"tecnologias",
         "id":52,
         "patterns":[
-            "quais as tecnologias em alta no mercado"
+            "quais as tecnologias em alta no mercado","tecnologias famosas",
+            "tecnologias populares"
         ],
         "responses":[
            "Estas estão sendo as maiores tendências tecnológicas: Inteligência Artificial (IA), Metaverso, Wireless com novas funções, plataformas de nuvem e desenvolvedores front e back-end. "  
@@ -586,7 +608,7 @@
         "patterns":[
             "Quais os projetos ganhadores do hackathon?",
             "Hackathon ganhadores",
-            "Quem ganhou o Hackathon?"
+            "Quem ganhou o Hackathon?","hackathon edições anteriores"
         ],
         "responses":[
             "No Hackathon de 2021 os ganhadores foram: Milena Fernandes, Ryan Corsi, Vinicius Cunha, Fernanda Cambiagui, Leonardo Migliorini e Mariana Barbosa com o projeto TestQuest, Correção Automática de provas por IA. No Hackathon de 2022 os ganhadores foram: Elizeu Magalhães, Louise Feliciano, Julia Monteiro, Maitê Fávaro, Naiury Chaves e Vinicius Ventura com o projeto Robosch, um ChatBot da ETS. No primeiro semestre de 2023 os ganhadores foram: Ingrid Oliveira, Jenifer Ramalho, Larissa de Oliveira, Lucas Capovila, Luiza Moraes, Michael Lopes e Naely Pereira Com o projeto Greenbo."
@@ -620,7 +642,7 @@
             "ÁVilla me explica esse proxy ai por favor",
             "ÁVilla proxy",
             "Proxy",
-            "Apenas proxy"
+            "proxy"
         ],
         "responses":[
             "Um servidor proxy é uma ferramenta importante para sua privacidade, e está muito ligado ao que a palavra em inglês quer dizer: procuração. Isto é, representa um certo tipo de autoridade dada a uma outra parte para agir em seu nome. Ele é uma ponte entre você e a internet. Quando você tenta acessar um site pelo seu dispositivo, o navegador envia uma requisição ao servidor web deste site, o qual retorna com a página que você estava buscando. Assim, sem um proxy, você se comunica diretamente com a internet e com o servidor em que está hospedado o site que você deseja acessar."
@@ -646,7 +668,8 @@
         "patterns":[
             "Quais os tres criterios de segurança da informação (cada um deles)",
             "Quais os critérios da segurança da informação?",
-            "Quais os pilares da segurança da informação?"
+            "Quais os pilares da segurança da informação?",
+            "segurança da informação"
         ],
         "responses":[
             "Os 3 pilares da segurança da informação são Disponibilidade, Confidencialidade e Integridade. Disponibilidade: esse pilar está diretamente ligado à possibilidade de acesso às informações. Segundo ele, as informações precisam estar sempre à disposição; Confidencialidade: segundo ele, o acesso as informações deve ser concedido apenas a quem tem permissão para acessá-las. Integridade: A informação enviada deve permanecer sempre em sua natureza original. Não deve ser alterado durante o processo de transmissão."
@@ -656,7 +679,7 @@
         "tag":"abstração",
         "id":58,   
         "patterns":[
-            "O que é abstração?"
+            "O que é abstração?","abstração"
         ], 
         "responses":[
             "Na programação de computadores ela é uma forma de reduzir a complexidade e tornar o projeto e a implementação mais eficientes em sistemas complexos de software. Ela esconde a complexidade técnica de um sistema por trás de uma API mais simples."
@@ -668,7 +691,8 @@
         "patterns":[
             "Qual a diferença entre modelagem lógica e conceitual?",
             "Modelagem conceitual e lógica",
-            "O que é modelagem lógica e conceitual?"
+            "O que é modelagem lógica e conceitual?",
+            "modelo logico", "modelo conceitual"
         ],
         "responses":[
             "Na Modelagem Conceitual o objetivo é criar um modelo de forma gráfica, sendo este chamado de Diagrama Entidade e Relacionamento (DER), que identificará todos de forma global, sem qualquer detalhamento específico de um Banco de Dados. Sua principal finalidade é capturar os requisitos de informação e regras de negócio sob o ponto de vista do negócio. Agora na Modelagem Lógica é principalmente associada à coleta de necessidades de negócios, e não ao design do banco de dados. Ele irá determinar se todos os requisitos do negócio foram coletados, sendo mais complexo que o Modelo COnceitual em que os tipos de coluna são definidos."
@@ -679,8 +703,8 @@
         "id":60,
         "patterns":[
             "Quando faço uma atribuição por valor e uma atribuição por referência?",
-            "Como faço atribuições no JavaScript?",
-            "Como faço atribuições?"
+            "Como faço atribuições?",
+            "Como faço atribuições?","atribuir java"
         ],
         "responses":[
             "No JavaScript os dados do tipo primitivos (string, number, boolean, null, undefined e symbol) são atribuídos por valor e os objetos (Array, Funções e {}) são atribuídos por referências."
@@ -691,7 +715,8 @@
         "id":61,
         "patterns":[
             "Quais os bancos de dados mais utilizados?",
-            "Me fale os bancos de dados mais usados por favor"
+            "Me fale os bancos de dados mais usados por favor",
+            "banco de dados populares"
         ],
         "responses":[
             "Listei os dez sistemas de banco de dados mais utilizados para você: ORACLE DATABASE, MYSQL, SQL SERVER, POSTGRESQL, IMB DB2, MICROSOFT ACCESS, SQLITE, MARIADB, SNOWFLAKE e MICROSOFT AZURE."
@@ -703,7 +728,8 @@
         "patterns":[
             "O que é um servidor web?",
             "Como funciona um servidor web?",
-            "Me explique o que é um servidor web por favor"
+            "Me explique o que é um servidor web por favor",
+            "servidor web"
         ],
         "responses":[
             "Um Servidor web pode se referir ao hardware ou ao software, ou ambos trabalhando juntos. Referente ao hardware, ele é um computador que armazena arquivos que compõem os sites (por exemplo, documentos HTML, imagens e arquivos JavaScript) e os entrega para o dispositivo do usuário final. Está conectado a Internet e pode ser acessado através do seu nome de domínio (DNS). Já ao software, um servidor web inclui diversos componentes que controlam como os usuários acessam os arquivos hospedados (armazenados para disponibilização), no mínimo um servidor HTTP. Um servidor HTTP é um software que compreende URLs (endereços web) e HTTP (o protocolo que seu navegador utiliza para visualizar páginas web."
@@ -714,7 +740,8 @@
         "id":63,
         "patterns":[
             "Onde posso hospedar minha aplicação?",
-            "Após terminar meu projeto como posso hospedar ele?"
+            "Após terminar meu projeto como posso hospedar ele?",
+            "hospedar projeto","hospedar aplicação","hospedagem"
         ],
         "responses":[
         ]
@@ -725,7 +752,7 @@
         "patterns":[
             "Primeiros passos com Power BI",
             "Por onde devo começar no Power BI?",
-            "Não sei nada de Power BI"
+            "Não sei nada de Power BI","powerbi basico"
         ],
         "responses":[
             "Eu sei o que você esperava, apenas três ou quatro passos haha, mas o Power BI é uma ferramenta muito rica! Por isso, recomendo este vídeo detalhado do Power BI, desde sua instalação a seu primeiro gráfico! Digite essa url no seu navegador: https://youtu.be/UFGe25gydxo"
@@ -737,7 +764,7 @@
         "patterns":[
             "Primeiros passos com VsDia",
             "Por onde devo começar no VsDia?",
-            "Não sei nada de VsDia"
+            "Não sei nada de VsDia","vsdia basico"
         ], 
         "responses":[
             "Nós já temos um belo tutorial para vocês! Aqui está S:PM/ter/ets/Inter_Setor/COMPARTILHADO/AULAS/DIGITAL_SOLUTIONS/DIGITAL_SOLUTIONS_04/VSDIA"
@@ -748,7 +775,7 @@
         "id":66,
         "patterns":[
             "Como faço para criar um relatório no Power BI?",
-            "Como eu crio um relatório no Power BI?"
+            "Como eu crio um relatório no Power BI?","relatorio powerbi"
         ],
         "responses":[
             "No painel de navegação no serviço do Power BI, você pode selecionar o botão Criar, que abre uma página em que você pode selecionar sua fonte de dados. Isso também pode ser acessado no botão Novo relatório na página inicial. "
@@ -759,7 +786,8 @@
         "id":67,
         "patterns":[
             "Como compartilhar meu Power BI com outras pessoas?",
-            "Quero compartilhar meu Power BI, como faço isso?"
+            "Quero compartilhar meu Power BI, como faço isso?",
+            "compartilhar powerbi","divulgar powerbi","powerbi compartilhado"
         ],
         "responses":[
             "Para isso você precisa publicar o powerbi, digite a seguinte URL na web: https://powerbi.bosch.com/publish/ Clique em Add Reports, na caixa de seleção escolha o nivel de segurança do seu powerbi (qualquer coisa deixa o SC-2, mas é bom saber o correto) Depois selecione o arquivo, preencha as informações e tudo certo! Já pode enviar o link aos interessados."
@@ -772,7 +800,8 @@
             "Como programar no Power BI?",
             "Qual a linguagem de programação do Power BI",
             "Power BI tem linguagem de programação?",
-            "Power BI usa alguma linguagem?"
+            "Power BI usa alguma linguagem?","powerbi programar",
+            "programação powerbi","linguagem de programação powerbi"
         ],
         "responses":[
             "Assim como no Excel, é possível realizarmos fórmulas no Power BI através do DAX (Data Analysis Expressions), a linguagem de programação própria do Power BI"
@@ -783,7 +812,8 @@
         "id":69,
         "patterns":[
             "Como fazer um E-mail automático no Outlook?",
-            "Como eu faço um E-mail automático no Outlook?"
+            "Como eu faço um E-mail automático no Outlook?",
+            "email automatico","outlook automatico"
         ],
         "responses":[
             "É mais simples do que imagina! Basta abrir seu Outlook e em seguida clicar em Arquivo no cabeçalho e selecionar ‘Respostas Automáticas’. Desta forma você pode escolher algumas configurações como horários e intervalo de tempo de envio."
@@ -798,7 +828,9 @@
             "Como solicito um notebook?",
             "Como pedir um notebook?",
             "Como eu peço um notebook?",
-            "Como eu peço um computador?"
+            "Como eu peço um computador?",
+            "pedir notebook","fazer pedido notebook",
+            "fazer solicitação notebook","solicitar notebook"
         ],
         "responses":[
             "Para pedir um computador, você deve seguir os passos: 1- Acessar o Bosch Zunder, clicar no icone de IS ou pesquisar por IT Service Portal. 2- Na barra de pesquisa busque por ‘Request computer’, vai aparecer um card, se for para você clique em ‘Order for self’, se não em ‘Order for others’. 3 – Preencha as informações e clique em submit. As demais informações você receberá por email."
@@ -810,7 +842,9 @@
         "patterns":[
             "Como tirar meu WorkOn?",
             "Como retiro meu WorkOn?",
-            "Tirar WorkOn"
+            "Tirar WorkOn",
+            "fazer workon",
+            "pegar workon"
         ],
         "responses":[
             "Para pedir um workon, você deve seguir os passos: 1- Acessar o Bosch Zunder, clicar no icone de IS ou pesquisar por IT Service Portal. 2- Na barra de pesquisa busque por ‘WorkON’, vai aparecer um card, se for para você clique em ‘Order for self’, se não em ‘Order for others’. 3 – Preencha as informações e clique em submit. As demais informações você recebrá por email."
@@ -823,7 +857,10 @@
             "Como fazer um programa rodar todos os dias ou assim que eu ligar o pc?",
             "Como eu rodo um programa todos os dias ou assim que eu ligar o pc?",
             "Como eu rodo um programa em determinado horário?",
-            "Como eu rodo um programa em um horário específico?"
+            "Como eu rodo um programa em um horário específico?",
+            "rodar script todo dia", "rodar programa todo dia",
+            "executar diariamente","executar rotina","rodar diariamente",
+            "executar horario","executar ligar o pc"
         ],
         "responses":[
             "Para isso, você pode usar o agendador de tarefas do windows, pesquise por ele no menu iniciar. Depois clique em ‘criar tarefa básica’, preencha o nome e a descrição. Clique em avançar, escolha qual a recorrência (lembre-se, você precisa ligar o pc para que o programa rode!), clique em avançar, escolha ‘inicar um programa’ selecione qual, prossiga e conclua!"
@@ -835,7 +872,8 @@
         "patterns":[
             "Como ativar acesso adminstrativo?",
             "Como eu consigo acesso adminstrativo?",
-            "Como eu consigo acesso admin?"
+            "Como eu consigo acesso admin?","acesso administrativo",
+            "recurso administrativo acesso"
         ],
         "responses":[
             "Para pedir acesso administrativo, você deve ir ao IT Service Portal (o icone de IS na pagina da Bosch Zunder) e pesquisar por Enable or Disable Permanent Administrative Rights, clicar em Order e preencher os campos, depois é só aguardar! Para ativá-lo, vá no IT Workspace Toolkit (o icone de ferramenta provavelmente no sue Desktop) e clique em ‘Habilitar Acesso Administrativo Temporário’, selecione o motivo e tudo pronto"
@@ -845,7 +883,8 @@
         "tag":"download",
         "id":74,
         "patterns":[
-            "Nao estou conseguindo baixar um programa, o que faço?"
+            "Nao estou conseguindo baixar um programa, o que faço?",
+            "instalar nao consigo","instalação negada","instalação recusada"
         ],
         "responses":[
             "Minhas sugestões são:  checar o espaço disponível em sua máquina, caso esteja tudo ok, faça o download do programa e o arraste para a área de trabalho. Se não for possível, habilite o acesso administrativo e tente novamente. Se o problema persistir, vá ao AppLocker no IT Workspace toolkit e desligue ou habilite baixa proteção e tente novamente."
@@ -857,7 +896,10 @@
         "patterns":[
             "Como pedir a instalação ou remoção de um programa no meu computador?",
             "Como eu peço para instalar um programa?",
-            "Como eu peço para desinstalar um programa?"
+            "Como eu peço para desinstalar um programa?",
+            "instalar software","desinstalar software",
+            "instalar programa", "desinstalar programa",
+            "adicionar software","remover software"
         ],
         "responses":[
             "Vá até a página da Bosch Zunder ‘Access & Permissions’ e busque por ‘Add/Remove Software’. Preencha as informações de acordo e aguarde, pois pode levar um tempo."
@@ -868,7 +910,10 @@
         "id":76,
         "patterns":[
             "Como pedir acesso a Bosch em casa?",
-            "Como eu peço acesso a Bosch para trabalhar Home Office?"
+            "Como eu peço acesso a Bosch para trabalhar Home Office?",
+            "bosch fora da bosch","acessar home office","acessar fora da empresa",
+            "fora da bosch acesso","internet fora da bosch","rede bosch home office",
+            "acesso home office","acesso bosch casa home office"
         ],
         "responses":[
             "Caso você já tenha o workon, vá até a página inicial da bosch zunder no IT Service Portal, lá você irá pesquisar por CoRASon: Corporate Remote Access Solution. Uma vez que esteja no seu usuário selecione Order e preencha as informações, caso peça para terceiros selecione Order for others. Agora chegamos ao último passo! Em sua casa acesso o Cisco AnyConnect; selecione LA Brazil e seu usuário."
@@ -880,7 +925,8 @@
         "patterns":[
             "Como pedir acesso ao curso de inglês?",
             "Como eu consigo fazer o curso de inglês?",
-            "Como eu faço o curso de inglês?"
+            "Como eu faço o curso de inglês?","ingles curso",
+            "voxxy","voxy"
         ],
         "responses":[
             "Converse com o gestor da sua área sobre o seu interesse no curso, se aprovado, siga os passos: na pagina da Bosch Zunder, clique no icone LP, pesquise por ‘portal de idiomas’, antes de terminar de digitar vai aparecer duas opções, clique na primeira. Após isso, na nova página clique em ‘tutorial: como solicitar o teste de idiomas’ e siga os passos!"
@@ -892,7 +938,7 @@
         "patterns":[
             "Qual a diferença entre Proxy e VPN?",
             "Proxy e VPN tem diferença?",
-            "VPN e Proxy é a mesma coisa?"
+            "VPN e Proxy é a mesma coisa?","proxy vpn"
         ],  
          "responses":[
             "Embora uma VPN (Virtual Private Network) também possa ser usada para acessar serviços de outros países, e mascarar seu IP, ela cria uma rede privada criptografada, blindando totalmente os dados entre o computador do usuário e o servidor VPN. Já o proxy é apenas um intermediário entre você e a internet e não criptografa nada."
@@ -903,7 +949,7 @@
         "id":79,
         "patterns":[
             "Para que servem interfaces em Java?",
-            "O que é interface na Java?"
+            "O que é interface na Java?","interface java"
         ],
         "responses":[
             "Uma interface é similar a um contrato, através dela podemos especificar quais métodos as classes que implementam esta interface são obrigados a implementar."
@@ -914,7 +960,7 @@
         "id":80,
         "patterns":[
             "Para que serve o Enum em java?",
-            "O que o Enum do Java faz?"
+            "O que o Enum do Java faz?","enum"
         ],
         "responses":[
             "Habilita uma variável a ser configurada com valores costantes pré-definidos. Ao atribuir valores à variável durante a execução do programa, somente são aceitos valores presentes da lista definida de ENUM. Usamos Enum sempre que precisamos representar um conjunto fixo de constantes, valores que são totalmente conhecidos na hora d compilação do programa."
