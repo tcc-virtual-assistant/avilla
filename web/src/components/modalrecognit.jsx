@@ -1,36 +1,88 @@
 import { Dialog, Transition } from '@headlessui/react'
 import { Fragment, useState, useEffect } from 'react'
+import axios from 'axios';
+import {ToastContainer, toast} from "react-toastify";
+import 'react-toastify/dist/ReactToastify.css';
 
 import { FaMicrophoneAlt, FaAssistiveListeningSystems } from 'react-icons/fa';
 
-export default function ModalRecognit(props) {
+export default function ModalRecognit() {
     const [open, setOpen] = useState(false);
-    const [voice, SetVoice] = useState();
+    const [voice, SetVoice] = useState('');
 
-    const SpeakRecognition = () => {
-        setOpen(true);
+    const toastOptions = {
+        position: "top-right",
+        autoClose: 3000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: "light",
+    }
 
+    const newest_question = async () => {
+        let apiID;
+
+        await axios.get("http://127.0.0.1:8000/question/?format=json")
+            .then((response) => {
+                var object = (response.data);
+                var tamanho = ((object).length) + 1;
+                apiID = tamanho;
+            })
+        
+        await axios.get("http://127.0.0.1:8000/question/"+ apiID +"/?format=json")
+            .then((response) => {
+                setData(response.data)
+                console.log('Resposta: ')
+                console.log(response.data)
+            })
+            .catch(error => console.log(error))
+    }
+
+    const apiPost = async () => {
+        await axios.post("http://127.0.0.1:8000/question/?format=json", {
+            userQuestion: voice,
+            avillaAnswer: ""
+        })
+            .then(response => {
+                console.log(response)
+            })
+            .catch(error => console.log(error))
+
+            setTimeout(newest_question, 2000)
+            toast.success("A Avilla já esta procurando a resposta para a sua pergunta", toastOptions)
+    }
+
+    const SpeakRecognition = async () => {
         const recognition = new window.webkitSpeechRecognition(); 
         recognition.lang = 'pt-BR'; 
     
         recognition.onresult = event => {
-          const resultado = event.results[0][0].transcript; 
-          SetVoice(resultado);
-          console.log(voice);
+            const resultado = event.results[0][0].transcript; 
+            SetVoice(resultado);
+            console.log(voice);
         };
     
-        recognition.start(); 
-      };
+        await recognition.start();
+    };
+
+    const Submit = async (event) => {
+        setOpen(true);
+        event.preventDefault()
+        var espera = await SpeakRecognition()
+        apiPost()
+    }
 
     return (
         <>
           <button
             type="button"
-            onClick={SpeakRecognition}
-            className='border-2 border-blue-400 text-blue-400 font-bold text-lg w-64 h-64 cursor-pointer rounded-full hover:bg-blue-100 duration-300'
+            onClick={Submit}
+            className='border-2 border-blue-400 text-blue-400 font-bold text-lg w-44 h-44 cursor-pointer rounded-full hover:bg-blue-100 duration-300'
           >
             <FaMicrophoneAlt
-              size={100}
+              size={70}
               className='m-auto'
             />
           </button>
