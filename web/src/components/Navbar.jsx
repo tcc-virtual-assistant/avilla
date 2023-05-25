@@ -22,17 +22,6 @@ function Navbar() {
               />
             </a>
           </div>
-          <div className="flex mt-6 mr-6">
-            <div class="a-dropdown flex">
-              <select
-                className="h-8 flex align-middle"
-              >
-                <option value='"Português"'>Português</option>
-                <option value='"English"'>English</option>
-                <option value='"Español"'>Español</option>
-              </select>
-            </div>
-          </div>
         </div>
       </div>
     </>
