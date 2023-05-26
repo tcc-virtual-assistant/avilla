@@ -10,21 +10,10 @@ import 'react-toastify/dist/ReactToastify.css';
 import { Suspense } from 'react'
 import { Canvas } from '@react-three/fiber'
 import {OrbitControls, useGLTF} from '@react-three/drei';
-// import { serverSideTranslations } from 'next-i18next/serverSideTranslations' 
-// import { useTranslation } from 'next-i18next';
 
-
-// export async function getStaticProps({locale}){
-//     return{
-//         props: {
-//             ...(await serverSideTranslations(locale, ['chat']))
-//         }
-//     }
-// }
 
 function Chat(props) {
     
-    // const {t: translate} = useTranslation('chat')
 
     const [input, setInput] = useState({})
     const [data, setData] = useState([])
@@ -42,25 +31,29 @@ function Chat(props) {
       }
 
     const newest_question = () =>{
-        console.log('teste')
         axios.get("http://127.0.0.1:8000/question/?format=json")
         .then((response) => {
             var object = (response.data)
             var tamanho = ((object).length) + 1
             setidAPI(tamanho)
         })
-        apiGet()
+        apiGet(idAPI)
     }
 
-    const apiGet = async () => {
+    const apiGet = (idAPI) => {
         console.log(idAPI)
-        axios.get("http://127.0.0.1:8000/question/"+ idAPI +"/?format=json")
+        axios.get("http://127.0.0.1:8000/question/"+ idAPI +"?format=json")
             .then((response) => {
+                console.log(response.data)
                 setData(response.data)
             })
             .catch(error => console.log(error))
     }
 
+    useEffect(() => {
+        console.log(data.avillaAnswer);
+      }, [data.avillaAnswer]);
+      
     const apiPost = async () => {
         await axios.post("http://127.0.0.1:8000/question/?format=json", {
             userQuestion: input.text,
@@ -71,7 +64,7 @@ function Chat(props) {
             })
             .catch(error => console.log(error))
 
-            setTimeout(newest_question, 2000)
+            setTimeout(newest_question, 7000)
             toast.success("A Avilla já esta procurando a resposta para a sua pergunta", toastOptions)
             }
 
@@ -100,8 +93,6 @@ function Chat(props) {
                 id='form'>
                 <div class="mb-4">
                 <label className="block text-gray-700 text-sm font-bold mb-2">
-                    {/* {translate('Sua pergunta:')} */}
-                    {/* {translate('Sua pergunta:')} */}
                     Sua pergunta:
                 </label>
                     <input
@@ -148,7 +139,7 @@ function Chat(props) {
                                 penumbra={1}
                                 position={[0,0,9]}
                                 castShadow/>
-                            <Avilla_Thinking />
+                            {/* <Avilla_Thinking /> */}
                             <OrbitControls 
                                 enablePan={true}
                                 enableZoom={true}
