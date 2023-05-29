@@ -64,7 +64,7 @@ function Chat(props) {
             })
             .catch(error => console.log(error))
 
-            setTimeout(newest_question, 7000)
+            setTimeout(newest_question, 3000)
             toast.success("A Avilla já esta procurando a resposta para a sua pergunta", toastOptions)
             }
 
@@ -139,7 +139,7 @@ function Chat(props) {
                                 penumbra={1}
                                 position={[0,0,9]}
                                 castShadow/>
-                            {/* <Avilla_Thinking /> */}
+                            <Avilla_Thinking />
                             <OrbitControls 
                                 enablePan={true}
                                 enableZoom={true}

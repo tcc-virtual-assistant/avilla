@@ -55,7 +55,7 @@
         "patterns":[
             "Onde devolvo o cracha provisório",
             "crachá provisório", "crachá temporário",
-            "perdi o crachá"
+            "perdi o crachá","devolver crachá"
         ],
         "responses":[
             "O crachá provisório deve ser devolvido na portaria 4 no momento em que você estiver saindo da Bosch. Lembre-se de que o crachá não deve ser retirado da planta."
@@ -179,6 +179,7 @@
             "ramal", "ramais",
             "contato", "telefone",
             "numero", "ambulatorio",
+            "ambulatório",
             "portaria", "fcm",
             "bombeiros", "fretados"
         ],
@@ -270,7 +271,7 @@
         "tag":"herança",
         "id":23,
         "patterns":[
-            "o que é herança?","herança"
+            "o que é herança?","herança","heranca"
         ],
         "responses":[
             "Herança é a capacidade de uma subclasse de ter acesso as propriedades da superclasse. Exemplo: A superclasse Mamifero possui duas subclasses: Gato e cachorro, ambos possuem os mesmos atributos pois herdam da superclasse mamifero (como pelos e glândulas mamárias) e também tem seus atributos individuais (como miar e latir). Sua maior vantagem é a reutilização de código. "
