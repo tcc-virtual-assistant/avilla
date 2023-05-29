@@ -1,12 +1,18 @@
 import Head from 'next/head'
 import React, { useEffect, useState } from "react";
 import Acessibilidade from "../components/Acessibilidade";
-import {Model} from "../components/mapa/Model"
-import { Avilla_Thinking } from '../components/Avilla_Thinking';
 import { Suspense } from 'react'
 import { Canvas } from '@react-three/fiber'
 import {OrbitControls, useGLTF} from '@react-three/drei'; 
 import { FaMapMarkedAlt } from 'react-icons/fa';
+import {Planta_cpin} from "../components/mapa/Planta_cpin"
+import {Digihub} from '../components/mapa/Digihub';
+import {Pt} from "../components/mapa/Pt"
+import {Ed} from "../components/mapa/Ed"
+import {Btc} from "../components/mapa/Btc"
+import {Chapeu} from "../components/mapa/Chapeu"
+import {Ambulatorio} from "../components/mapa/Ambulatorio"
+import {Avilla_Thinking} from '../components/Avilla_Thinking';
 // position={[-11,-3,-11]}
 
 
@@ -44,23 +50,25 @@ function Planta() {
               position={[10,15,10]}
               castShadow/>
               {model == "Planta" ? 
-              <Model /> 
+              <Planta_cpin /> 
               : model == "BTC" ?
-              <Avilla_Thinking/> 
+              <Btc /> 
               : model == "Chapeuzinho" ?
-              <Avilla_Thinking/> 
+              <Chapeu/> 
               : model == "Eletrical Drives" ?
-              <Avilla_Thinking/> 
+              <Ed/> 
               : model == "Power Tools" ?
-              <Avilla_Thinking/> 
+              <Pt/> 
               : model == "Ambulatório" ?
-              <Avilla_Thinking/> 
+              <Ambulatorio/> 
               : model == "Portarias" ?
               <Avilla_Thinking/> 
               : model == "Bosch Digital" ?
+              <Ambulatorio/> 
+              : model == "Banco" ?
               <Avilla_Thinking/> 
               : model == "Digihub" ?
-              <Avilla_Thinking/> 
+              <Digihub/> 
               : null 
             }
               <OrbitControls 
