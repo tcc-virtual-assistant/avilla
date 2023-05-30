@@ -159,7 +159,7 @@
         "patterns":[
             "epa", "ei",
             "oie", "fala ai",
-            "oi", "e ai",
+            "oi", "e ai","oii",
             "saudações", "opa",
             "oi bom dia", "olá",
             "oi como vai?", "olá tudo bem?",
@@ -184,7 +184,7 @@
             "bombeiros", "fretados"
         ],
         "responses":[
-            "Vou listar pra você cinco ramais da bosch, mas você pode conferir mais na tela.\n Ramal do ambulatório: 21031416\n Ramal dos bombeiros: 21031234.\n Ramal dos fretados: 21033915.\nPortaria  4: 21032142\nFCM: 21032142"
+            "Vou listar pra você cinco ramais da bosch.\n Ramal do ambulatório: 21031416\n Ramal dos bombeiros: 21031234.\n Ramal dos fretados: 21033915.\nPortaria  4: 21032142\nFCM: 21032142"
         ]
     },
     { 
@@ -229,7 +229,7 @@
             "reembolso de remédio", "reembolso",
             "comprei um remedio e quero reembolso",
             "como receber reembolso de um remédio",
-            "remedio"
+            "remedio","remédio"
         ],
         "responses":[
             "Para conseguir reembolso de um medicamento, você precisará da sua receita médica e da nota fiscal de compra do remédio.\n Grampeie esses dois documentos e escreva no verso na receita seu nome completo EDV, telefone e e-mail.\n Após isso, deposite esses documentos nas caixinhas disponíveis nas portarias."
@@ -919,6 +919,37 @@
         ],
         "responses":[
             "Habilita uma variável a ser configurada com valores costantes pré-definidos. Ao atribuir valores à variável durante a execução do programa, somente são aceitos valores presentes da lista definida de ENUM. Usamos Enum sempre que precisamos representar um conjunto fixo de constantes, valores que são totalmente conhecidos na hora d compilação do programa."
+        ]
+    },
+    {
+        "tag":"bosch", 
+        "id":81,
+        "patterns":[
+            "quanos anos tem a bosch","idade bosch","anos bosch","anos","idade"
+        ],
+        "responses":[
+            "A empresa foi fundada por Robert Bosch em Stuttgart, em 1886. Totalizando 136 anos em 2023"
+        ]
+    },
+    {
+        "tag":"ets", 
+        "id":82,
+        "patterns":[
+            "cursos ets", "cursos","curso"
+        ],
+        "responses":[
+            "A ETS possui 4 cursos: Mecatrônica, Manufatura Digital, Desenvolvimento de Sistemas e Administração. Você pode saber mais sobre eles em Cursos ETS, na página de home."
+        ]
+    },
+    {
+        "tag":"ets", 
+        "id":83,
+        "patterns":[
+            "henrique dona", "doná","henrique doná",
+            "gestor ets", "quem é henrique doná"
+        ],
+        "responses":[
+           "O gestor da ETS é o Henrique Doná, que também já foi gestor da equipe de planejamento central de manutenção (estoque de peças de reposição e ferramentas), terceirização de usinagens não produtivas e gestor da equipe de coordenação do TPM da Robert Bosch Campinas!"
         ]
     }
 ]}

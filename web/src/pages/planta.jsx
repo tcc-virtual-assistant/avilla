@@ -20,13 +20,13 @@ const areas = [
   {name:'Planta'},
   {name:'BTC'},
   {name:'Chapeuzinho'},
-  {name:'Eletrical Drives'},
-  {name:'Power Tools'},
   {name:'Ambulatório'},
   {name:'Portarias'}, 
-  {name:'Bosch Digital'},
+  {name:'Banco'},
   {name:'Digihub'},
-  {name:'Banco'}
+  {name:'Power Tools'},
+  {name:'Bosch Digital'},
+  {name:'Eletrical Drives'},
 ]
 
 
@@ -87,9 +87,9 @@ function Planta() {
                 <button className="bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 mb-2 w-52 rounded inline-flex items-center"
                   onClick={() => chooseMap(areas.name)}
                 >
-                <div className='flex flex-row items-center'>
+                <div className='text-2xl flex flex-row items-center'>
                   <FaMapMarkedAlt/>
-                  <span className='px-3'>{areas.name}</span>
+                  <span className='text-2xl px-3'>{areas.name}</span>
                 </div>
               </button>
               ))}
