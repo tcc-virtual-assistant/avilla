@@ -10,7 +10,7 @@ import Chat from "./Chat";
 export default function TelaEstatica() {
   return (
     <>
-      <div className="flex flex-col w-full  justify-center ">
+      <div className="flex flex-col w-full justify-center ">
         <div className="grid space-y-0">
           <div className="h-full w-full md:flex justify-center ">
             <Apresentacao />
