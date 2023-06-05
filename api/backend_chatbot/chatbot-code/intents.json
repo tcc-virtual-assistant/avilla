@@ -3,14 +3,14 @@
         "tag":"presidenteAmerica",
         "id":1,
         "patterns":[
-            "Quem é o presidente da planta/Bosch América Latina",
+            "Quem é o presidente da planta Bosch América Latina",
             "bosch presidente américa latina",
-            "américa latina", "brasil",
+            "presidente américa latina", "presidente brasil",
             "presidente bosch brasil",
             "bosch", "ceo america latina"
         ],
         "responses":[
-            "Gastón Diaz Perez, 45 anos, assumiu a presidência da Robert Bosch América Latina em 2022. Graduado em Administração de Empresas pela Pontifícia Universidade Católica da Argentina (UCA), Gastón possui MBA em Gestão pela Universidade Austral (IAE) em Buenos Aires. Iniciou no Grupo Bosch no programa de trainee executivo em 2000 e desenvolveu sua carreira internacional ocupando diferentes posições nas áreas financeiras e comerciais na Argentina, Espanha, Brasil e Alemanha."
+            "Gastón Diaz Perez, 45 anos, assumiu a presidência da Robert Bosch América Latina em 2022. Graduado em Administracao de Empresas pela Pontifícia Universidade Católica da Argentina (UCA), Gastón possui MBA em Gestão pela Universidade Austral (IAE) em Buenos Aires. Iniciou no Grupo Bosch no programa de trainee executivo em 2000 e desenvolveu sua carreira internacional ocupando diferentes posições nas áreas financeiras e comerciais na Argentina, Espanha, Brasil e Alemanha."
         ]
     },
     {
@@ -23,7 +23,7 @@
             "ceo bosch mundo"
         ],
         "responses":[
-            "O Doutor Stefan Hartung é presidente do conselho de administração e acionista da Robert Bosch, G1 desde 1º de janeiro de 2022. Suas responsabilidades incluem estratégia corporativa, comunicações corporativas, assuntos governamentais e desenvolvimento de tecnologia. Ele também é responsável pela pesquisa corporativa, engenharia avançada, gerenciamento de qualidade corporativa e pelo departamento corporativo de Fabricação de Tecnologia. Além disso, ele é responsável pela subsidiária Bosch Healthcare Solutions e pelas operações da Bosch na China."
+            "O Doutor Stefan Hartung, presidente do conselho de administracao e acionista da Robert Bosch, G1 desde 1 de janeiro de 2022. Suas responsabilidades incluem estrategia corporativa, comunicacoes corporativas, assuntos gover namentais e desenvolvimento de tecnologia. Ele tambem responsavel pela pesquisa corporativa, engenharia avancada, gerenciamento de qualidade corporativa e pelo departamento corporativo de Fabricacao de Tecnologia."
         ]
     },
     {
@@ -35,7 +35,7 @@
             "robert bosch"
         ],
         "responses":[
-            "August Robert Bosch nasceu em Albeck, 23 de setembro de 1861 e morreu em 12 de março de 1942. Foi um industrial e inventor alemão, fundador da Robert Bosch. Estudou nos Estados Unidos. Passou mais de sete anos trabalhando em diversas empresas, trabalhando até mesmo com Thomas Edison em Nova York, e no Reino Unido para a empresa alemã Siemens. Em 1886 fundou uma oficina de mecânica de precisão e engenharia elétrica, que em 1937 tornou-se a Robert Bosch. Deve-se a ele o desenvolvimento da ignição por magneto e da bomba de injeção para motores a diesel."
+            "August Robert Bosch nasceu em Albeck, 23 de setembro de 1861 e morreu em 12 de março de 1942. Foi um industrial e inventor alemão, fundador da Robert Bosch. Estudou nos Estados Unidos. Passou mais de sete anos trabalhando em diversas empresas, trabalhando até mesmo com Thomas Edison em Nova York, e no Reino Unido para a empresa alemã Siemens. Em 1886 fundou uma oficina de mecânica de precisão e engenharia elétrica, que em 1937 tornou-se a Robert Bosch. Deve-se a ele o desenvolvimento da ignicao por magneto e da bomba de injecao para motores a diesel."
         ]
     },
     {
@@ -46,7 +46,7 @@
             "historia", "historia bosch"
         ],
         "responses":[
-            "A Empresa Bosch teve o seu início com seu fundador Robert Bosch em 1886 com a abertura de uma oficina mecânica de precisão e engenharia elétrica em Stuttgard Alemanha. A partir de 1897, Robert Bosch começou a instalar dispositivos de ignição de melhor design em automóveis e tornou–se o único fornecedor de ignição verdadeiramente confiável. Em 1902, o engenheiro-chefe da Bosch, Gottlob Honold, apresentou uma solução ainda melhor: o sistema de ignição de alta tensão com vela de ignição. Esse produto abriu caminho para a Bosch se tornar um fornecedor líder mundial no mercado automotivo. Em 1901 foi construida a primeira fábrica da Bosch que se expandiu para prédios vizinhos, dai em diante a Bosch só cresceu como empresa e negócio de sucesso, alcançando o mundo inteiro e se tornando uma referência no mercado automobilistico e de ferramentas elétricas. Hoje em dia a Bosch tem crescendo como uma referência no mercado de IOT e inteligência artificial, criando tecnologias inovadoras. Para saber mais sobre a nossa história acesse o site da Bosch, bosch.com.br, barra, nossa empresa, barra, nossa história."
+            "A Empresa Bosch teve o seu inicio com seu fundador Robert Bosch em 1886 com a abertura de uma oficina mecanica de precisao e engenharia eletrica em Stuttgard Alemanha. A partir de 1897, Robert Bosch começou a instalar dispositivos de ignicao de melhor design em automóveis e se tornou o único fornecedor de ignicao verdadeiramente confiavel. Em 1902, o engenheiro-chefe da Bosch, Gottlob Honold, apresentou uma solucao ainda melhor: o sistema de ignicao de alta tensao com vela de ignicao. Esse produto abriu caminho para a Bosch se tornar um fornecedor lider mundial no mercado automotivo. Em 1901 foi construida a primeira fabrica da Bosch que se expandiu para prédios vizinhos, dai em diante a Bosch só cresceu como empresa e negócio de sucesso."
         ]
     },
     {
@@ -93,7 +93,7 @@
             "significado ets","ets"
         ],
         "responses":[
-            "ETS se trata da sigla em inglês para Escola Técnica de Engenharia. A ETS todos os anos integra diversos aprendizer na empresa da Bosch para poderem adquirir conhecimentos relacionados a um dos cursos do Senai, assim garantindo que os profissionais que estão atuando na planta tenham qualificação e conhecimento técnico referente ao mundo empresarial."
+            "ETS se trata da sigla em inglês para Escola Técnica de Engenharia. A ETS todos os anos integra diversos aprendizer na empresa da Bosch para poderem adquirir conhecimentos relacionados a um dos cursos do Senai, assim garantindo que os profissionais que estão atuando na planta tenham qualificacao e conhecimento técnico referente ao mundo empresarial."
         ]
     },
     {
@@ -150,7 +150,7 @@
             "seu objetivo"
         ],
         "responses":[
-            "O meu objetivo é tirar as dúvidas dos colaboradores da Bosch acerca da empresa. Assim ajudando a criar um ambiente mais familiar e confortável para todos. Além disso, tenho ferramentas de localização e agendamentos que podem ser utilizadas para ajudar no gerenciamento da ETS."
+            "O meu objetivo é tirar as dúvidas dos colaboradores da Bosch acerca da empresa. Assim ajudando a criar um ambiente mais familiar e confortável para todos. Além disso, tenho ferramentas de localizacao e agendamentos que podem ser utilizadas para ajudar no gerenciamento da ETS."
         ]
     },
     {
@@ -264,7 +264,7 @@
             "O que é polimorfismo?","polimorfismo"
         ],
         "responses":[
-            "Polimorfismo é um conceito da programação orientada a objetos, que se refere a objetos de diferentes classes terem o mesmo método ou operação de maneira diferente. Existem dois tipos: Um é polimorfismo estático ou sobrecarga, quando duas ou mais funções tem o mesmo nome, porém, parâmetros diferentes. O outro é o polimorfismo dinâmico ou sobrescrita, quando uma subclasse substitui um método que está na superclasse, alterando ou estendendo seu comportamento"
+            "Polimorfismo é um conceito da programacao orientada a objetos, que se refere a objetos de diferentes classes terem o mesmo método ou operacao de maneira diferente. Existem dois tipos: Um é polimorfismo estático ou sobrecarga, quando duas ou mais funções tem o mesmo nome, porém, parâmetros diferentes. O outro é o polimorfismo dinâmico ou sobrescrita, quando uma subclasse substitui um método que está na superclasse, alterando ou estendendo seu comportamento"
         ]
     },
     {
@@ -274,7 +274,7 @@
             "o que é herança?","herança","heranca"
         ],
         "responses":[
-            "Herança é a capacidade de uma subclasse de ter acesso as propriedades da superclasse. Exemplo: A superclasse Mamifero possui duas subclasses: Gato e cachorro, ambos possuem os mesmos atributos pois herdam da superclasse mamifero (como pelos e glândulas mamárias) e também tem seus atributos individuais (como miar e latir). Sua maior vantagem é a reutilização de código. "
+            "Herança é a capacidade de uma subclasse de ter acesso as propriedades da superclasse. Exemplo: A superclasse Mamifero possui duas subclasses: Gato e cachorro, ambos possuem os mesmos atributos pois herdam da superclasse mamifero (como pelos e glândulas mamárias) e também tem seus atributos individuais (como miar e latir). Sua maior vantagem é a reutilizacao de código. "
         ]
     },
     {
@@ -295,7 +295,7 @@
             "poo", "orientação a objetos", "programação orientada"
         ],
         "responses":[
-           "O termo orientação a objetos significa organizar o mundo real como uma coleção de objetos que são organizados em classes, cujo possuem métodos. Por exemplo: temos um carro civic cor preta e um carro hrv cor prata, ambos aceleram e freiam. O carro é a classe cujo possui modelo, cor e suas ações. Cada carro é um objeto onde é especificado qual modelo, cor e como executa essas ações. De forma mais simples, é um conceito que está relacionado com a ideia de classificar, organizar e abstrair coisas. "  
+           "O termo orientacao a objetos significa organizar o mundo real como uma colecao de objetos que são organizados em classes, cujo possuem métodos. Por exemplo: temos um carro civic cor preta e um carro hrv cor prata, ambos aceleram e freiam. O carro é a classe cujo possui modelo, cor e suas ações. Cada carro é um objeto onde é especificado qual modelo, cor e como executa essas ações. De forma mais simples, é um conceito que está relacionado com a ideia de classificar, organizar e abstrair coisas. "  
         ]
     },
     {
@@ -305,7 +305,7 @@
             "o que é compilado?","compilação"
         ],
         "responses":[
-           "Linguagem compilada é uma linguagem de programação em que o código fonte, nessa linguagem, é executado diretamente pelo sistema operacional ou pelo processador, após ser traduzido por meio de um processo chamado compilação, usando um programa de computador chamado compilador, para uma linguagem de baixo nível, como linguagem de montagem ou código de máquina. "  
+           "Linguagem compilada é uma linguagem de programacao em que o código fonte, nessa linguagem, é executado diretamente pelo sistema operacional ou pelo processador, após ser traduzido por meio de um processo chamado compilacao, usando um programa de computador chamado compilador, para uma linguagem de baixo nível, como linguagem de montagem ou código de máquina. "  
         ]
     },
     {
@@ -315,7 +315,7 @@
             "qual a diferença de compilado e interpretado?","interpretado"
         ],
         "responses":[
-           "Na compilação, o compilador irá ler o código, fazer todas as análises sintáticas e demais processos, para, por fim, gerar um arquivo código-objeto ou um arquivo executável (exemplo: c). Já na interpretação, nenhum arquivo ou código é gerado, e sim uma tradução instantânea, em tempo de execução (exemplo: python) "  
+           "Na compilacao, o compilador irá ler o código, fazer todas as análises sintáticas e demais processos, para, por fim, gerar um arquivo código-objeto ou um arquivo executável (exemplo: c). Já na interpretacao, nenhum arquivo ou código é gerado, e sim uma traducao instantânea, em tempo de execucao (exemplo: python) "  
         ]
     },
     {
@@ -326,7 +326,7 @@
             "o que é classe em java"
         ],
         "responses":[
-           "Sendo aplicadas durante a programação orientada a objetos as classes tem como função definir o formato destes objetos e, além disso, definir como esse objeto se comunicará com o resto da aplicação. Estes objetos da programação, assim como os da vida real possuem características e comportamentos característicos. Em programação chamamos estas características de atributos e estes comportamentos de métodos. "  
+           "Sendo aplicadas durante a programacao orientada a objetos as classes tem como funcao definir o formato destes objetos e, além disso, definir como esse objeto se comunicará com o resto da aplicacao. Estes objetos da programacao, assim como os da vida real possuem características e comportamentos característicos. Em programacao chamamos estas características de atributos e estes comportamentos de métodos. "  
         ]
     },
     {
@@ -337,7 +337,7 @@
             "método construtor"
         ],
         "responses":[
-           "São métodos especiais que servem para construir e inicializar instâncias de uma classe (novos objetos). Em geral os construtores são responsáveis por atribuir valores iniciais para os atributos do novo objeto que está sendo criado, mas eventualmente pode ser necessário algum processamento adicional que vai além da inicialização de atributos. "  
+           "São métodos especiais que servem para construir e inicializar instâncias de uma classe (novos objetos). Em geral os construtores são responsáveis por atribuir valores iniciais para os atributos do novo objeto que está sendo criado, mas eventualmente pode ser necessário algum processamento adicional que vai além da inicializacao de atributos. "  
         ]
     },
     {
@@ -364,7 +364,7 @@
         "tag":"imagensPowerBI",
         "id":32,
         "patterns":[
-            "tem como usar imagens no powerbi","figuras powerbi"
+            "tem como usar imagens no powerbi","figuras powerbi","imagens powerbi"
         ],
         "responses":[
            "Para usar imagens no powerbi, vá para Insert na faixa de opções e em Elements clique em imagem e a selecione. Para adicionar ações, clique na imagem, do lado direito irá aparecer um menu de opções chamado Format, em Image clique em Action. "  
@@ -387,27 +387,27 @@
             "dicas para ser um melhor programador", "como posso melhorar minha programação"
         ],
         "responses":[
-           "Buscar conhecimento todos os dias, seja por meio do estudo teorico ou prático. É muito importante a prática de exercícios sobre os assuntos aprendidos, para que eles se fixem na mente, alguns sites para treinar são: HackerRank, LeetCode ou Codeforces  Esteja apto a receber feedbacks buscando constante evolução. Pergunte aos colegas como eles resolveriam tal problema, para aprender as diversas maneiras. "  
+           "Buscar conhecimento todos os dias, seja por meio do estudo teorico ou prático. É muito importante a prática de exercícios sobre os assuntos aprendidos, para que eles se fixem na mente, alguns sites para treinar são: HackerRank, LeetCode ou Codeforces  Esteja apto a receber feedbacks buscando constante evolucao. Pergunte aos colegas como eles resolveriam tal problema, para aprender as diversas maneiras. "  
         ]
     },
     {
-        "tag":"automação",
+        "tag":"automacao",
         "id":35,
         "patterns":[
             "quais as principais ferramentas de automação que a Bosch tem?","bosch automação"
         ],
         "responses":[
-           "Power BI, AutomationAnywhere, VsDIA, Catalytic e PowerAutomate são as principais ferramentas de automação usadas na Bosch"  
+           "Power BI, AutomationAnywhere, VsDIA, Catalytic e PowerAutomate são as principais ferramentas de automacao usadas na Bosch"  
         ]
     },
     {
         "tag":"composição",
         "id":36,
         "patterns":[
-            "o que é composição", "composição"
+            "o que é composicao", "composicao","composição"
         ],
         "responses":[
-           "A Composição ou Agregação faz o reaproveitamento (reutilização) de classes utilizado pela programação orientada a objetos para aumentar a produtividade e a qualidade no desenvolvimento de software. Basicamente, é quando uma classe está composta de várias outras, exemplo: um carro é composto por: rodas, motor, pneus, direção etc. "  
+           "A Composicao ou Agregacao faz o reaproveitamento (reutilizacao) de classes utilizado pela programacao orientada a objetos para aumentar a produtividade e a qualidade no desenvolvimento de software. Basicamente, é quando uma classe está composta de várias outras, exemplo: um carro é composto por: rodas, motor, pneus, direcao etc. "  
         ]
     },
     {
@@ -419,7 +419,7 @@
             "quero desistir do curso","nao quero continuar curso"
         ],
         "responses":[
-           "De jovem para jovem, quero te fazer refletir sobre umas coisas. O primeiro ponto é de que apesar muitas pessoas considerarem normal, você fica no piloto automático com frequência? O que te faz ficar assim são as atividades que realiza ou o ambiente em que está? porque veja bem, se você é o profissional que passa os dias contando as horas para chegar em casa, algo com certeza está errado. Outro ponto é se existe aquela positividade boa ou você passa o dia inteiro de mal humor comprometendo sua produtividade. Tenha sempre em mente que quando atuamos em uma área que nos trás satisfação diária, existem planos frequentes de crescer na carreira. "  
+           "De jovem para jovem, quero te fazer refletir sobre umas coisas. O primeiro ponto é de que apesar muitas pessoas considerarem normal, você fica no piloto automático com frequência? O que te faz ficar assim são as atividades que realiza ou o ambiente em que está? porque veja bem, se você é o profissional que passa os dias contando as horas para chegar em casa, algo com certeza está errado. Outro ponto é se existe aquela positividade boa ou você passa o dia inteiro de mal humor comprometendo sua produtividade. Tenha sempre em mente que quando atuamos em uma área que nos trás satisfacao diária, existem planos frequentes de crescer na carreira. "  
         ]
     },
     {
@@ -429,7 +429,7 @@
             "o que posso usar para fazer uma API","ferramentas api","api"
         ],
         "responses":[
-           "Para Node.js existe o framework Express.js, que permite criar APIs RESTful rapidamente e de maneira simples. Para Python existe o Django Rest Framework, que possui bons recursos para autenticação e serialização dos dados. Para Java existe o Spring Boot que facilita o desenvolvimento de APIs RESTful de alto desempenho"  
+           "Para Node.js existe o framework Express.js, que permite criar APIs RESTful rapidamente e de maneira simples. Para Python existe o Django Rest Framework, que possui bons recursos para autenticacao e serializacao dos dados. Para Java existe o Spring Boot que facilita o desenvolvimento de APIs RESTful de alto desempenho"  
         ]
     },
     {
@@ -439,7 +439,7 @@
             "dicas para um melhor powerbi","como fazer um bom powerbi","dicas powerbi"
         ],
         "responses":[
-           "Organização dos gráficos de acordo com seu contexto (ex: deixar tudo que se relaciona a X de um lado e perto um do outro) investir na clusterização (se possível). Sempre conversar com o cliente e mostrar a ele o powerbi, pois é ele quem tem que entender o que você está fazendo. "  
+           "Organizacao dos gráficos de acordo com seu contexto (ex: deixar tudo que se relaciona a X de um lado e perto um do outro) investir na clusterizacao (se possível). Sempre conversar com o cliente e mostrar a ele o powerbi, pois é ele quem tem que entender o que você está fazendo. "  
         ]
     },
     {
@@ -493,10 +493,11 @@
             "quais os dias do pagamento",
             "quando a gente recebe",
             "quando o salario ta na conta",
-            "quando a gente recebe"
+            "quando a gente recebe","salario vai cair quando",
+            "quando cai o salario"
         ],
         "responses":[
-           "Irei te informar apenas após meu mês de criação, haha! Em Junho será no dia 14 e 29, Julho: 13 e 28, Agosto: 15 a 30, Setembro: 13 e 28, Outubro:   e 30, Novembro: 14 e 29 (junto a 1º parcela do décimo terceiro), e Dezembro: 13 (junto a nossa 2º parcela do décimo terceiro) e 28! "  
+           "Irei te informar apenas após meu mês de criacao, haha! Em Junho será no dia 14 e 29, Julho: 13 e 28, Agosto: 15 a 30, Setembro: 13 e 28, Outubro:   e 30, Novembro: 14 e 29 (junto a 1º parcela do décimo terceiro), e Dezembro: 13 (junto a nossa 2º parcela do décimo terceiro) e 28! "  
         ]
     },
     {
@@ -506,7 +507,7 @@
             "quais os feriados desse ano?","que dias a gente folga esse ano"
         ],
         "responses":[
-           "No dia 08 de Junho teremos Corpus Christi, 07 de Setembro nossa independência do Brasil! 12 de Outubro nosso dia das crianças e Nossa Sra. Aparecida, em Novembro teremos Finados no dia 02 e Proclamação da República no dia 15, e por fim o Natal no dia 25 de Dezembro. "  
+           "No dia 08 de Junho teremos Corpus Christi, 07 de Setembro nossa independência do Brasil! 12 de Outubro nosso dia das crianças e Nossa Sra. Aparecida, em Novembro teremos Finados no dia 02 e Proclamacao da República no dia 15, e por fim o Natal no dia 25 de Dezembro. "  
         ]
     },
     {
@@ -514,6 +515,7 @@
         "id":46,
         "patterns":[
             "como clicar em um botao e ir pra outra página no powerbi",
+            "Como fazer um botão para clicar e ir pra outra página no powerbi?",
             "como fazer redirecionamento com o powerbi"
         ],
         "responses":[
@@ -527,17 +529,17 @@
             "como modificar planilhas no python","como fazer crud em planilha"
         ],
         "responses":[
-           "Para fazer um crud basico no python, você precisa importar o pandas, é comum que se use a dominação pd, (import pandas as pd), você também precisa uar o DataFrame para fazer as modificações. Analisei os videos do YouTube e te recomendo esse: https://youtu.be/C0aj3FjN5e0 "  
+           "Para fazer um crud basico no python, você precisa importar o pandas, é comum que se use a dominacao pd, (import pandas as pd), você também precisa uar o DataFrame para fazer as modificações. Analisei os videos do YouTube e te recomendo esse: https://youtu.be/C0aj3FjN5e0 "  
         ]
     },
     {
         "tag":"metodosHttp",
         "id":48,
         "patterns":[
-            "metodos http","http","protocolo de comunicação"
+            "metodos http","http","protocolo de comunicacao"
         ],
         "responses":[
-           "O método HTTP nada mais é que um protocolo de comunicação entre cliente-servidor, ou seja, de um lado, um navegador requisita um determinado dado, e do outro, um computador/servidor retorna a informação desejada (ou não, caso ela não seja encontrada, ocorra um erro ou não exista mesmo). Este protocolo define oito métodos de requisição que são GET (irá buscar a informação), POST (irá postar uma informação), PUT (irá atualizar uma informação), DELETE (irá deletar uma informação), HEAD (retorna o cabeçalho da informação pedida pelo GET), TRACE (realiza um teste de loopback provendo um mecanismo útil para debug), OPTIONS (mostra as opções de requisição permitidas para um determinado recurso em um servidor) e CONNECT (acessa websites que usam SSL ou HTTPS). "  
+           "O método HTTP nada mais é que um protocolo de comunicacao entre cliente-servidor, ou seja, de um lado, um navegador requisita um determinado dado, e do outro, um computador/servidor retorna a informacao desejada (ou não, caso ela não seja encontrada, ocorra um erro ou não exista mesmo). Este protocolo define oito métodos de requisicao que são GET, POST, PUT, DELETE, HEAD, TRACE, OPTIONS e CONNECT. "  
         ]
     },
     {
@@ -547,7 +549,7 @@
             "publicar powerbi","publicar powerbi"
         ],
         "responses":[
-           "Para publicar o powerbi, digite a seguinte URL na web: ‘https://powerbi.bosch.com/publish/’ Clique em Add Reports, na caixa de seleção escolha o nivel de segurança do seu powerbi (qualquer coisa deixa o SC-2, mas é bom saber o correto) Depois selecione o arquivo, preencha as informações e tudo certo! Já pode enviar o link aos interessados. "  
+           "Para publicar o powerbi, digite a seguinte URL na web: ‘https://powerbi.bosch.com/publish/’ Clique em Add Reports, na caixa de selecao escolha o nivel de segurança do seu powerbi (qualquer coisa deixa o SC-2, mas é bom saber o correto) Depois selecione o arquivo, preencha as informações e tudo certo! Já pode enviar o link aos interessados. "  
         ]
     },
     {
@@ -590,7 +592,7 @@
             "Quem ganhou o Hackathon?"
         ],
         "responses":[
-            "No Hackathon de 2021 os ganhadores foram: Milena Fernandes, Ryan Corsi, Vinicius Cunha, Fernanda Cambiagui, Leonardo Migliorini e Mariana Barbosa com o projeto TestQuest, Correção Automática de provas por IA. No Hackathon de 2022 os ganhadores foram: Elizeu Magalhães, Louise Feliciano, Julia Monteiro, Maitê Fávaro, Naiury Chaves e Vinicius Ventura com o projeto Robosch, um ChatBot da ETS. No primeiro semestre de 2023 os ganhadores foram: Ingrid Oliveira, Jenifer Ramalho, Larissa de Oliveira, Lucas Capovila, Luiza Moraes, Michael Lopes e Naely Pereira Com o projeto Greenbo."
+            "No Hackathon de 2021 os ganhadores foram: o projeto TestQuest, Correcao Automática de provas por IA. No Hackathon de 2022 os ganhador foi o projeto Robosch, um ChatBot da ETS. No primeiro semestre de 2023 o projeto ganhador foi o Greenbo."
         ]
     },
     {
@@ -608,7 +610,7 @@
             "Componentes de um computador"
         ],
         "responses":[
-            "Bom, a sua resposta vai ser um pouco longa hahaha, temos a Placa Mãe, ela é como uma central do computador/noteboook, onde as informações são coletadas e difundidas através desse união de todas as partes do seu Sistema Operacional. Ela se conecta com a placa de vídeo, os pentes de memória, o processador, e o HD por exemplo! Agora o processador..bem, ele é o responsável pela execução de instruções do sistema do seu computador, ou seja, vai executar os comandos dados à máquina. Nosso HD tem a função de armazenar todos os arquivos e informações do seu computador, permitindo o seu funcionamento. Nossa Memória RAM armazenada é diferente ao HD, pois ela é uma memória temporária do seu computador. Temos a Placa de Vídeo e a Fonte de Alimentação, que recebe a energia da rede elétrica e a distribui aos componentes de seu computador. "
+            "Bom, a sua resposta vai ser um pouco longa hahaha, temos a Placa Mãe, ela é como uma central do computador/noteboook, onde as informações são coletadas e difundidas através desse união de todas as partes do seu Sistema Operacional. Ela se conecta com a placa de vídeo, os pentes de memória, o processador, e o HD por exemplo! Agora o processador..bem, ele é o responsável pela execucao de instruções do sistema do seu computador, ou seja, vai executar os comandos dados à máquina. Nosso HD tem a funcao de armazenar todos os arquivos e informações do seu computador, permitindo o seu funcionamento. Nossa Memória RAM armazenada é diferente ao HD, pois ela é uma memória temporária do seu computador. Temos a Placa de Vídeo e a Fonte de Alimentacao, que recebe a energia da rede elétrica e a distribui aos componentes de seu computador. "
         ]
     },
     {
@@ -624,7 +626,7 @@
             "Apenas proxy"
         ],
         "responses":[
-            "Um servidor proxy é uma ferramenta importante para sua privacidade, e está muito ligado ao que a palavra em inglês quer dizer: procuração. Isto é, representa um certo tipo de autoridade dada a uma outra parte para agir em seu nome. Ele é uma ponte entre você e a internet. Quando você tenta acessar um site pelo seu dispositivo, o navegador envia uma requisição ao servidor web deste site, o qual retorna com a página que você estava buscando. Assim, sem um proxy, você se comunica diretamente com a internet e com o servidor em que está hospedado o site que você deseja acessar."
+            "Um servidor proxy é uma ferramenta importante para sua privacidade, e está muito ligado ao que a palavra em inglês quer dizer: procuracao. Isto é, representa um certo tipo de autoridade dada a uma outra parte para agir em seu nome. Ele é uma ponte entre você e a internet. Quando você tenta acessar um site pelo seu dispositivo, o navegador envia uma requisicao ao servidor web deste site, o qual retorna com a página que você estava buscando. Assim, sem um proxy, você se comunica diretamente com a internet e com o servidor em que está hospedado o site que você deseja acessar."
         ]
     },  
     {
@@ -638,7 +640,7 @@
             "Escopo global e local"
         ],
         "responses":[
-            "Uma variável global é quando declaramos uma variável fora de qualquer função, se tornando acessível a qualquer parte da nossa aplicação, podendo ser lida e alterada. Diferente da global, a variável local é quando declaramos dentro de uma função,assim ela se torna acessível somente dentro da função onde ela foi declarada."
+            "Uma variável global é quando declaramos uma variável fora de qualquer funcao, se tornando acessível a qualquer parte da nossa aplicacao, podendo ser lida e alterada. Diferente da global, a variável local é quando declaramos dentro de uma funcao,assim ela se torna acessível somente dentro da funcao onde ela foi declarada."
         ]
     },
     {
@@ -650,17 +652,17 @@
             "Quais os pilares da segurança da informação?"
         ],
         "responses":[
-            "Os 3 pilares da segurança da informação são Disponibilidade, Confidencialidade e Integridade. Disponibilidade: esse pilar está diretamente ligado à possibilidade de acesso às informações. Segundo ele, as informações precisam estar sempre à disposição; Confidencialidade: segundo ele, o acesso as informações deve ser concedido apenas a quem tem permissão para acessá-las. Integridade: A informação enviada deve permanecer sempre em sua natureza original. Não deve ser alterado durante o processo de transmissão."
+            "Os 3 pilares da segurança da informacao são Disponibilidade, Confidencialidade e Integridade. Disponibilidade: esse pilar está diretamente ligado à possibilidade de acesso às informações. Segundo ele, as informações precisam estar sempre à disposicao; Confidencialidade: segundo ele, o acesso as informações deve ser concedido apenas a quem tem permissão para acessá-las. Integridade: A informacao enviada deve permanecer sempre em sua natureza original. Não deve ser alterado durante o processo de transmissão."
         ]
     },
     {    
-        "tag":"abstração",
+        "tag":"abstracao",
         "id":58,   
         "patterns":[
-            "O que é abstração?"
+            "O que é abstracao?","abstração"
         ], 
         "responses":[
-            "Na programação de computadores ela é uma forma de reduzir a complexidade e tornar o projeto e a implementação mais eficientes em sistemas complexos de software. Ela esconde a complexidade técnica de um sistema por trás de uma API mais simples."
+            "Na programacao de computadores ela é uma forma de reduzir a complexidade e tornar o projeto e a implementacao mais eficientes em sistemas complexos de software. Ela esconde a complexidade técnica de um sistema por trás de uma API mais simples."
         ]
     },
     {
@@ -672,7 +674,7 @@
             "O que é modelagem lógica e conceitual?"
         ],
         "responses":[
-            "Na Modelagem Conceitual o objetivo é criar um modelo de forma gráfica, sendo este chamado de Diagrama Entidade e Relacionamento (DER), que identificará todos de forma global, sem qualquer detalhamento específico de um Banco de Dados. Sua principal finalidade é capturar os requisitos de informação e regras de negócio sob o ponto de vista do negócio. Agora na Modelagem Lógica é principalmente associada à coleta de necessidades de negócios, e não ao design do banco de dados. Ele irá determinar se todos os requisitos do negócio foram coletados, sendo mais complexo que o Modelo COnceitual em que os tipos de coluna são definidos."
+            "Na Modelagem Conceitual o objetivo é criar um modelo de forma gráfica, sendo este chamado de Diagrama Entidade e Relacionamento (DER), que identificará todos de forma global, sem qualquer detalhamento específico de um Banco de Dados. Sua principal finalidade é capturar os requisitos de informacao e regras de negócio sob o ponto de vista do negócio. Agora na Modelagem Lógica é principalmente associada à coleta de necessidades de negócios, e não ao design do banco de dados. Ele irá determinar se todos os requisitos do negócio foram coletados, sendo mais complexo que o Modelo COnceitual em que os tipos de coluna são definidos."
         ]
     },
     {
@@ -684,7 +686,7 @@
             "Como faço atribuições?"
         ],
         "responses":[
-            "No JavaScript os dados do tipo primitivos (string, number, boolean, null, undefined e symbol) são atribuídos por valor e os objetos (Array, Funções e {}) são atribuídos por referências."
+            "Atribuições por valor é quando você faz, por exemplo, x = 5. Esta guardado na memoria o valor 5 no endereço reservado à variável X. Ao fazer *y = x estamos dizendo que o ponteiro y vai guardar na memoria o endereço da variavel X, ou seja, estamos referenciando X"
         ]
     },
     {
@@ -707,17 +709,18 @@
             "Me explique o que é um servidor web por favor"
         ],
         "responses":[
-            "Um Servidor web pode se referir ao hardware ou ao software, ou ambos trabalhando juntos. Referente ao hardware, ele é um computador que armazena arquivos que compõem os sites (por exemplo, documentos HTML, imagens e arquivos JavaScript) e os entrega para o dispositivo do usuário final. Está conectado a Internet e pode ser acessado através do seu nome de domínio (DNS). Já ao software, um servidor web inclui diversos componentes que controlam como os usuários acessam os arquivos hospedados (armazenados para disponibilização), no mínimo um servidor HTTP. Um servidor HTTP é um software que compreende URLs (endereços web) e HTTP (o protocolo que seu navegador utiliza para visualizar páginas web."
+            "Um Servidor web pode se referir ao hardware ou ao software, ou ambos trabalhando juntos. Referente ao hardware, ele é um computador que armazena arquivos que compõem os sites (por exemplo, documentos HTML, imagens e arquivos JavaScript) e os entrega para o dispositivo do usuário final. Está conectado a Internet e pode ser acessado através do seu nome de domínio (DNS). Já ao software, um servidor web inclui diversos componentes que controlam como os usuários acessam os arquivos hospedados (armazenados para disponibilizacao), no mínimo um servidor HTTP. Um servidor HTTP é um software que compreende URLs (endereços web) e HTTP (o protocolo que seu navegador utiliza para visualizar páginas web."
         ]
     },
     {
         "tag":"aplicação", 
         "id":63,
         "patterns":[
-            "Onde posso hospedar minha aplicação?",
+            "Onde posso hospedar minha aplicacao?",
             "Após terminar meu projeto como posso hospedar ele?"
         ],
         "responses":[
+            "Para hospedar uma aplicacao frontend você pode usar Vercel ou AWS Amplify. Para hospedar uma aplicacao backend você pode usar Render, Fly.io ou Railway.  "
         ]
     },
     {
@@ -729,7 +732,7 @@
             "Não sei nada de Power BI"
         ],
         "responses":[
-            "Eu sei o que você esperava, apenas três ou quatro passos haha, mas o Power BI é uma ferramenta muito rica! Por isso, recomendo este vídeo detalhado do Power BI, desde sua instalação a seu primeiro gráfico! Digite essa url no seu navegador: https://youtu.be/UFGe25gydxo"
+            "Eu sei o que você esperava, apenas três ou quatro passos haha, mas o Power BI é uma ferramenta muito rica! Por isso, recomendo este vídeo detalhado do Power BI, desde sua instalacao a seu primeiro gráfico! Digite essa url no seu navegador: https://youtu.be/UFGe25gydxo"
         ]
     },
     {
@@ -738,7 +741,8 @@
         "patterns":[
             "Primeiros passos com VsDia",
             "Por onde devo começar no VsDia?",
-            "Não sei nada de VsDia"
+            "Não sei nada de VsDia",
+            "VSDIA"
         ], 
         "responses":[
             "Nós já temos um belo tutorial para vocês! Aqui está S:PM/ter/ets/Inter_Setor/COMPARTILHADO/AULAS/DIGITAL_SOLUTIONS/DIGITAL_SOLUTIONS_04/VSDIA"
@@ -752,7 +756,7 @@
             "Como eu crio um relatório no Power BI?"
         ],
         "responses":[
-            "No painel de navegação no serviço do Power BI, você pode selecionar o botão Criar, que abre uma página em que você pode selecionar sua fonte de dados. Isso também pode ser acessado no botão Novo relatório na página inicial. "
+            "No painel de navegacao no serviço do Power BI, você pode selecionar o botão Criar, que abre uma página em que você pode selecionar sua fonte de dados. Isso também pode ser acessado no botão Novo relatório na página inicial. "
         ]
     },
     {
@@ -763,7 +767,7 @@
             "Quero compartilhar meu Power BI, como faço isso?"
         ],
         "responses":[
-            "Para isso você precisa publicar o powerbi, digite a seguinte URL na web: https://powerbi.bosch.com/publish/ Clique em Add Reports, na caixa de seleção escolha o nivel de segurança do seu powerbi (qualquer coisa deixa o SC-2, mas é bom saber o correto) Depois selecione o arquivo, preencha as informações e tudo certo! Já pode enviar o link aos interessados."
+            "Para isso você precisa publicar o powerbi, digite a seguinte URL na web: https://powerbi.bosch.com/publish/ Clique em Add Reports, na caixa de selecao escolha o nivel de segurança do seu powerbi (qualquer coisa deixa o SC-2, mas é bom saber o correto) Depois selecione o arquivo, preencha as informações e tudo certo! Já pode enviar o link aos interessados."
         ]   
     },
     {
@@ -776,7 +780,7 @@
             "Power BI usa alguma linguagem?"
         ],
         "responses":[
-            "Assim como no Excel, é possível realizarmos fórmulas no Power BI através do DAX (Data Analysis Expressions), a linguagem de programação própria do Power BI"
+            "Assim como no Excel, é possível realizarmos fórmulas no Power BI através do DAX (Data Analysis Expressions), a linguagem de programacao própria do Power BI"
         ]
     },
     {
@@ -811,7 +815,9 @@
         "patterns":[
             "Como tirar meu WorkOn?",
             "Como retiro meu WorkOn?",
-            "Tirar WorkOn"
+            "Tirar WorkOn",
+            "como fazer workon","como criar workon",
+            "como pedir workon"
         ],
         "responses":[
             "Para pedir um workon, você deve seguir os passos: 1- Acessar o Bosch Zunder, clicar no icone de IS ou pesquisar por IT Service Portal. 2- Na barra de pesquisa busque por ‘WorkON’, vai aparecer um card, se for para você clique em ‘Order for self’, se não em ‘Order for others’. 3 – Preencha as informações e clique em submit. As demais informações você recebrá por email."
@@ -827,7 +833,7 @@
             "Como eu rodo um programa em um horário específico?"
         ],
         "responses":[
-            "Para isso, você pode usar o agendador de tarefas do windows, pesquise por ele no menu iniciar. Depois clique em ‘criar tarefa básica’, preencha o nome e a descrição. Clique em avançar, escolha qual a recorrência (lembre-se, você precisa ligar o pc para que o programa rode!), clique em avançar, escolha ‘inicar um programa’ selecione qual, prossiga e conclua!"
+            "Para isso, você pode usar o agendador de tarefas do windows, pesquise por ele no menu iniciar. Depois clique em ‘criar tarefa básica’, preencha o nome e a descricao. Clique em avançar, escolha qual a recorrência (lembre-se, você precisa ligar o pc para que o programa rode!), clique em avançar, escolha ‘inicar um programa’ selecione qual, prossiga e conclua!"
         ]
     },
     {
@@ -849,7 +855,7 @@
             "Nao estou conseguindo baixar um programa, o que faço?"
         ],
         "responses":[
-            "Minhas sugestões são:  checar o espaço disponível em sua máquina, caso esteja tudo ok, faça o download do programa e o arraste para a área de trabalho. Se não for possível, habilite o acesso administrativo e tente novamente. Se o problema persistir, vá ao AppLocker no IT Workspace toolkit e desligue ou habilite baixa proteção e tente novamente."
+            "Minhas sugestões são:  checar o espaço disponível em sua máquina, caso esteja tudo ok, faça o download do programa e o arraste para a área de trabalho. Se não for possível, habilite o acesso administrativo e tente novamente. Se o problema persistir, vá ao AppLocker no IT Workspace toolkit e desligue ou habilite baixa protecao e tente novamente."
         ]
     },
     {
@@ -918,7 +924,7 @@
             "O que o Enum do Java faz?"
         ],
         "responses":[
-            "Habilita uma variável a ser configurada com valores costantes pré-definidos. Ao atribuir valores à variável durante a execução do programa, somente são aceitos valores presentes da lista definida de ENUM. Usamos Enum sempre que precisamos representar um conjunto fixo de constantes, valores que são totalmente conhecidos na hora d compilação do programa."
+            "Habilita uma variável a ser configurada com valores costantes pré-definidos. Ao atribuir valores à variável durante a execucao do programa, somente são aceitos valores presentes da lista definida de ENUM. Usamos Enum sempre que precisamos representar um conjunto fixo de constantes, valores que são totalmente conhecidos na hora d compilacao do programa."
         ]
     },
     {
@@ -938,7 +944,7 @@
             "cursos ets", "cursos","curso"
         ],
         "responses":[
-            "A ETS possui 4 cursos: Mecatrônica, Manufatura Digital, Desenvolvimento de Sistemas e Administração. Você pode saber mais sobre eles em Cursos ETS, na página de home."
+            "A ETS possui 4 cursos: Mecatrônica, Manufatura Digital, Desenvolvimento de Sistemas e Administracao. Você pode saber mais sobre eles em Cursos ETS, na página de home."
         ]
     },
     {
@@ -949,7 +955,7 @@
             "gestor ets", "quem é henrique doná"
         ],
         "responses":[
-           "O gestor da ETS é o Henrique Doná, que também já foi gestor da equipe de planejamento central de manutenção (estoque de peças de reposição e ferramentas), terceirização de usinagens não produtivas e gestor da equipe de coordenação do TPM da Robert Bosch Campinas!"
+           "O gestor da ETS é o Henrique Doná, que também já foi gestor da equipe de planejamento central de manutencao (estoque de peças de reposicao e ferramentas), terceirizacao de usinagens não produtivas e gestor da equipe de coordenacao do TPM da Robert Bosch Campinas!"
         ]
     }
 ]}

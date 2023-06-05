@@ -115,7 +115,7 @@ function Chat(props) {
                 onClick={handleSubmit}
                 >Enviar
                 </button>
-            <div className="w-full max-w-3xl flex justify-center flex-col">
+            <div className="w-full max-w-4xl flex justify-center flex-col">
                 <div className="block text-gray-700 text-sm font-bold mb-2 mt-5">
                     <p className="shadow appearance-none border rounded 
                     w-full py-2 px-4 text-roxo leading-tight 
