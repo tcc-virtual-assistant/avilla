@@ -93,7 +93,7 @@ function Chat(props) {
             <form onSubmit={handleSubmit} 
                 className="bg-white shadow-md rounded pt-6 pb-8 mb-4"
                 id='form'>
-                <div class="mb-4">
+                <div className="mb-4">
                 <label className="block text-4xl text-roxo font-bold mb-2">
                     Sua pergunta:
                 </label>

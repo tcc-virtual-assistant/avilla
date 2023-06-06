@@ -33,7 +33,7 @@ function Navbar() {
             </a>
           </div>
           <div className="flex mt-6 mr-3">
-            <div class="a-dropdown flex">
+            <div className="a-dropdown flex">
               <select
                 className="h-8 flex align-middle"
                 id="demo"
