@@ -8,12 +8,12 @@ export default function ModalRecognit() {
     const [open, setOpen] = useState(false);
     const [voice, SetVoice] = useState('');
 
-    const PostQuestion = async () => {
+    const PostQuestion = async (question) => {
         let data = JSON.stringify({});
-        
+
         let body = {
-            userQuestion : "Ola mundo",
-            avillaAnswer : ""
+            userQuestion: question,
+            avillaAnswer: ""
         }
 
         let config = {
@@ -21,9 +21,9 @@ export default function ModalRecognit() {
             maxBodyLength: Infinity,
             url: 'http://localhost:8000/question/',
             Headers: {
-                'Content-Type' : 'application/json'
+                'Content-Type': 'application/json'
             },
-            data : body
+            data: body
         };
 
         await axios.request(config)
@@ -36,38 +36,43 @@ export default function ModalRecognit() {
     }
 
     const SpeakRecognition = async () => {
-        const recognition = new window.webkitSpeechRecognition(); 
-        recognition.lang = 'pt-BR'; 
-    
-        recognition.onresult = event => {
-            const resultado = event.results[0][0].transcript; 
+        const recognition = new window.webkitSpeechRecognition();
+        recognition.lang = 'pt-BR';
+
+        recognition.onresult = async (event) => {
+            const resultado = event.results[0][0].transcript;
             SetVoice(resultado);
             console.log(voice);
+            return resultado; 
         };
-    
-        await recognition.start();
+
+        return await recognition.start();
+
     };
 
     const Submit = async (event) => {
-        event.preventDefault();
-        setOpen(true);
-        SpeakRecognition();
-        PostQuestion();
+        // event.preventDefault();
+        setOpen(true); 
+        await SpeakRecognition().then(resp => {
+                console.log(`Resposta: ${resp}`)
+            }
+        );
+
     }
 
     return (
         <>
-          <button
-            type="button"
-            onClick={Submit}
-            className='border-2 border-blue-400 text-blue-400 font-bold text-lg w-40 h-40 cursor-pointer rounded-full hover:bg-blue-100 duration-300'
-          >
-            <FaMicrophoneAlt
-              size={80}
-              className='m-auto'
-            />
-          </button>
-    
+            <button
+                type="button"
+                onClick={Submit}
+                className='border-2 border-blue-400 text-blue-400 font-bold text-lg w-40 h-40 cursor-pointer rounded-full hover:bg-blue-100 duration-300'
+            >
+                <FaMicrophoneAlt
+                    size={80}
+                    className='m-auto'
+                />
+            </button>
+
             <Transition appear show={open} as={Fragment}>
                 <Dialog as="div" className="relative z-10" onClose={() => setOpen(false)}>
                     <Transition.Child
@@ -81,7 +86,7 @@ export default function ModalRecognit() {
                     >
                         <div className="fixed inset-0 bg-black bg-opacity-25" />
                     </Transition.Child>
-        
+
                     <div className="fixed inset-0 overflow-y-auto">
                         <div className="flex min-h-full items-center justify-center p-4 text-center">
                             <Transition.Child
@@ -93,7 +98,7 @@ export default function ModalRecognit() {
                                 leaveFrom="opacity-100 scale-100"
                                 leaveTo="opacity-0 scale-95"
                             >
-                                <Dialog.Panel 
+                                <Dialog.Panel
                                     className="w-full max-w-2xl transform overflow-hidden rounded-lg bg-white p-6 text-left align-middle shadow-xl transition-all"
                                 >
                                     <Dialog.Title
@@ -102,7 +107,7 @@ export default function ModalRecognit() {
                                     >
                                         Diga o que deseja saber para a Avila, ela está escutando...
                                     </Dialog.Title>
-        
+
                                     <div className='w-full flex my-3'>
                                         <div className='w-1/4'>
                                             <span className="relative flex h-16 w-16 my-6 m-auto">
@@ -116,7 +121,7 @@ export default function ModalRecognit() {
                                             <strong className='text-green-400'>Sua pergunta:</strong> {voice}
                                         </div>
                                     </div>
-                                    
+
                                     <div className="mt-4">
                                         <button
                                             type="button"

@@ -24,4 +24,4 @@ def get_root():
 app2.include_router(router, prefix="")
 
 if __name__ == "__main__":
-    uvicorn.run("main:app2", port=8000, log_level="info")
+    uvicorn.run("main:app2", port=7000, log_level="info")
