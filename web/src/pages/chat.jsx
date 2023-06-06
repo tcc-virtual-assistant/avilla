@@ -10,21 +10,12 @@ import 'react-toastify/dist/ReactToastify.css';
 import { Suspense } from 'react'
 import { Canvas } from '@react-three/fiber'
 import {OrbitControls, useGLTF} from '@react-three/drei';
-import { serverSideTranslations } from 'next-i18next/serverSideTranslations' 
-import { useTranslation } from 'next-i18next';
+import { Planta_cpin } from '@/components/mapa/Planta_cpin';
+import { Planta_spin } from '@/components/mapa/Planta_spin';
 
-
-// export async function getStaticProps({locale}){
-//     return{
-//         props: {
-//             ...(await serverSideTranslations(locale, ['chat']))
-//         }
-//     }
-// }
 
 function Chat(props) {
     
-    // const {t: translate} = useTranslation('chat')
 
     const [input, setInput] = useState({})
     const [data, setData] = useState([])
@@ -42,25 +33,29 @@ function Chat(props) {
       }
 
     const newest_question = () =>{
-        console.log('teste')
         axios.get("http://127.0.0.1:8000/question/?format=json")
         .then((response) => {
             var object = (response.data)
             var tamanho = ((object).length) + 1
             setidAPI(tamanho)
         })
-        apiGet()
+        apiGet(idAPI)
     }
 
-    const apiGet = async () => {
+    const apiGet = (idAPI) => {
         console.log(idAPI)
-        axios.get("http://127.0.0.1:8000/question/"+ idAPI +"/?format=json")
+        axios.get("http://127.0.0.1:8000/question/"+ idAPI +"?format=json")
             .then((response) => {
+                console.log(response.data)
                 setData(response.data)
             })
             .catch(error => console.log(error))
     }
 
+    useEffect(() => {
+        console.log(data.avillaAnswer);
+      }, [data.avillaAnswer]);
+      
     const apiPost = async () => {
         await axios.post("http://127.0.0.1:8000/question/?format=json", {
             userQuestion: input.text,
@@ -93,21 +88,19 @@ function Chat(props) {
 
     return(
         <>
-        <div className="flex items-center justify-center flex-row ml-80 place-content-center">
-        <div className="w-full max-w-lg flex justify-center flex-col">
+        <div className="flex w-full mt-24 justify-center flex-row pl-64">
+        <div className="w-full max-w-3xl flex justify-center flex-col">
             <form onSubmit={handleSubmit} 
-                className="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4"
+                className="bg-white shadow-md rounded pt-6 pb-8 mb-4"
                 id='form'>
-                <div class="mb-4">
-                <label className="block text-gray-700 text-sm font-bold mb-2">
-                    {/* {translate('Sua pergunta:')} */}
-                    {/* {translate('Sua pergunta:')} */}
+                <div className="mb-4">
+                <label className="block text-4xl text-roxo font-bold mb-2">
                     Sua pergunta:
                 </label>
                     <input
                         className="shadow appearance-none border rounded 
-                        w-full py-2 px-4 text-gray-700 leading-tight 
-                        focus:outline-none focus:shadow-outline"
+                        w-11/12 py-2 mx-8 mt-8 text-gray-700 leading-tight 
+                        focus:outline-none focus:shadow-outline text-3xl"
                         type='text'
                         id='question-text'
                         name='text'
@@ -116,30 +109,31 @@ function Chat(props) {
                     ></input>
                 </div>
             </form>
-                <button className="bg-green-500 hover:bg-green-700 
-                text-white font-bold py-1.5 px-5 rounded w-40 place-self-center"
+                <button className="mt-8 bg-verde-escuro hover:bg-green-700 
+                text-white font-bold py-1.5 px-5 rounded w-40 text-3xl place-self-center"
                 id='btn'
                 onClick={handleSubmit}
                 >Enviar
                 </button>
-            <div className="w-full max-w-lg flex justify-center flex-col">
+            <div className="w-full max-w-4xl flex justify-center flex-col">
                 <div className="block text-gray-700 text-sm font-bold mb-2 mt-5">
                     <p className="shadow appearance-none border rounded 
-                    w-full py-2 px-4 text-gray-700 leading-tight 
-                    focus:outline-none focus:shadow-outline">
+                    w-full py-2 px-4 text-roxo leading-tight 
+                    focus:outline-none focus:shadow-outline text-4xl">
                         Avilla informa: 
                     </p>
                     </div>
                     <p className="shadow appearance-none border rounded 
                         w-full py-2 px-10 text-gray-700 leading-tight 
-                        focus:outline-none focus:shadow-outline">
+                        focus:outline-none focus:shadow-outline text-3xl">
                                 {data.avillaAnswer}
                         </p>
                 </div>
                 </div>
-                <div className='relative ml-16'>
+                <div className='relative ml-36'>
                     <div className="h-80 w-72">
-                        <Canvas>
+                    <img className='w-92 h-full' src='../avilla.png' />
+                        {/* <Canvas>
                             <Suspense fallback={null}>
                             <ambientLight/>
                             <spotLight
@@ -147,16 +141,18 @@ function Chat(props) {
                                 angle={Math.PI/3}
                                 penumbra={1}
                                 position={[0,0,9]}
-                                castShadow/>
-                            <Avilla_Thinking />
-                            <OrbitControls 
+                                castShadow/> */}
+                            {/* <Avilla_Thinking /> */}
+
+                            
+                            {/* <OrbitControls 
                                 enablePan={true}
                                 enableZoom={true}
                                 enableRotate={true}
                                 enableDamping={true}
                                 />
                             </Suspense>
-                        </Canvas>    
+                        </Canvas>     */}
                     </div>
                     </div>
                 </div>

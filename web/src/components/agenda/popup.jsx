@@ -31,7 +31,7 @@ export default function Popup(props) {
   }
 
   return (
-    <>
+    <div>
       <button
         type="button"
         onClick={openModal}
@@ -113,6 +113,6 @@ export default function Popup(props) {
           </div>
         </Dialog>
       </Transition>
-    </>
+    </div>
   )
 }

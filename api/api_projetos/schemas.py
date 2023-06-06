@@ -10,7 +10,6 @@ class ProjectBase(BaseModel):
     description: Optional[str]
     techs: Optional[str]
     contact: str
-    finish_ratio: int
     status: str
 
 class ProjectAdd(ProjectBase):
@@ -34,7 +33,6 @@ class UpdateProject(BaseModel):
     contact: str
     description: str
     techs: str
-    finish_ratio: int
     status: str
     image_path: str
 
@@ -53,7 +51,6 @@ class UpdateProjectNoImage(BaseModel):
     contact: str
     description: str
     techs: str
-    finish_ratio: int
     status: str
 
     class Config:

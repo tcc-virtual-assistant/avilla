@@ -12,7 +12,7 @@ from db_handler import SessionLocal, engine
 models.Base.metadata.create_all(bind=engine)
 
 app = FastAPI(
-    title = "BOSCH/ETS Project Manager (Made by ApeView)",
+    title = "Avilla Project Manager",
     version = "0.0.1"
 )
 
@@ -91,4 +91,4 @@ async def updateProject(options:schemas.UpdateProject = Depends(), db:Session = 
     return crud.updateProjectWithoutImage(db = db, up = options, sl_id = options.project_id)
 
 if __name__ == "__main__":
-    uvicorn.run(app, host="0.0.0.0", port=8000)
+    uvicorn.run(app, host="0.0.0.0", port=8001)

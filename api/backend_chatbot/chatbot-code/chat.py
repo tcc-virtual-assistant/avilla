@@ -1,6 +1,5 @@
 import random
 import json
-# import train
 import torch
 import time
 import requests
@@ -27,18 +26,10 @@ def chatbot():
     model = NeuralNet(input_size, hidden_size, output_size).to(device)
     model.load_state_dict(model_state)
     model.eval()
-    print("Vamos testar! (Escreva 'sair' para sair)")
     
     newestID = 0
     firstRun = 0
     while True:
-        firstRun + 1
-        if firstRun != 1:
-            timer = 1
-        else:
-            timer = 0
-        
-        time.sleep(timer)
         allQuestions = requests.get('http://localhost:8000/question')
         allQuestions = (allQuestions.json())
         newest = 0
@@ -49,8 +40,6 @@ def chatbot():
         apiUserid = newest
         sentence = newestQuestion
         sentence = str(sentence)
-        print(f" do começo {apiUserid}")
-        print(f" do começo newest {newestID}")
 
         if newestID != apiUserid:
             while True:
@@ -78,12 +67,11 @@ def chatbot():
                     call = response.json()
                     answer = call['response']
                     sendAPI(answer, apiUserid)
-                    print(f"antigo {newestID}")
                     newestID = apiUserid
-                    print(f"novo {newestID}")
                     break
                 else:
                     answer = "Me desculpe, irei trabalhar na resposta para essa pergunta, ainda não sou perfeita..."
                     sendAPI(answer, apiUserid)
+                    break
 
 chatbot()
