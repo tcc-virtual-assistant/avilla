@@ -19,7 +19,7 @@ export default function ModalRecognit() {
         let config = {
             method: 'post',
             maxBodyLength: Infinity,
-            url: 'http://localhost:8000/question/',
+            url: 'http://localhost:7000/question/',
             Headers: {
                 'Content-Type': 'application/json'
             },
@@ -39,24 +39,27 @@ export default function ModalRecognit() {
         const recognition = new window.webkitSpeechRecognition();
         recognition.lang = 'pt-BR';
 
-        recognition.onresult = async (event) => {
+        recognition.onresult = (event) => {
             const resultado = event.results[0][0].transcript;
             SetVoice(resultado);
             console.log(voice);
-            return resultado; 
+            //return resultado;
         };
 
-        return await recognition.start();
+        await recognition.start();
 
     };
 
     const Submit = async (event) => {
         // event.preventDefault();
         setOpen(true); 
-        await SpeakRecognition().then(resp => {
-                console.log(`Resposta: ${resp}`)
+        await SpeakRecognition();
+        while (true) {
+            if(voice != '') {
+                PostQuestion(voice);
+                break;
             }
-        );
+        }
 
     }
 
