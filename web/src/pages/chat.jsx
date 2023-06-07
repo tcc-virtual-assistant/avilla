@@ -88,72 +88,48 @@ function Chat(props) {
 
     return(
         <>
-        <div className="flex w-full mt-24 justify-center flex-row pl-64">
-        <div className="w-full max-w-3xl flex justify-center flex-col">
+        <div className="flex  mt-10 justify-center flex-row pl-64">
+        <div className="w-full  max-w-3xl flex justify-center flex-col">
             <form onSubmit={handleSubmit} 
-                className="bg-white shadow-md rounded pt-6 pb-8 mb-4"
+                className="bg-white rounded pb-8 mb-4"
                 id='form'>
-                <div className="mb-4">
-                <label className="block text-4xl text-roxo font-bold mb-2">
+                <label className="block px-6 text-3xl text-roxo font-bold">
                     Sua pergunta:
                 </label>
                     <input
                         className="shadow appearance-none border rounded 
-                        w-11/12 py-2 mx-8 mt-8 text-gray-700 leading-tight 
-                        focus:outline-none focus:shadow-outline text-3xl"
+                        w-11/12 py-2  mt-2 text-gray-700 leading-tight 
+                        focus:outline-none focus:shadow-outline text-2xl pl-4"
                         type='text'
                         id='question-text'
                         name='text'
                         placeholder='Digite aqui'
                         onChange={handleChange}
                     ></input>
-                </div>
             </form>
-                <button className="mt-8 bg-verde-escuro hover:bg-green-700 
-                text-white font-bold py-1.5 px-5 rounded w-40 text-3xl place-self-center"
+                <button className="bg-verde-escuro
+                text-white font-bold py-1.5 px-5 rounded w-40 text-2xl place-self-center"
                 id='btn'
                 onClick={handleSubmit}
                 >Enviar
                 </button>
-            <div className="w-full max-w-4xl flex justify-center flex-col">
+            <div className="   max-w-4xl flex justify-center flex-col">
                 <div className="block text-gray-700 text-sm font-bold mb-2 mt-5">
-                    <p className="shadow appearance-none border rounded 
-                    w-full py-2 px-4 text-roxo leading-tight 
-                    focus:outline-none focus:shadow-outline text-4xl">
+                    <p className="shadow appearance-none rounded 
+                    w-full py-2 px-6 text-roxo leading-tight 
+                    focus:outline-none text-3xl">
                         Avilla informa: 
                     </p>
                     </div>
                     <p className="shadow appearance-none border rounded 
-                        w-full py-2 px-10 text-gray-700 leading-tight 
-                        focus:outline-none focus:shadow-outline text-3xl">
+                     py-2 mx-16 text-gray-700 leading-tight 
+                        focus:outline-none focus:shadow-outline text-2xl pl-4">
                                 {data.avillaAnswer}
                         </p>
                 </div>
                 </div>
-                <div className='relative ml-36'>
-                    <div className="h-80 w-72">
+                    <div className="h-80 w-86 mt-36">
                     <img className='w-92 h-full' src='../avilla.png' />
-                        {/* <Canvas>
-                            <Suspense fallback={null}>
-                            <ambientLight/>
-                            <spotLight
-                                intensity={1.0}
-                                angle={Math.PI/3}
-                                penumbra={1}
-                                position={[0,0,9]}
-                                castShadow/> */}
-                            {/* <Avilla_Thinking /> */}
-
-                            
-                            {/* <OrbitControls 
-                                enablePan={true}
-                                enableZoom={true}
-                                enableRotate={true}
-                                enableDamping={true}
-                                />
-                            </Suspense>
-                        </Canvas>     */}
-                    </div>
                     </div>
                 </div>
                 <div className='absolute bottom-2 w-full flex justify-center'>

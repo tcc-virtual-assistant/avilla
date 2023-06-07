@@ -21,8 +21,6 @@ const areas = [
   {name:'BTC'},
   {name:'Chapeuzinho'},
   {name:'Ambulatório'},
-  {name:'Portarias'}, 
-  {name:'Banco'},
   {name:'Digihub'},
   {name:'Power Tools'},
   {name:'Bosch Digital'},
@@ -61,12 +59,8 @@ function Planta() {
               <Pt/> 
               : model == "Ambulatório" ?
               <Ambulatorio/> 
-              : model == "Portarias" ?
-              <Avilla_Thinking/> 
               : model == "Bosch Digital" ?
               <Ambulatorio/> 
-              : model == "Banco" ?
-              <Avilla_Thinking/> 
               : model == "Digihub" ?
               <Digihub/> 
               : null 

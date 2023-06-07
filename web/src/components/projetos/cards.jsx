@@ -10,7 +10,7 @@ function ProjectCards() {
 
     useEffect(() => {
 
-        axios.get('http://localhost:8000/projects')
+        axios.get('http://localhost:8002/projects')
             .then(function (response) {
                 setData(response.data)
             })
@@ -20,7 +20,7 @@ function ProjectCards() {
     }, [])
 
 
-    const url = `http://localhost:8000/projects/media/${data.image_path}`
+    const url = `http://localhost:8002/projects/media/${data.image_path}`
 
 
     return (
@@ -33,7 +33,7 @@ function ProjectCards() {
                         {data.map((project, index) => (
                             <div key={project.project_id} className="shadow-md flex">
                                 <div className=" card card-side bg-base-200 shadow-xl rounded" >
-                                    <figure><img src={`http://127.0.0.1:8000/projects/media/${project.image_path}`} className="w-80  h-full" alt="Movie" /></figure>
+                                    <figure><img src={`http://127.0.0.1:8002/projects/media/${project.image_path}`} className="w-80  h-full" alt="Movie" /></figure>
                                     <div className="card-body">
                                         <h2 className="card-title text-black" >{project.project_name}</h2>
                                         <p className="text-black text-justify">{project.description}</p>
