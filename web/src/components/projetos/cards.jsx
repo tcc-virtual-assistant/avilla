@@ -10,7 +10,7 @@ function ProjectCards() {
 
     useEffect(() => {
 
-        axios.get('http://localhost:8000/projects')
+        axios.get('http://localhost:8002/projects')
             .then(function (response) {
                 setData(response.data)
             })

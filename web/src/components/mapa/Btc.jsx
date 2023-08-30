@@ -18,6 +18,7 @@ export function Btc(props) {
           castShadow
           receiveShadow
           geometry={nodes.CA_401001.geometry}
+          
           material={materials.Material}
           position={[-3.47, -2.82, -21.87]}
           rotation={[0, 0, -3.11]}
