@@ -36,7 +36,6 @@ def newProject(db:Session, proj: schemas.ProjectAdd, image_path: str):
         description = proj.description,
         techs = proj.techs,
         contact = proj.contact,
-        finish_ratio = proj.finish_ratio,
         status = proj.status,
         image_path = image_path,
     )
@@ -56,7 +55,6 @@ def newProjectWithoutImage(db:Session, proj: schemas.ProjectAdd):
         description = proj.description,
         techs = proj.techs,
         contact = proj.contact,
-        finish_ratio = proj.finish_ratio,
         status = proj.status,
     )
     

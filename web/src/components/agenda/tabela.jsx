@@ -13,8 +13,6 @@ export default function Tabela(props) {
         }
     })
 
-    console.log(aulas);
-
     return (
         <div className="w-max h-auto border border-gray-900 text-center ml-8 my-8 bg-gray-50">
             <h1 className="text-2xl m-2">
@@ -99,153 +97,10 @@ export default function Tabela(props) {
                 <div className="flex">
                     <div className="w-32 border-r border-black relative">
                         {
-                            aulas.map((aula) =>(
+                            aulas.map((aula, i) => (
                                 (
                                     aula.turma == "ADM1 (M)" ?
-                                    <Popup
-                                        instrutor={aula.instrutor}
-                                        aula={aula.aula}
-                                        data={aula.data}
-                                        inicio={aula.inicio}
-                                        termino={aula.termino}
-                                        sala={aula.sala}
-                                        cor={aula.cor}
-                                    />
-                                : null )
-                            ))
-                        }
-                    </div>
-                    <div className="w-32 border-r border-black relative">
-                        {
-                            aulas.map((aula) =>(
-                                (
-                                    aula.turma == "ADM2 (T)" ?
-                                    <Popup
-                                        instrutor={aula.instrutor}
-                                        aula={aula.aula}
-                                        data={aula.data}
-                                        inicio={aula.inicio}
-                                        termino={aula.termino}
-                                        sala={aula.sala}
-                                        cor={aula.cor}
-                                    />
-                                : null )
-                            ))
-                        }
-                    </div>
-                    <div className="w-32 border-r border-black relative">
-                        {
-                            aulas.map((aula) =>(
-                                (
-                                    aula.turma == "DS3 (T)" ?
-                                    <Popup
-                                        instrutor={aula.instrutor}
-                                        aula={aula.aula}
-                                        data={aula.data}
-                                        inicio={aula.inicio}
-                                        termino={aula.termino}
-                                        sala={aula.sala}
-                                        cor={aula.cor}
-                                    />
-                                : null )
-                            ))
-                        }
-                    </div>
-                    <div className="w-32 border-r border-black relative">
-                        {
-                            aulas.map((aula) =>(
-                                (
-                                    aula.turma == "DS4 (T)" ?
-                                    <Popup
-                                        instrutor={aula.instrutor}
-                                        aula={aula.aula}
-                                        data={aula.data}
-                                        inicio={aula.inicio}
-                                        termino={aula.termino}
-                                        sala={aula.sala}
-                                        cor={aula.cor}
-                                    />
-                                : null )
-                            ))
-                        }
-                    </div>
-                    <div className="w-32 border-r border-black relative">
-                        {
-                            aulas.map((aula) =>(
-                                (
-                                    aula.turma == "DS5 (M)" ?
-                                    <Popup
-                                        instrutor={aula.instrutor}
-                                        aula={aula.aula}
-                                        data={aula.data}
-                                        inicio={aula.inicio}
-                                        termino={aula.termino}
-                                        sala={aula.sala}
-                                        cor={aula.cor}
-                                    />
-                                : null )
-                            ))
-                        }
-                    </div>
-                    <div className="w-32 border-r border-black relative">
-                        {
-                            aulas.map((aula) =>(
-                                (
-                                    aula.turma == "DS (6)" ?
-                                    <Popup
-                                        instrutor={aula.instrutor}
-                                        aula={aula.aula}
-                                        data={aula.data}
-                                        inicio={aula.inicio}
-                                        termino={aula.termino}
-                                        sala={aula.sala}
-                                        cor={aula.cor}
-                                    />
-                                : null )
-                            ))
-                        }
-                    </div>
-                    <div className="w-32 border-r border-black relative">
-                        {
-                            aulas.map((aula) =>(
-                                (
-                                    aula.turma == "DS7 (T)" ?
-                                    <Popup
-                                        instrutor={aula.instrutor}
-                                        aula={aula.aula}
-                                        data={aula.data}
-                                        inicio={aula.inicio}
-                                        termino={aula.termino}
-                                        sala={aula.sala}
-                                        cor={aula.cor}
-                                    />
-                                : null )
-                            ))
-                        }
-                    </div>
-                    <div className="w-32 border-r border-black relative">
-                        {
-                            aulas.map((aula) =>(
-                                (
-                                    aula.turma == "MD3 (T)" ?
-                                    <Popup
-                                        instrutor={aula.instrutor}
-                                        aula={aula.aula}
-                                        data={aula.data}
-                                        inicio={aula.inicio}
-                                        termino={aula.termino}
-                                        sala={aula.sala}
-                                        cor={aula.cor}
-                                    />
-                                : null )
-                            ))
-                        }
-                    </div>
-                    <div className="w-32 border-r border-black relative">
-                        {
-                            aulas.map((aula) =>(
-                                (
-                                    aula.turma == "MEC 1 Ano" ?
+                                    <div key={i}>
                                         <Popup
                                             instrutor={aula.instrutor}
                                             aula={aula.aula}
@@ -255,15 +110,157 @@ export default function Tabela(props) {
                                             sala={aula.sala}
                                             cor={aula.cor}
                                         />
+                                    </div>
                                 : null )
                             ))
                         }
                     </div>
-                    <div className='w-32 relative'>
+                    <div className="w-32 border-r border-black relative">
                         {
-                            aulas.map((aula) =>(
+                            aulas.map((aula, i) =>(
                                 (
-                                    aula.turma == "MEC 2 Ano" ?
+                                    aula.turma == "ADM2 (T)" ?
+                                    <div key={i}>
+                                        <Popup
+                                            instrutor={aula.instrutor}
+                                            aula={aula.aula}
+                                            data={aula.data}
+                                            inicio={aula.inicio}
+                                            termino={aula.termino}
+                                            sala={aula.sala}
+                                            cor={aula.cor}
+                                        />
+                                    </div>
+                                : null )
+                            ))
+                        }
+                    </div>
+                    <div className="w-32 border-r border-black relative">
+                        {
+                            aulas.map((aula, i) => (
+                                (
+                                    aula.turma == "DS3 (T)" ?
+                                    <div key={i}>
+                                        <Popup
+                                            instrutor={aula.instrutor}
+                                            aula={aula.aula}
+                                            data={aula.data}
+                                            inicio={aula.inicio}
+                                            termino={aula.termino}
+                                            sala={aula.sala}
+                                            cor={aula.cor}
+                                        />
+                                    </div>
+                                : null )
+                            ))
+                        }
+                    </div>
+                    <div className="w-32 border-r border-black relative">
+                        {
+                            aulas.map((aula, i) => (
+                                (
+                                    aula.turma == "DS4 (T)" ?
+                                    <div key={i}>
+                                        <Popup
+                                            instrutor={aula.instrutor}
+                                            aula={aula.aula}
+                                            data={aula.data}
+                                            inicio={aula.inicio}
+                                            termino={aula.termino}
+                                            sala={aula.sala}
+                                            cor={aula.cor}
+                                        />
+                                    </div>
+                                : null )
+                            ))
+                        }
+                    </div>
+                    <div className="w-32 border-r border-black relative">
+                        {
+                            aulas.map((aula, i) => (
+                                (
+                                    aula.turma == "DS5 (M)" ?
+                                    <div key={i}>
+                                        <Popup
+                                            instrutor={aula.instrutor}
+                                            aula={aula.aula}
+                                            data={aula.data}
+                                            inicio={aula.inicio}
+                                            termino={aula.termino}
+                                            sala={aula.sala}
+                                            cor={aula.cor}
+                                        />
+                                    </div>
+                                : null )
+                            ))
+                        }
+                    </div>
+                    <div className="w-32 border-r border-black relative">
+                        {
+                            aulas.map((aula, i) =>(
+                                (
+                                    aula.turma == "DS6 (M)" ?
+                                    <div key={i}>
+                                        <Popup
+                                            instrutor={aula.instrutor}
+                                            aula={aula.aula}
+                                            data={aula.data}
+                                            inicio={aula.inicio}
+                                            termino={aula.termino}
+                                            sala={aula.sala}
+                                            cor={aula.cor}
+                                        />
+                                    </div>
+                                : null )
+                            ))
+                        }
+                    </div>
+                    <div className="w-32 border-r border-black relative">
+                        {
+                            aulas.map((aula, i) =>(
+                                (
+                                    aula.turma == "DS7 (T)" ?
+                                    <div key={i}>
+                                        <Popup
+                                            instrutor={aula.instrutor}
+                                            aula={aula.aula}
+                                            data={aula.data}
+                                            inicio={aula.inicio}
+                                            termino={aula.termino}
+                                            sala={aula.sala}
+                                            cor={aula.cor}
+                                        />
+                                    </div>
+                                : null )
+                            ))
+                        }
+                    </div>
+                    <div className="w-32 border-r border-black relative">
+                        {
+                            aulas.map((aula, i) =>(
+                                (
+                                    aula.turma == "MD3 (T)" ?
+                                    <div key={i}>
+                                        <Popup
+                                            instrutor={aula.instrutor}
+                                            aula={aula.aula}
+                                            data={aula.data}
+                                            inicio={aula.inicio}
+                                            termino={aula.termino}
+                                            sala={aula.sala}
+                                            cor={aula.cor}
+                                        />
+                                    </div>
+                                : null )
+                            ))
+                        }
+                    </div>
+                    <div className="w-32 border-r border-black relative">
+                        {
+                            aulas.map((aula, i) =>(
+                                (
+                                    aula.turma == "MEC 1 Ano" ?
+                                    <div key={i}>
                                     <Popup
                                         instrutor={aula.instrutor}
                                         aula={aula.aula}
@@ -273,6 +270,27 @@ export default function Tabela(props) {
                                         sala={aula.sala}
                                         cor={aula.cor}
                                     />
+                                </div>
+                            : null )
+                        ))
+                        }
+                    </div>
+                    <div className='w-32 relative'>
+                        {
+                            aulas.map((aula, i) =>(
+                                (
+                                    aula.turma == "MEC 2 Ano" ?
+                                    <div key={i}>
+                                        <Popup
+                                            instrutor={aula.instrutor}
+                                            aula={aula.aula}
+                                            data={aula.data}
+                                            inicio={aula.inicio}
+                                            termino={aula.termino}
+                                            sala={aula.sala}
+                                            cor={aula.cor}
+                                        />
+                                    </div>
                                 : null )
                             ))
                         }
