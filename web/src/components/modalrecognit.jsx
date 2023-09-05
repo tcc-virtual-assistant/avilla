@@ -43,24 +43,19 @@ export default function ModalRecognit() {
             const resultado = event.results[0][0].transcript;
             SetVoice(resultado);
             console.log(voice);
-            //return resultado;
+            return resultado;
         };
 
-        await recognition.start();
+        PostQuestion(await recognition.start())
 
     };
 
     const Submit = async (event) => {
-        // event.preventDefault();
+        event.preventDefault();
         setOpen(true); 
         await SpeakRecognition();
-        while (true) {
-            if(voice != '') {
-                PostQuestion(voice);
-                break;
-            }
-        }
-
+        setTimeout(() => {PostQuestion('teste')}, 5000)
+        console.log('ola mundo')
     }
 
     return (

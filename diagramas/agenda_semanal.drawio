@@ -1,0 +1,185 @@
+<mxfile host="app.diagrams.net" modified="2023-08-03T17:41:40.544Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:102.0) Gecko/20100101 Firefox/102.0" etag="bKQgdn0HxlHaeukr8J1U" version="21.6.6" type="device">
+  <diagram name="Página-1" id="rc1Bp2-EuoJKdFO09NEM">
+    <mxGraphModel dx="934" dy="591" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="sCkKfZELMnCLLn8VMU1E-67" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="315" y="65" width="926" height="2110" as="geometry" />
+        </mxCell>
+        <mxCell id="sCkKfZELMnCLLn8VMU1E-8" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;" edge="1" parent="1" source="sCkKfZELMnCLLn8VMU1E-1" target="sCkKfZELMnCLLn8VMU1E-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="sCkKfZELMnCLLn8VMU1E-1" value="inicio" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="610" y="120" width="80" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="sCkKfZELMnCLLn8VMU1E-9" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;" edge="1" parent="1" source="sCkKfZELMnCLLn8VMU1E-2" target="sCkKfZELMnCLLn8VMU1E-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="sCkKfZELMnCLLn8VMU1E-2" value="A planilha em Excel é aberta e deve ser encontrar na pasta compartilhada da rede Bosch" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="490" y="200" width="320" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="sCkKfZELMnCLLn8VMU1E-10" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;" edge="1" parent="1" source="sCkKfZELMnCLLn8VMU1E-3" target="sCkKfZELMnCLLn8VMU1E-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="sCkKfZELMnCLLn8VMU1E-3" value="O formulário é aberto por meio do script em VBA que se encontra dentro do arquivo Excel" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="490" y="280" width="320" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="sCkKfZELMnCLLn8VMU1E-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;" edge="1" parent="1" source="sCkKfZELMnCLLn8VMU1E-4" target="sCkKfZELMnCLLn8VMU1E-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="sCkKfZELMnCLLn8VMU1E-4" value="&lt;div&gt;O instrutor preenche o formulário com todos os dados referentes ao a aula que está sendo agendada&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="490" y="360" width="320" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="sCkKfZELMnCLLn8VMU1E-14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;strokeWidth=2;" edge="1" parent="1" source="sCkKfZELMnCLLn8VMU1E-5" target="sCkKfZELMnCLLn8VMU1E-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="sCkKfZELMnCLLn8VMU1E-5" value="Os dados são lidos e primeiramente é detectado qual é o instrutor responsável pela aula" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="490" y="440" width="320" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="sCkKfZELMnCLLn8VMU1E-15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;strokeWidth=2;" edge="1" parent="1" source="sCkKfZELMnCLLn8VMU1E-6" target="sCkKfZELMnCLLn8VMU1E-7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="sCkKfZELMnCLLn8VMU1E-6" value="É atribuído um código REX (que representa uma cor) para a aula de acordo com o instrutor responsável, assim a aula passa a ter uma cor relacionado a ela" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="490" y="510" width="320" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="sCkKfZELMnCLLn8VMU1E-18" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="sCkKfZELMnCLLn8VMU1E-7" target="sCkKfZELMnCLLn8VMU1E-19">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="sCkKfZELMnCLLn8VMU1E-7" value="As informações que foram inseridas no formulário passam para a planilha e assim fica listada com as demais aulas que já foram agendadas no sistema." style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="490" y="590" width="320" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="sCkKfZELMnCLLn8VMU1E-23" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;" edge="1" parent="1" source="sCkKfZELMnCLLn8VMU1E-17" target="sCkKfZELMnCLLn8VMU1E-22">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="sCkKfZELMnCLLn8VMU1E-17" value="Busca os dados referentes as aulas agendadas dentro do arquivo Excel" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="490" y="760" width="320" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="sCkKfZELMnCLLn8VMU1E-20" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;" edge="1" parent="1" source="sCkKfZELMnCLLn8VMU1E-19" target="sCkKfZELMnCLLn8VMU1E-17">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="sCkKfZELMnCLLn8VMU1E-19" value="Script em Python faz a abertura do arquivo em Excel de 12 em 12 horas por meio da biblioteca OpenPyXl" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="490" y="680" width="320" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="sCkKfZELMnCLLn8VMU1E-27" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;" edge="1" parent="1" source="sCkKfZELMnCLLn8VMU1E-22" target="sCkKfZELMnCLLn8VMU1E-26">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="sCkKfZELMnCLLn8VMU1E-22" value="Conversão dos dados por meio da biblioteca Pandas em formato DataFrame que é interpretado pelo pela linguagem de programação" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="490" y="830" width="320" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="sCkKfZELMnCLLn8VMU1E-37" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;" edge="1" parent="1" source="sCkKfZELMnCLLn8VMU1E-24" target="sCkKfZELMnCLLn8VMU1E-36">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="sCkKfZELMnCLLn8VMU1E-39" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;strokeWidth=2;" edge="1" parent="1" source="sCkKfZELMnCLLn8VMU1E-24" target="sCkKfZELMnCLLn8VMU1E-19">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="880" y="1120" as="sourcePoint" />
+            <mxPoint x="940" y="720" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="930" y="1120" />
+              <mxPoint x="930" y="700" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="sCkKfZELMnCLLn8VMU1E-24" value="&lt;div&gt;Detecção de mudança entre&lt;/div&gt;&lt;div&gt;as duas bases de dados&lt;br&gt;&lt;/div&gt;" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="522.5" y="1080" width="255" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="sCkKfZELMnCLLn8VMU1E-30" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;" edge="1" parent="1" source="sCkKfZELMnCLLn8VMU1E-26" target="sCkKfZELMnCLLn8VMU1E-29">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="sCkKfZELMnCLLn8VMU1E-26" value="&lt;div&gt;Busca das aulas agendadas que estão armazenada na API (FastAPI) por meio de uma requisição de GET&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="490" y="920" width="320" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="sCkKfZELMnCLLn8VMU1E-31" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="sCkKfZELMnCLLn8VMU1E-29" target="sCkKfZELMnCLLn8VMU1E-24">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="sCkKfZELMnCLLn8VMU1E-32" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;" edge="1" parent="1" source="sCkKfZELMnCLLn8VMU1E-29" target="sCkKfZELMnCLLn8VMU1E-24">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="sCkKfZELMnCLLn8VMU1E-29" value="Comparação de dados entre API e planilha Excel" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="490" y="1000" width="320" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="sCkKfZELMnCLLn8VMU1E-42" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;" edge="1" parent="1" source="sCkKfZELMnCLLn8VMU1E-36" target="sCkKfZELMnCLLn8VMU1E-41">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="sCkKfZELMnCLLn8VMU1E-36" value="Transformação das novas aulas agendadas para o formato de um objeto que possa ser enviado para a API" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="490" y="1200" width="320" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="sCkKfZELMnCLLn8VMU1E-38" value="&lt;font style=&quot;font-size: 16px;&quot;&gt;&lt;b&gt;SIM&lt;/b&gt;&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="659" y="1160" width="50" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="sCkKfZELMnCLLn8VMU1E-40" value="&lt;font style=&quot;font-size: 16px;&quot;&gt;&lt;b&gt;NÃO&lt;/b&gt;&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="840" y="1130" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="sCkKfZELMnCLLn8VMU1E-44" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;" edge="1" parent="1" source="sCkKfZELMnCLLn8VMU1E-41" target="sCkKfZELMnCLLn8VMU1E-43">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="sCkKfZELMnCLLn8VMU1E-41" value="Envio do objeto para a API por meio de uma requisição de POST" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="490" y="1280" width="320" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="sCkKfZELMnCLLn8VMU1E-46" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;" edge="1" parent="1" source="sCkKfZELMnCLLn8VMU1E-43" target="sCkKfZELMnCLLn8VMU1E-45">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="sCkKfZELMnCLLn8VMU1E-43" value="API armazena a(s) aula(s) agendada(s) no banco de dados SQLite" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="490" y="1360" width="320" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="sCkKfZELMnCLLn8VMU1E-48" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;" edge="1" parent="1" source="sCkKfZELMnCLLn8VMU1E-45" target="sCkKfZELMnCLLn8VMU1E-47">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="sCkKfZELMnCLLn8VMU1E-45" value="Disponibilização dos dados para requisição" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="490" y="1440" width="320" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="sCkKfZELMnCLLn8VMU1E-50" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;" edge="1" parent="1" source="sCkKfZELMnCLLn8VMU1E-47" target="sCkKfZELMnCLLn8VMU1E-49">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="sCkKfZELMnCLLn8VMU1E-47" value="Site (criado em Next Js) faz a requisição para a API de todas as aulas armazenadas no seu banco de dados" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="490" y="1520" width="320" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="sCkKfZELMnCLLn8VMU1E-53" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;" edge="1" parent="1" source="sCkKfZELMnCLLn8VMU1E-49" target="sCkKfZELMnCLLn8VMU1E-52">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="sCkKfZELMnCLLn8VMU1E-49" value="O site verifica quais são os dias que fazem parte da semana atual e qual é o mês atual" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="490" y="1600" width="320" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="sCkKfZELMnCLLn8VMU1E-55" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;" edge="1" parent="1" source="sCkKfZELMnCLLn8VMU1E-52" target="sCkKfZELMnCLLn8VMU1E-54">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="sCkKfZELMnCLLn8VMU1E-65" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;strokeWidth=2;" edge="1" parent="1" source="sCkKfZELMnCLLn8VMU1E-52" target="sCkKfZELMnCLLn8VMU1E-62">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="sCkKfZELMnCLLn8VMU1E-52" value="&lt;div&gt;Verificação se alguma aula&lt;/div&gt;&lt;div&gt;está agendada para a semana&lt;/div&gt;&lt;div&gt;atual&lt;br&gt;&lt;/div&gt;" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="522.5" y="1670" width="255" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="sCkKfZELMnCLLn8VMU1E-58" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;" edge="1" parent="1" source="sCkKfZELMnCLLn8VMU1E-54" target="sCkKfZELMnCLLn8VMU1E-57">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="sCkKfZELMnCLLn8VMU1E-54" value="É calculado o horário de duração da aula para definir a largura que ela vai ocupar dentro da agenda" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="490" y="1800" width="320" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="sCkKfZELMnCLLn8VMU1E-56" value="&lt;font style=&quot;font-size: 16px;&quot;&gt;&lt;b&gt;SIM&lt;/b&gt;&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="669" y="1760" width="50" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="sCkKfZELMnCLLn8VMU1E-60" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;" edge="1" parent="1" source="sCkKfZELMnCLLn8VMU1E-57" target="sCkKfZELMnCLLn8VMU1E-59">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="sCkKfZELMnCLLn8VMU1E-57" value="A agenda é renderizada com todas as turmas da ETS em colunas e todos os horários de trabalho em linhas" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="490" y="1880" width="320" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="sCkKfZELMnCLLn8VMU1E-64" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;" edge="1" parent="1" source="sCkKfZELMnCLLn8VMU1E-59" target="sCkKfZELMnCLLn8VMU1E-63">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="sCkKfZELMnCLLn8VMU1E-59" value="A aula aparece na agenda localizada de acordo com o dia, turma e período de duração" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="490" y="1960" width="320" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="sCkKfZELMnCLLn8VMU1E-62" value="A agenda é renderizada sem nenhuma aula agendada" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="850" y="1880" width="320" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="sCkKfZELMnCLLn8VMU1E-63" value="É disponibilizado uma janela que aparece quando o usuário clica na aula dentro da agenda que mostra especificações do agendamento" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="490" y="2040" width="320" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="sCkKfZELMnCLLn8VMU1E-66" value="&lt;font style=&quot;font-size: 16px;&quot;&gt;&lt;b&gt;NÃO&lt;/b&gt;&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="865" y="1730" width="60" height="30" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
