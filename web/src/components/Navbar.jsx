@@ -33,19 +33,6 @@ function Navbar() {
             </a>
           </div>
           <div className="flex mt-6 mr-3">
-            <div className="a-dropdown flex">
-              <select
-                className="h-8 flex align-middle"
-                id="demo"
-                aria-label="here goes the aria label for the dropwdown"
-              >
-                {/* <option value='pt' onClick={()=> changeLocale('en')}>Português</option> */}
-                <option value='pt'>Português</option>
-                <option value='en'>English</option>
-                <option value='es'>Español</option>
-                {/* <option value='"Deutsch"'>Deutsch</option> */}
-              </select>
-            </div>
           </div>
         </div>
       </div>

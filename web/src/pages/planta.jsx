@@ -44,7 +44,7 @@ function Planta({ nomePlanta }) {
 
   return (
     <div className=' flex items-center justify-center'>
-      <div className="flex w-9/12 h-[600px] flex-col items-center">
+      <div className="flex w-5/6 h-[800px] flex-col items-center">
         <Canvas>
           <Suspense fallback={null}>
             <ambientLight />
@@ -115,9 +115,7 @@ function Planta({ nomePlanta }) {
           </ul>
         ) : null}
       </div>
-      <div className="absolute bottom-2 w-full flex px-10 justify-evenly">
-        <Acessibilidade />
-      </div>
+      
     </div>
 
 

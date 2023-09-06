@@ -13,16 +13,17 @@ function Cards() {
             src="\images\calendar-date-single.svg"
             alt=""
           />
-          <p className="text-azul text-xl">Agenda semanal</p>
+          <p className="text-roxo text-xl">Agenda semanal</p>
         </button>
 
-        <button className="flex flex-col items-center justify-center">
-          <img
-            className="w-2/4  md:w-10 lg:w-24 2xl:w-40"
-            src="\images\education.svg"
-            alt=""
-          />
-          <p className="text-gray-600 text-xl">Cursos da ETS</p>
+        <button class="  flex flex-col items-center justify-center"
+            onClick={()=>{router.push('/cursos_ets')}}>
+              <img
+                className="w-2/4  md:w-10 lg:w-24 2xl:w-40"
+                src="\images\education.svg"
+                alt=""
+              />
+              <p className="text-azul text-bold text-2xl">Cursos da ETS</p>
         </button>
 
         <button onClick={()=>{router.push('/chat')}}
@@ -32,7 +33,7 @@ function Cards() {
             src="\images\chat-question-answer.svg"
             alt=""
           />
-          <p className="text-verde-grama text-xl">Dúvidas frequentes</p>
+          <p className="text-cinza text-xl">Dúvidas frequentes</p>
         </button >
 
         <button onClick={()=>{router.push('/planta')}}
@@ -42,7 +43,7 @@ function Cards() {
             src="\images\map-city.svg"
             alt=""
           />
-          <p className="text-roxo text-xl">Localizações da planta</p>
+          <p className="text-verde-agua text-xl">Localizações da planta</p>
         </button>
 
         <button onClick={() => {router.push('/projetos')}} className=" flex flex-col items-center justify-center">
@@ -51,7 +52,7 @@ function Cards() {
             src="\images\team-lightbulb.svg"
             alt=""
           />
-          <p className="text-verde-agua text-xl">Projetos da ETS</p>
+          <p className="text-verde-grama text-xl">Projetos da ETS</p>
         </button>
       </div>
     </>
