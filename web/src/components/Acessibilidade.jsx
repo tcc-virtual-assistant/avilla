@@ -13,13 +13,6 @@ function Acessibilidade() {
               alt=""
             />
           </button>
-
-
-            {/* <img
-              className=" w-12 md:w-20 lg:w-28 2xl:w-40"
-              src="\images\keyboard.svg"
-              alt=""
-            /> */}
             <Popup/>
           
         </div>

@@ -66,7 +66,7 @@ function Chat(props) {
             })
             .catch(error => console.log(error))
 
-            setTimeout(newest_question, 3000)
+            setTimeout(newest_question, 6000)
             toast.success("A Avilla já esta procurando a resposta para a sua pergunta", toastOptions)
             }
 
@@ -157,7 +157,6 @@ function Chat(props) {
                     </div>
                 </div>
                 <div className='absolute bottom-2 w-full flex justify-center'>
-                    <Acessibilidade />
                 </div>
         <ToastContainer />
         </>

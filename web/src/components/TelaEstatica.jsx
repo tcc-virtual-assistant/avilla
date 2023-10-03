@@ -17,7 +17,6 @@ export default function TelaEstatica() {
             <Cards />
           </div>
           <div className="absolute bottom-0 w-full flex justify-center ">
-            <Acessibilidade />
           </div>
           {/* < Chat/> */}
           {/* <AvilaSVG/> */}

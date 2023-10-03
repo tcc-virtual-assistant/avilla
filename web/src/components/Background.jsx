@@ -1,6 +1,6 @@
 import React from "react";
 import bg from "../../public/images/campo_cinza-cropped.svg";
-import Acessibilidade from "./Acessibilidade";
+
 import AvilaSVG from "./AvilaSVG";
 
 function Background() {
