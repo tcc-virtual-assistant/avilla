@@ -33,7 +33,7 @@ function Cards() {
             src="\images\chat-question-answer.svg"
             alt=""
           />
-          <p className="text-cinza text-xl">Dúvidas frequentes</p>
+          <p className="text-gray-500 text-xl">Dúvidas frequentes</p>
         </button >
 
         <button onClick={()=>{router.push('/planta')}}

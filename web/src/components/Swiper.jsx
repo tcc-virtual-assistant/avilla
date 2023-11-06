@@ -95,7 +95,7 @@ export default function Carrosel() {
               <div class="text-roxo font-bold text-center text-5xl mb-8 leading-tight">
                 Soluções Digitais
               </div>
-              <p class="text-grey-darker text-4xl leading-tight">{text1}</p>
+              <p class="text-black text-4xl leading-tight">{text1}</p>
               <a
                 class="text-2xl bg-roxo py-4 rounded-lg text-white w-1/4 text-center text-bold block mt-6 mb-10"
                 onClick={handleClick}
@@ -116,7 +116,7 @@ export default function Carrosel() {
               <div class="text-roxo font-bold text-center text-5xl mb-8 leading-tight">
                 Mecatrônica
               </div>
-              <p class="text-grey-darker text-4xl leading-tight">{text2}</p>
+              <p class="text-black text-4xl leading-tight">{text2}</p>
               <a
                 class="text-2xl bg-roxo py-4 rounded-lg text-white w-1/4 text-center text-bold block mt-6 mb-10"
                 onClick={handleClick}
@@ -137,7 +137,7 @@ export default function Carrosel() {
               <div class="text-roxo font-bold text-center text-5xl mb-8 leading-tight">
                 Administração
               </div>
-              <p class="text-grey-darker text-4xl leading-tight">{text3}</p>
+              <p class="text-black text-4xl leading-tight">{text3}</p>
               <a
                 class="text-2xl bg-roxo py-4 rounded-lg text-white w-1/4 text-center text-bold block mt-6 mb-10"
                 onClick={handleClick}

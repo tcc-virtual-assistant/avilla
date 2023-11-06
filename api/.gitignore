@@ -1,7 +1,5 @@
-env/
-.env/
-venv/2
 venv
-./venv
-/venv
-/venv2
+ven2
+venvChat
+./node_modules
+
